@@ -1,0 +1,142 @@
+
+.night {
+    height: 100%;
+    width: 100%;
+    background-color: #1D1D1D;
+}
+
+.day {
+    background-color: white;
+}
+
+.menu {
+    width: 100%;
+    margin-top: 1%;
+    background: transparent;
+    font-size: 30px;
+    padding: 20px;
+    display: inline-flex;
+}
+
+.nightMain {
+
+    color: white;
+    padding: 10px;
+    margin-left: 3%;
+}
+
+.dayMain {
+    color: black;
+}
+
+.nightMain:hover {
+    color: #e3cd93;
+}
+
+.nightServices {
+    color: white;
+    padding: 10px;
+    margin-left: 30%;
+}
+
+.dayServices {
+    color: black;
+}
+
+.nightServices:hover {
+    color: #e3cd93;
+}
+
+.nightAbout {
+
+    color: white;
+    padding: 10px;
+    width: 170px;
+    margin-left: 6%;
+}
+
+.dayAbout {
+    color: black;
+}
+
+.nightAbout:hover {
+    color: #e3cd93;
+}
+
+.nightFAQ {
+    color: white;
+    padding: 10px;
+    margin-left: 7%;
+}
+
+.dayFAQ {
+    color: black;
+
+}
+
+.nightFAQ:hover {
+    color: #e3cd93;
+}
+
+.icon {
+    position: relative;
+    top: -2px;
+    margin-right: 5px;
+    height: 30px;
+    width: 30px;
+}
+
+.gena {
+    height: 70px;
+    width: 200px;
+    color: black;
+    padding: 10px;
+    background-color: #e3cd93;
+    border-radius: 100px;
+    margin-left: 9%;
+}
+
+.gena:hover {
+    color: black;
+    box-shadow: 5px 5px 5px #c7b68b;
+}
+
+.dayNight {
+    cursor: pointer;
+    height: 70px;
+    width: 70px;
+    margin-left: 5%;
+    border-radius: 100px;
+    border: 0;
+    background-color: #e3cd93;
+}
+
+.dayNight:hover {
+    box-shadow: 5px 5px 5px #c7b68b;
+}
+
+.appWrapper {
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+
+    grid-template-areas:
+  'c p';
+    grid-template-columns: 3fr 1fr;
+
+}
+
+.content {
+    grid-area: c;
+    margin-top: 3%;
+    margin-left: 4%;
+}
+
+.pivo {
+    grid-area: p;
+}
+
+
+
+
+

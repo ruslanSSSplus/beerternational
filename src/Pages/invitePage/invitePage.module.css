@@ -1,0 +1,34 @@
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.field{
+    font-size: 30px;
+    width: 400px;
+    margin-bottom: 10px;
+}
+.logo1{
+    width: 200px;
+    height: 68px;
+}
+.error{
+    font-size: 30px;
+    color: red;
+}
+.response{
+    font-size: 30px;
+    color: green;
+}
+.sub{
+    font-size: 30px;
+    color: cornflowerblue;
+}
+.all{
+    margin: 20px;
+    border: solid blue 2px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border-radius: 10px;
+    padding: 15px;
+    width: 710px;
+}

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Poiret+One&display=swap');
+
+
+.jul72 {
+    font-family: 'Julius Sans One', 'Arial', "Times New Roman", sans-serif;
+    color: #e3cd93;
+    font-size: 100px;
+}
+
+.jul30 {
+    font-family: 'Julius Sans One', 'Arial', "Times New Roman", sans-serif;
+    color: #e3cd93;
+    font-size: 45px;
+}
+
+.all {
+    width: 1270px;
+    line-height: 1.2;
+    margin-top: 5%;
+}
+
+.nightSmall {
+    font-size: 22px;
+    color: white;
+    font-family: 'Poiret One', cursive;
+}
+
+.nightLarge {
+    font-size: 35px;
+    color: white;
+    font-family: 'Poiret One', cursive;
+}
+
+.day {
+    color: black;
+}
+
+
+.nightZayvka {
+    cursor: pointer;
+    margin-top: 20px;
+    border: solid 7px #e3cd93;
+    color: #e3cd93;
+    font-size: 50px;
+    vertical-align: middle;
+    border-radius: 100px;
+    width: 500px;
+    height: 90px;
+    background-color: #1D1D1D;
+}
+
+.dayZayvka {
+    background-color: white;
+}
+
+.nightZayvka:hover {
+    box-shadow: 5px 5px 5px #c7b68b;
+}
+
+.invite{
+    color: #e3cd93;
+}
