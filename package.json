@@ -41,5 +41,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:3002"
+  "proxy": "https://glacial-crag-96225.herokuapp.com"
 }
