@@ -11,7 +11,7 @@ export const AboutUs = (props) => {
 
 
     useEffect(() => {
-        fetch('/users', {
+        fetch('https://glacial-crag-96225.herokuapp.com/users', {
             method: 'GET',
             headers: {
                 'Content-type': 'application/json'
@@ -24,7 +24,7 @@ export const AboutUs = (props) => {
 
 
     const deleteUser = (uid) =>{
-        fetch('/del', {
+        fetch('https://glacial-crag-96225.herokuapp.com/del', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'

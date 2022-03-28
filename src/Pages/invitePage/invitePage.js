@@ -52,7 +52,7 @@ export const InvitePage = (props) => {
             photo: avatar,
             id: uuidv4()
         }
-        fetch('/api', {
+        fetch('https://glacial-crag-96225.herokuapp.com/api', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'
