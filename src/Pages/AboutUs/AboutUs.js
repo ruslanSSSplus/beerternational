@@ -1,23 +1,62 @@
 import React, {useEffect, useState} from 'react';
 import classes from './AboutUS.module.css'
+import sveti from '../../Pictures/profil_svetl.png'
+import temn from '../../Pictures/uchastniki_temny.png'
+import EachUser from './EachUser/EachUser'
 
-export const AboutUs = () => {
 
-    const [pic, setPic] = useState('')
+export const AboutUs = (props) => {
 
-    const encodeImageFileAsURL = (element) => {
-        let file = element.target.files[0];
-        let reader = new FileReader();
-        reader.onloadend = function() {
-            console.log('RESULT', reader.result)
-            setPic(reader.result)
-        }
-        reader.readAsDataURL(file);
+    const [data, setData] = useState([])
+
+
+    useEffect(() => {
+        fetch('/users', {
+            method: 'GET',
+            headers: {
+                'Content-type': 'application/json'
+            },
+
+        }).then(response => response.json())
+            .then(response => setData(response))
+
+    }, [])
+
+
+    const deleteUser = (uid) =>{
+        fetch('/del', {
+            method: 'POST',
+            headers: {
+                'Content-type': 'application/json'
+            },
+            body: JSON.stringify({id: uid})
+        }).then(response => response.json())
+            .then(response => setData(response))
     }
-    return (
-        <div className={classes.all}>
-            <input onChange={encodeImageFileAsURL} type={'file'}/>
-            <img src={pic} alt={'fdf'}/>
+
+
+    console.log(data)
+    let users = data.map((el) => <EachUser user={el} theme={props.theme} deleteUser={deleteUser} key={el.id}/>)
+
+
+    return (<div>
+            <h1> Участники </h1>
+            <div className={classes.all}>
+
+
+                <div className={classes.content}>
+                    {users}
+                </div>
+
+                <div className={classes.pivo}>
+                    {!props.theme ? <img alt={'Pivo'}
+                                         src={temn}/>
+                        : null}
+                    {props.theme ? <img alt={'Pivo'}
+                                        src={sveti}/> : null}
+                </div>
+            </div>
         </div>
-    )
+
+    );
 }

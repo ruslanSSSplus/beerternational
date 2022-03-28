@@ -1,3 +1,25 @@
-.all{
-    font-size: 100px;
+
+.all {
+    display: grid;
+    width: 100%;
+    min-height: 1000px;
+
+    grid-template-areas:
+    'c p';
+    grid-template-columns: 1fr 1fr;
+
 }
+.pivo{
+    margin-top: 10%;
+    margin-left: 100px;
+    grid-area: p;
+
+}
+.content{
+    margin-top: 20px;
+    margin-left: 5%;
+    grid-area: c;
+    text-align: center;
+}
+
+

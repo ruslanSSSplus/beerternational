@@ -3,14 +3,19 @@ input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+::-webkit-input-placeholder {
+    text-align:center;
+}
+
 .field{
     font-size: 30px;
     width: 400px;
-    margin-bottom: 10px;
-}
-.logo1{
-    width: 200px;
-    height: 68px;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+    border-radius: 100px;
+    text-align:center;
+    background-color: #e6e6e6;
 }
 .error{
     font-size: 30px;
@@ -20,15 +25,95 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 30px;
     color: green;
 }
-.sub{
-    font-size: 30px;
-    color: cornflowerblue;
+
+.nightZayvka {
+    cursor: pointer;
+    margin-top: 20px;
+    border: solid 7px #e3cd93;
+    color: #e3cd93;
+    font-size: 50px;
+    vertical-align: middle;
+    border-radius: 100px;
+    width: 500px;
+    height: 90px;
+    background-color: #1D1D1D;
 }
-.all{
-    margin: 20px;
-    border: solid blue 2px;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+.dayZayvka {
+    background-color: white;
+}
+
+.nightZayvka:hover {
+    box-shadow: 5px 5px 5px #c7b68b;
+}
+.invite{
+    color: #e3cd93;
+}
+
+.all {
+    display: grid;
+    width: 100%;
+    min-height: 1000px;
+
+    grid-template-areas:
+  'p c';
+    grid-template-columns: 1fr 3fr;
+
+}
+.pivo{
+    margin-top: 10%;
+    grid-area: p;
+}
+.content{
+    margin-top: 20px;
+    margin-left: 5%;
+    grid-area: c;
+    text-align: center;
+}
+
+.resquit{
+    color: #e3cd93;
+    font-size: 70px;
+    line-height: 0.4em;
+}
+.photo{
+    width: 270px;
+    height: 310px;
+    border: solid 2px #e3cd93;
     border-radius: 10px;
-    padding: 15px;
-    width: 710px;
+    margin-bottom: 20px;
+}
+.chooseFile{
+    margin-bottom: 10px ;
+}
+.customfileinput {
+    margin-left: 130px;
+    color: transparent;
+    margin-bottom: 10px ;
+}
+.customfileinput::-webkit-file-upload-button {
+    visibility: hidden;
+}
+.customfileinput::before {
+    content: 'Выберите фото';
+    color: black;
+    display: inline-block;
+    background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+}
+.customfileinput:hover::before {
+    border-color: black;
+}
+
+.customfileinput:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
 }

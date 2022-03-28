@@ -3,13 +3,16 @@ import classes from './App.module.css';
 import 'antd/dist/antd.min.css'
 import React, {useState} from "react";
 import {Layout} from 'antd';
-
 import {Main} from "./Pages/Main/Main";
 import {Services} from "./Pages/Services/Services";
 import {AboutUs} from "./Pages/AboutUs/AboutUs";
 import {FAQ} from "./Pages/FAQ/FAQ";
 import cn from "classnames";
 import {InvitePage} from "./Pages/invitePage/invitePage";
+import svetl from './Pictures/Frame.png'
+import temn from './Pictures/Frame-1.png'
+
+
 
 const {Content} = Layout;
 
@@ -31,7 +34,11 @@ const App = () => {
 
                 <Link to="/Main" className={cn({
                     [classes.dayMain]: theme === true
-                }, classes.nightMain)}>Main</Link>
+                }, classes.nightMain)}>
+                <img alt={'logo'}
+                src = {theme ? svetl : temn }  className={classes.logo}
+                />
+                </Link>
 
                 <Link to='/Services' className={cn({
                     [classes.dayServices]: theme === true
@@ -56,24 +63,18 @@ const App = () => {
 
             </div>
 
-            <Content className={classes.appWrapper}>
-                <div className={classes.content}>
+            <Content className={classes.content}>
+                <div >
                     <Routes>
                         <Route path="/" element={<Navigate replace to="/Main"/>}/>
                         <Route path='/Main' element={<Main theme={theme}/>}> </Route>
-                        <Route path='/Services' element={<Services/>}> </Route>
-                        <Route path='/AboutUs' element={<AboutUs/>}> </Route>
-                        <Route path='/FAQ' element={<FAQ/>}> </Route>
-                        <Route path='/InvitePage' element={<InvitePage/>}> </Route>
+                        <Route path='/Services' element={<Services theme={theme}/>}> </Route>
+                        <Route path='/AboutUs' element={<AboutUs theme={theme}/>}> </Route>
+                        <Route path='/FAQ' element={<FAQ theme={theme}/>}> </Route>
+                        <Route path='/InvitePage' element={<InvitePage theme={theme}/>}> </Route>
                     </Routes>
                 </div>
-                <div className={classes.pivo}>
-                    {!theme ? <img alt={'Pivo'}
-                                   src={'https://sun9-22.userapi.com/impf/li7sOcpgRBTx1toQ0PHg51uj_uOE1fHYQFJuZQ/JnzwL53dUqY.jpg?size=693x939&quality=95&sign=896a326088c70ede60ad14bf904f4031&type=album'}/>
-                        : null}
-                    {theme ? <img alt={'Pivo'}
-                                  src={'https://sun9-86.userapi.com/impf/nVg5vVwMNO-nSP14H007icFrk8XDF1PHmWoRFw/4Zl93YvLtyU.jpg?size=693x939&quality=95&sign=b423611fffd14ab78503380814a1b651&type=album'}/> : null}
-                </div>
+
             </Content>
         </div>
     </HashRouter>);

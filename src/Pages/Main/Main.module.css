@@ -13,10 +13,9 @@
     font-size: 45px;
 }
 
-.all {
-    width: 1270px;
+.info {
     line-height: 1.2;
-    margin-top: 5%;
+
 }
 
 .nightSmall {
@@ -59,4 +58,23 @@
 
 .invite{
     color: #e3cd93;
+}
+
+
+.all {
+    display: grid;
+    width: 100%;
+
+    grid-template-areas:
+  'c p';
+    grid-template-columns: 3fr 1fr;
+
+}
+.pivo{
+    grid-area: p;
+}
+.content{
+    margin-top: 5%;
+    margin-left: 5%;
+    grid-area: c;
 }
