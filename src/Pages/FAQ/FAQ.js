@@ -7,6 +7,7 @@ export const FAQ = () => {
     return (
         <div className={classes.all}>
             FAQ
+            afdasfdfasdfas
         </div>
     )
 }
