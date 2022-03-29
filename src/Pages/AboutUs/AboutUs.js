@@ -27,7 +27,7 @@ export const AboutUs = (props) => {
             headers: {
                 'Content-type': 'application/json'
             },
-            body: JSON.stringify({uid})
+            body: JSON.stringify(uid)
         }).then(response => response.json())
             .then(response => setData(response))
     }
