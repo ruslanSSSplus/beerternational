@@ -55,7 +55,7 @@ export const InvitePage = (props) => {
         fetch('https://glacial-crag-96225.herokuapp.com/api', {
             method: 'POST',
             headers: {
-                'Content-type': 'application/json'
+                'Content-type': 'application/json',
             },
             body: JSON.stringify(data)
         }).then(response => response.json())

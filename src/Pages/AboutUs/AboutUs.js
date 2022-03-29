@@ -11,10 +11,10 @@ export const AboutUs = (props) => {
 
 
     useEffect(() => {
-        fetch('https://glacial-crag-96225.herokuapp.com/getUsers', {
+        fetch('https://glacial-crag-96225.herokuapp.com/getUsers1', {
             method: 'GET',
             headers: {
-                'Content-type': 'application/json'
+                'Content-type': 'application/json',
             },
         }).then(response => response.json())
             .then(response => setData(response))
@@ -25,7 +25,8 @@ export const AboutUs = (props) => {
         fetch('https://glacial-crag-96225.herokuapp.com/del', {
             method: 'POST',
             headers: {
-                'Content-type': 'application/json'
+                'Content-type': 'application/json',
+
             },
             body: JSON.stringify({uid})
         }).then(response => response.json())
