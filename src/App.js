@@ -11,6 +11,7 @@ import cn from "classnames";
 import {InvitePage} from "./Pages/invitePage/invitePage";
 import svetl from './Pictures/Frame.png'
 import temn from './Pictures/Frame-1.png'
+import {v4 as uuidv4} from "uuid";
 
 
 
@@ -20,6 +21,21 @@ const {Content} = Layout;
 const App = () => {
 
     const [theme, setTheme] = useState(true)
+    const [isLogin, setIsLogin] = useState(false)
+
+
+    const submitLogin = (values) =>{
+
+        fetch('https://glacial-crag-96225.herokuapp.com/login', {
+            method: 'POST',
+            headers: {
+                'Content-type': 'application/json',
+            },
+            body: JSON.stringify(values)
+        }).then(response => response.json())
+            .then(response => setIsLogin(response.access))
+    }
+
 
     const changeTheme = () => {
         setTheme(!theme)
@@ -50,7 +66,7 @@ const App = () => {
 
                 <Link to='/FAQ' className={cn({
                     [classes.dayFAQ]: theme === true
-                }, classes.nightFAQ)}>FAQ</Link>
+                }, classes.nightFAQ)}>Admin</Link>
 
 
                 <a href={'https://vk.com/clubgenafond'} className={classes.gena}>
@@ -69,8 +85,8 @@ const App = () => {
                         <Route path="/" element={<Navigate replace to="/Main"/>}/>
                         <Route path='/Main' element={<Main theme={theme}/>}> </Route>
                         <Route path='/Services' element={<Services theme={theme}/>}> </Route>
-                        <Route path='/AboutUs' element={<AboutUs theme={theme}/>}> </Route>
-                        <Route path='/FAQ' element={<FAQ theme={theme}/>}> </Route>
+                        <Route path='/AboutUs' element={<AboutUs theme={theme} isLogin={isLogin}/>}> </Route>
+                        <Route path='/FAQ' element={<FAQ theme={theme} submitLogin={submitLogin} isLogin={isLogin}/>}> </Route>
                         <Route path='/InvitePage' element={<InvitePage theme={theme}/>}> </Route>
                     </Routes>
                 </div>

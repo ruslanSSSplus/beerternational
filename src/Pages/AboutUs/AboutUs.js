@@ -35,7 +35,7 @@ export const AboutUs = (props) => {
 
 
 
-    let users = data.map((el) => <EachUser user={el} theme={props.theme} deleteUser={deleteUser} key={el.id}/>)
+    let users = data.map((el) => <EachUser user={el} theme={props.theme} deleteUser={deleteUser} key={el.id} isLogin={props.isLogin}/>)
 
 
     return (<div>
