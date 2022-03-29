@@ -12,14 +12,12 @@ export const AboutUs = (props) => {
 
     useEffect(() => {
         fetch('https://glacial-crag-96225.herokuapp.com/users', {
-            method: 'GET',
+            method: 'POST',
             headers: {
                 'Content-type': 'application/json'
             },
-
         }).then(response => response.json())
             .then(response => setData(response))
-
     }, [])
 
 
@@ -29,14 +27,14 @@ export const AboutUs = (props) => {
             headers: {
                 'Content-type': 'application/json'
             },
-            body: JSON.stringify({id: uid})
+            body: JSON.stringify({uid})
         }).then(response => response.json())
             .then(response => setData(response))
     }
 
 
-    console.log(data)
-    let users = data.map((el) => <EachUser user={el} theme={props.theme} deleteUser={deleteUser} key={el.id}/>)
+
+    let users = data.map((el) => <EachUser user={el} theme={props.theme} deleteUser={deleteUser} key={el._id}/>)
 
 
     return (<div>
