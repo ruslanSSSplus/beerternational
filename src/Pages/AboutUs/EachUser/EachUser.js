@@ -11,7 +11,7 @@ const EachUser = (props) => {
             <div className={classes.name}>Имя - {props.user.name}</div>
             <div className={classes.age}>Возраст - {props.user.age}</div>
             <div className={classes.social}>VK {props.user.social}</div>
-            <button onClick={()=> props.deleteUser(props.user.id)}> удалить</button>
+            {/*<button onClick={()=> props.deleteUser(props.user.id)}> удалить</button>*/}
         </div>
     )
 }
