@@ -11,8 +11,8 @@ export const AboutUs = (props) => {
 
 
     useEffect(() => {
-        fetch('https://glacial-crag-96225.herokuapp.com/users', {
-            method: 'POST',
+        fetch('https://glacial-crag-96225.herokuapp.com/getUsers', {
+            method: 'GET',
             headers: {
                 'Content-type': 'application/json'
             },
