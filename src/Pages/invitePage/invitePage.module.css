@@ -7,9 +7,12 @@ input[type=number]::-webkit-outer-spin-button {
     text-align:center;
 }
 
+.close{
+    position: absolute;
+}
 .field{
     font-size: 30px;
-    width: 400px;
+    width: 200px;
     margin-bottom: 20px;
     outline: none;
     border: none;
@@ -17,10 +20,7 @@ input[type=number]::-webkit-outer-spin-button {
     text-align:center;
     background-color: #e6e6e6;
 }
-.error{
-    font-size: 30px;
-    color: red;
-}
+
 .response{
     font-size: 30px;
     color: green;
@@ -34,7 +34,7 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 50px;
     vertical-align: middle;
     border-radius: 100px;
-    width: 500px;
+    width: 200px;
     height: 90px;
     background-color: #1D1D1D;
 }
@@ -52,37 +52,44 @@ input[type=number]::-webkit-outer-spin-button {
 
 .all {
     display: grid;
-    width: 100%;
-    min-height: 1000px;
-
+    width: 750px;
+    height: 500px;
     grid-template-areas:
   'p c';
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 250px 500px;
 
 }
 .pivo{
-    margin-top: 10%;
     grid-area: p;
+    background-color: #e3cd93;
+
+}
+.PivoPng   {
+    width: 200px;
+    height: 200px;
 }
 .content{
-    margin-top: 20px;
-    margin-left: 5%;
+    margin-top: 50px ;
     grid-area: c;
     text-align: center;
 }
 
-.resquit{
-    color: #e3cd93;
-    font-size: 70px;
-    line-height: 0.4em;
-}
+
 .photo{
-    width: 270px;
-    height: 310px;
+    width: 200px;
+    height: 200px;
     border: solid 2px #e3cd93;
-    border-radius: 10px;
+    border-radius: 100px;
     margin-bottom: 20px;
+
 }
+
+
+
+
+
+
+
 .chooseFile{
     margin-bottom: 10px ;
 }

@@ -13,7 +13,7 @@ export const InvitePage = (props) => {
 
 
     const [data, setData] = useState(null)
-    const [avatar, setAvatar] = useState('https://ex-beton.ru/images/home/client-say/00.jpg')
+    const [avatar, setAvatar] = useState(temn)
 
     const initialValues = {
         name: '',
@@ -62,43 +62,43 @@ export const InvitePage = (props) => {
             .then(response => setData(response.message))
     }
 
-    return (<div className={classes.all}>
+    return (<div >
             <Formik initialValues={initialValues} onSubmit={onSubmit} validationSchema={validationSchema}
                     validateOnBlur>
-                <Form className={classes.content}>
-                    <p className={classes.resquit}> Рекрутирование</p>
-                    <img className={classes.photo}
-                         alt={'photo'}
-                         src={avatar}/>
-                 <div className={classes.chooseFile}>
-                     <input onChange={encodeImageFileAsURL} type={'file'}  name='photo'
-                     className={classes.customfileinput}/>
-                 </div>
-                    <div><Field className={classes.field} placeholder={'Имя'} type='text' name='name'
-                                component='input'/></div>
-                    <div><Field className={classes.field} placeholder={'Возраст'}
-                                type='number' name='age'
-                                component='input'/></div>
-                    <div><Field className={classes.field} placeholder={'VK'} type='text'
-                                name='social'
-                                component='input'/></div>
+                <Form className={classes.all}>
 
-                    <button type="submit" className={cn({
-                        [classes.dayZayvka]: props.theme === true
-                    }, classes.nightZayvka)}><p className={classes.invite}> Вступить </p></button>
-                    <div>{!data ? null : <p className={classes.response}> {data} </p>}</div>
-                    <div> <ErrorMessage name='name' /> </div>
+                    <div className={classes.content}>
+                        <div><Field className={classes.field} placeholder={'Имя'} type='text' name='name'
+                                    component='input'/></div>
+                        <div><Field className={classes.field} placeholder={'Возраст'}
+                                    type='number' name='age'
+                                    component='input'/></div>
+                        <div><Field className={classes.field} placeholder={'VK'} type='text'
+                                    name='social'
+                                    component='input'/></div>
+
+
+                        <div>{!data ? null : <p className={classes.response}> {data} </p>}</div>
+                        <div> <ErrorMessage name='name' /> </div>
+                    </div>
+                    <div className={classes.pivo}>
+                        <img className={classes.photo}
+                             alt={'photo'}
+                             src={avatar}/>
+                        <div className={classes.chooseFile}>
+                            <input onChange={encodeImageFileAsURL} type={'file'}  name='photo'
+                                   className={classes.customfileinput}/>
+                        </div>
+                        <button type="submit" className={cn({
+                            [classes.dayZayvka]: props.theme === true
+                        }, classes.nightZayvka)}><p className={classes.invite}> Вступить </p></button>
+                    </div>
 
                 </Form>
             </Formik>
 
-            <div className={classes.pivo}>
-                {!props.theme ? <img alt={'Pivo'}
-                                     src={temn}/>
-                    : null}
-                {props.theme ? <img alt={'Pivo'}
-                                    src={sveti}/> : null}
-            </div>
+
+            <button onClick={()=>props.close()} className={classes.close}> close</button>
         </div>
     );
 }

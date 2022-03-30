@@ -11,7 +11,6 @@ import cn from "classnames";
 import {InvitePage} from "./Pages/invitePage/invitePage";
 import svetl from './Pictures/Frame.png'
 import temn from './Pictures/Frame-1.png'
-import {v4 as uuidv4} from "uuid";
 
 
 
@@ -71,8 +70,8 @@ const App = () => {
 
                 <a href={'https://vk.com/clubgenafond'} className={classes.gena}>
                     <img className={classes.icon}
-                         alt={'icom'}
-                         src={'https://cdn-icons.flaticon.com/png/512/3670/premium/3670029.png?token=exp=1648314735~hmac=65cc45387367b28a67eeef8e605d0dc2'}/>GenaFond </a>
+                         alt={'icon'}
+                         src={temn}/>GenaFond </a>
 
                 {!theme ? <button className={classes.dayNight} onClick={() => changeTheme()}>🌝</button> : null}
                 {theme ? <button className={classes.dayNight} onClick={() => changeTheme()}>🌚</button> : null}
@@ -87,7 +86,7 @@ const App = () => {
                         <Route path='/Services' element={<Services theme={theme}/>}> </Route>
                         <Route path='/AboutUs' element={<AboutUs theme={theme} isLogin={isLogin}/>}> </Route>
                         <Route path='/FAQ' element={<FAQ theme={theme} submitLogin={submitLogin} isLogin={isLogin}/>}> </Route>
-                        <Route path='/InvitePage' element={<InvitePage theme={theme}/>}> </Route>
+                        {/*<Route path='/InvitePage' element={<InvitePage theme={theme}/>}> </Route>*/}
                     </Routes>
                 </div>
 

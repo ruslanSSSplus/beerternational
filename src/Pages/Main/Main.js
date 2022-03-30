@@ -1,12 +1,21 @@
-import React, {useEffect} from 'react';
+import React, {useState} from 'react';
 import classes from './Main.module.css'
 import cn from "classnames";
 import {Link} from "react-router-dom";
 import sveti from '../../Pictures/pivo_svetl.png'
 import temn from '../../Pictures/pivo_temn.png'
+import {InvitePage} from "../invitePage/invitePage";
 
 export const Main = (props) => {
 
+    let [isOpen, setIisOpen] = useState(false)
+    let show = () => {
+        setIisOpen(true)
+    }
+    let close = () => {
+        console.log('close')
+        setIisOpen(false)
+    }
 
     return (
         <div className={classes.all}>
@@ -32,9 +41,9 @@ export const Main = (props) => {
                     </p>
                     <button className={cn({
                         [classes.dayZayvka]: props.theme === true
-                    }, classes.nightZayvka)}><Link to='/InvitePage'>
+                    }, classes.nightZayvka)} onClick={()=> show()}>
                         <p className={classes.invite}> Подать заявку </p>
-                    </Link></button>
+                   </button>
             </div>
             </div>
 
@@ -44,7 +53,13 @@ export const Main = (props) => {
                         : null}
                     {props.theme ? <img alt={'Pivo'}
                                   src={sveti}/> : null}
-                </div>
+                </div>s
+            {isOpen ?
+                <div className={classes.inviteBlank}>
+                    <InvitePage close={close} theme={props.theme}/>
+                </div> : null
+            }
         </div>
+
     )
 }
