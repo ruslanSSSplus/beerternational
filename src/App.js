@@ -18,7 +18,7 @@ const {Content} = Layout;
 
 const App = () => {
 
-    const [theme, setTheme] = useState(true)
+    const [theme, setTheme] = useState(false)
     const [isLogin, setIsLogin] = useState(false)
 
 

@@ -32,9 +32,11 @@ export const InvitePage = (props) => {
 
     const validationSchema = Yup.object({
         name: Yup.string()
-            .required(<img className={classes.error} src={errorPng}/>), age: Yup.string()
-            .required(<img className={classes.error} src={errorPng}/>), social: Yup.string()
-            .required(<img className={classes.error} src={errorPng}/>),
+            .required(<img alt={'error'} className={classes.error} src={errorPng}/>),
+        age: Yup.string()
+            .required(<img alt={'error'} className={classes.error} src={errorPng}/>),
+        social: Yup.string()
+            .required(<img alt={'error'} className={classes.error} src={errorPng}/>),
     })
 
     const encodeImageFileAsURL = (element) => {
@@ -92,7 +94,7 @@ export const InvitePage = (props) => {
                     [classes.pivoDay]: props.theme === true
                 }, classes.pivoNight)}>
                     <img className={classes.photo}
-                         alt={'photo'}
+                         alt={'photoAva'}
                          src={avatar}/>
                     <div className={classes.chooseFile}>
                         <label htmlFor="ava" className={classes.labelInput}>
