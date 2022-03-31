@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import classes from './Main.module.css'
 import cn from "classnames";
-import {Link} from "react-router-dom";
 import sveti from '../../Pictures/pivo_svetl.png'
 import temn from '../../Pictures/pivo_temn.png'
 import {InvitePage} from "../invitePage/invitePage";

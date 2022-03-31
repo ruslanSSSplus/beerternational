@@ -1,11 +1,6 @@
-import React, {useState} from 'react';
+import React from 'react';
 import classes from './FAQ.module.css'
-import * as Yup from "yup";
-import {v4 as uuidv4} from "uuid";
-import {ErrorMessage, Field, Form, Formik} from "formik";
-import cn from "classnames";
-import temn from "../../Pictures/ragistr_temn.png";
-import sveti from "../../Pictures/registr_svetl.png";
+import { Field, Form, Formik} from "formik";
 
 
 export const FAQ = (props) => {
