@@ -8,7 +8,6 @@ import {Services} from "./Pages/Services/Services";
 import {AboutUs} from "./Pages/AboutUs/AboutUs";
 import {FAQ} from "./Pages/FAQ/FAQ";
 import cn from "classnames";
-import {InvitePage} from "./Pages/invitePage/invitePage";
 import svetl from './Pictures/Frame.png'
 import temn from './Pictures/Frame-1.png'
 

@@ -27,16 +27,13 @@ export const Main = (props) => {
                     <p className={cn({
                         [classes.day]: props.theme === true
                     }, classes.nightSmall)}> Ежегодный пивной турнир среди членов клуба Genafond
-                        возвращается! <wbr/> Запаситесь
-                        терпением и пивом, докажите вашим зависникам, что именно вы достойны звания чемпиона.
-                        <wbr/>
-                        Перепейте их,
+                        возвращается! Запаситесь
+                        терпением и пивом, докажите вашим зависникам, что именно вы достойны звания чемпиона. Перепейте их,
                         перестреляйте или красиво сойдите с дистанции.
                     </p>
                     <p className={cn({
                         [classes.day]: props.theme === true
-                    }, classes.nightLarge)}> Успейте подать заявку и побороться за звание лучшего подпиваса 2022ого года.
-                        <wbr/>
+                    }, classes.nightSmall)}> Успейте подать заявку и побороться за звание лучшего подпиваса 2022ого года.
                         Ваша победа в вашем бокале!
                     </p>
                     <button className={cn({
@@ -53,7 +50,7 @@ export const Main = (props) => {
                         : null}
                     {props.theme ? <img alt={'Pivo'}
                                   src={sveti}/> : null}
-                </div>s
+                </div>
             {isOpen ?
                 <div className={classes.inviteBlank}>
                     <InvitePage close={close} theme={props.theme}/>
