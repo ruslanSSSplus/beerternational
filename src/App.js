@@ -8,8 +8,8 @@ import {OurHistory} from "./Pages/OurHistory/OurHistory";
 import {Members} from "./Pages/Members/Members";
 import {Regulations} from "./Pages/Regulations/Regulations";
 import cn from "classnames";
-import svetl from './Pictures/Frame.png'
-import temn from './Pictures/Frame-1.png'
+import svetl from './components/Pictures/Frame.png'
+import temn from './components/Pictures/Frame-1.png'
 
 
 

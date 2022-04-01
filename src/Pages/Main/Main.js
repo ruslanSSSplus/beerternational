@@ -1,9 +1,11 @@
 import React, {useState} from 'react';
 import classes from './Main.module.css'
 import cn from "classnames";
-import sveti from '../../Pictures/pivo_svetl.png'
-import temn from '../../Pictures/pivo_temn.png'
+import sveti from '../../components/Pictures/pivo_svetl.png'
+import temn from '../../components/Pictures/pivo_temn.png'
 import {InvitePage} from "../invitePage/invitePage";
+import song from '../../INSTASAMKA - LIPSI HA.mp3'
+
 
 export const Main = (props) => {
 
@@ -15,13 +17,12 @@ export const Main = (props) => {
         console.log('close')
         setIisOpen(false)
     }
-
     return (
         <div className={classes.all}>
             <div className={classes.content}>
                 <h1 className={classes.jul72}> THE BEERTERNATIONAL <wbr/> 2022</h1>
                 <h2 className={classes.jul30}> GENAFOND CHAMPIONSHIP</h2>
-
+                <audio src={song} autoPlay="autoplay"> </audio>
                 <div className={classes.info}>
                     <p className={cn({
                         [classes.day]: props.theme === true

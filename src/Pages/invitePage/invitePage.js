@@ -3,13 +3,13 @@ import classes from './invitePage.module.css'
 import {Field, Form, Formik, ErrorMessage} from "formik";
 import * as Yup from "yup";
 
-import avaDefault from '../../Pictures/avatar.png'
-import inviteButton from '../../Pictures/inviteBut.png'
-import galochka from '../../Pictures/galochka.png'
-import inputPng from '../../Pictures/input.png'
-import closeButton from '../../Pictures/close.png'
-import closeButtonDay from '../../Pictures/closeDay.png'
-import errorPng from '../../Pictures/error.png'
+import avaDefault from '../../components/Pictures/avatar.png'
+import inviteButton from '../../components/Pictures/inviteBut.png'
+import galochka from '../../components/Pictures/galochka.png'
+import inputPng from '../../components/Pictures/input.png'
+import closeButton from '../../components/Pictures/close.png'
+import closeButtonDay from '../../components/Pictures/closeDay.png'
+import errorPng from '../../components/Pictures/error.png'
 
 import cn from "classnames";
 import {v4 as uuidv4} from 'uuid';

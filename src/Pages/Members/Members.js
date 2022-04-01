@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import classes from './Members.module.css'
-import sveti from '../../Pictures/profil_svetl.png'
-import temn from '../../Pictures/uchastniki_temny.png'
+import sveti from '../../components/Pictures/profil_svetl.png'
+import temn from '../../components/Pictures/uchastniki_temny.png'
 import EachUser from './EachUser/EachUser'
 import Preloader from "../../components/Preloader/Preloader";
 
@@ -17,7 +17,7 @@ export const Members = (props) => {
                 'Content-type': 'application/json',
             },
         }).then(response => response.json())
-            .then(response => setData(response))
+            .then(response => setData(response.reverse()))
     }, [])
 
 
@@ -30,7 +30,7 @@ export const Members = (props) => {
             },
             body: JSON.stringify({uid})
         }).then(response => response.json())
-            .then(response => setData(response))
+            .then(response => setData(response.reverse()))
     }
     console.log(data[0]===undefined )
 
