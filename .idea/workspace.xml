@@ -1,22 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8808b533-7d5b-4ec3-818f-134c1325d499" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Pages/OurHistory/OurHistory.js" afterDir="false" />
+    <list default="true" id="8808b533-7d5b-4ec3-818f-134c1325d499" name="Changes" comment="bundles">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/AboutUs/AboutUS.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Members/Members.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/AboutUs/AboutUs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Members/Members.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/AboutUs/EachUser/EachUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Members/EachUser/EachUser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/AboutUs/EachUser/EachUser.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Members/EachUser/EachUser.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/FAQ/FAQ.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Regulations/Regulations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/FAQ/FAQ.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/OurHistory/OurHistory.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Main/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Main/Main.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Main/Main.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Services/Services.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Services/Services.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Regulations/Regulations.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/invitePage/invitePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/invitePage/invitePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/OurHistory/OurHistory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/OurHistory/OurHistory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/OurHistory/OurHistory.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/OurHistory/OurHistory.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +13,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -73,8 +69,16 @@
       <option name="presentableId" value="Default" />
       <updated>1648637457240</updated>
       <workItem from="1648637459052" duration="4274000" />
-      <workItem from="1648769450785" duration="7577000" />
+      <workItem from="1648769450785" duration="9616000" />
     </task>
+    <task id="LOCAL-00001" summary="bundles">
+      <created>1648810681068</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1648810681068</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,5 +94,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="bundles" />
+    <option name="LAST_COMMIT_MESSAGE" value="bundles" />
   </component>
 </project>
