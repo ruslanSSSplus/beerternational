@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8808b533-7d5b-4ec3-818f-134c1325d499" name="Changes" comment="bundlesd">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Main/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Members/Members.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Members/Members.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/invitePage/invitePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/invitePage/invitePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pictures/04de2e31234507.564a1d23645bf.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pictures/04de2e31234507.564a1d23645bf.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pictures/Frame-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pictures/Frame-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pictures/Frame.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pictures/Frame.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pictures/avatar.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pictures/avatar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pictures/but1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pictures/but1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pictures/but2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pictures/but2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pictures/bx_medal-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pictures/bx_medal-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pictures/bx_medal.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pictures/bx_medal.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pictures/close.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pictures/close.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pictures/closeDay.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pictures/closeDay.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pictures/error.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pictures/error.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pictures/galochka.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pictures/galochka.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pictures/input.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pictures/input.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pictures/inviteBut.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pictures/inviteBut.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pictures/pivo_svetl.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pictures/pivo_svetl.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pictures/pivo_temn.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pictures/pivo_temn.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pictures/profil_svetl.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pictures/profil_svetl.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pictures/ragistr_temn.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pictures/ragistr_temn.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pictures/registr_svetl.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pictures/registr_svetl.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pictures/uchastniki_temny.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pictures/uchastniki_temny.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Preloader/Preloader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Preloader/Preloader.js" afterDir="false" />
-    </list>
+    <list default="true" id="8808b533-7d5b-4ec3-818f-134c1325d499" name="Changes" comment="bundlesd" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,7 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1648637457240</updated>
       <workItem from="1648637459052" duration="4274000" />
-      <workItem from="1648769450785" duration="10806000" />
+      <workItem from="1648769450785" duration="10827000" />
     </task>
     <task id="LOCAL-00001" summary="bundles">
       <created>1648810681068</created>
@@ -109,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648823559727</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="bundlesd">
+      <created>1648826088399</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1648826088399</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
