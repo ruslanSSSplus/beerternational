@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import classes from './OurHistory.module.css'
-import lipsiHi from '../../INSTASAMKA - LIPSI HA.mp3'
+import lipsiHi from '../../components/voices/INSTASAMKA - LIPSI HA.mp3'
 
 export const OurHistory = () => {
 
