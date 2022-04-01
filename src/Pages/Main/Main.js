@@ -44,11 +44,9 @@ export const Main = (props) => {
             </div>
 
                 <div className={classes.pivo}>
-                    {!props.theme ? <img alt={'Pivo'}
-                                   src={temn}/>
-                        : null}
-                    {props.theme ? <img alt={'Pivo'}
-                                  src={sveti}/> : null}
+                   <img alt={'Pivo'}
+                                   src={props.theme ? sveti : temn}
+                                         className={classes.pivoPng}/>
                 </div>
             {isOpen ?
                 <div className={classes.inviteBlank}>

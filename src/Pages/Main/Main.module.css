@@ -3,7 +3,7 @@
 .jul72 {
     font-family: 'Julius Sans One', 'Arial', "Times New Roman", sans-serif;
     color: #e3cd93;
-    font-size: 100px;
+    font-size: 80px;
 }
 
 .jul30 {
@@ -59,7 +59,6 @@
 .all {
     display: grid;
     width: 100%;
-
     grid-template-areas:
   'c p';
     grid-template-columns: 3fr 1fr;
@@ -68,9 +67,10 @@
 .pivo{
     grid-area: p;
 }
+.pivoPng{}
 .content{
     margin-top: 5%;
-    margin-left: 5%;
+    margin-left: 3%;
     grid-area: c;
 }
 

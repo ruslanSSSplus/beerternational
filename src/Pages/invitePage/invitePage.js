@@ -69,7 +69,7 @@ export const InvitePage = (props) => {
 
     const redirect = () => {
         console.log('try')
-        navigate('/AboutUs');
+        navigate('/Members');
     }
 
     return (<div>

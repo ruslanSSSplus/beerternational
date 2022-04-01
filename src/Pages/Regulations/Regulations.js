@@ -1,9 +1,9 @@
 import React from 'react';
-import classes from './FAQ.module.css'
+import classes from './Regulations.module.css'
 import { Field, Form, Formik} from "formik";
 
 
-export const FAQ = (props) => {
+export const Regulations = (props) => {
 
 
 

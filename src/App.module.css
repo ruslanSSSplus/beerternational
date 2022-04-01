@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Poiret+One&family=Raleway:wght@200&display=swap');
 
 .night {
+
     height: 100%;
     width: 100%;
+
+    min-height: 1100px;
     background-color: #1D1D1D;
     font-family: 'Raleway', sans-serif;
 }
@@ -13,18 +16,17 @@
 
 .menu {
     width: 100%;
-    margin-top: 1%;
     background: transparent;
     font-size: 30px;
     padding: 20px;
-    display: inline-flex;
+    display: flex;
 }
 
 .nightMain {
 
     color: white;
     padding: 10px;
-    margin-left: 3%;
+
 }
 
 .dayMain {
@@ -35,48 +37,47 @@
     color: #e3cd93;
 }
 
-.nightServices {
+.nightMembers {
     color: white;
     padding: 10px;
-    margin-left: 30%;
+    margin-left: auto;
 }
 
-.dayServices {
+.dayMembers {
     color: black;
 }
 
-.nightServices:hover {
+.nightMembers:hover {
     color: #e3cd93;
 }
 
-.nightAbout {
+.nightOurHistory {
 
     color: white;
     padding: 10px;
-    width: 170px;
-    margin-left: 6%;
+    margin-left: 30px;
 }
 
-.dayAbout {
+.dayOurHistory {
     color: black;
 }
 
-.nightAbout:hover {
+.nightOurHistory:hover {
     color: #e3cd93;
 }
 
-.nightFAQ {
+.nightRegulations {
     color: white;
     padding: 10px;
-    margin-left: 7%;
+    margin-left: 30px;
 }
 
-.dayFAQ {
+.dayRegulations {
     color: black;
 
 }
 
-.nightFAQ:hover {
+.nightRegulations:hover {
     color: #e3cd93;
 }
 
@@ -89,25 +90,32 @@
 }
 
 .gena {
+    text-align: center;
     height: 70px;
-    width: 200px;
+    min-width: 210px;
     color: black;
     padding: 10px;
     background-color: #e3cd93;
     border-radius: 100px;
-    margin-left: 9%;
+    margin-left: 140px;
 }
 
 .gena:hover {
     color: black;
     box-shadow: 5px 5px 5px #c7b68b;
 }
-
+.gena2{
+    font-size: 30px;
+    color: black;
+}
+.gena2:hover{
+    color: black;
+}
 .dayNight {
     cursor: pointer;
     height: 70px;
     width: 70px;
-    margin-left: 5%;
+    margin-left: 50px;
     border-radius: 100px;
     border: 0;
     background-color: #e3cd93;

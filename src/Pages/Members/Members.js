@@ -1,12 +1,12 @@
 import React, {useEffect, useState} from 'react';
-import classes from './AboutUS.module.css'
+import classes from './Members.module.css'
 import sveti from '../../Pictures/profil_svetl.png'
 import temn from '../../Pictures/uchastniki_temny.png'
 import EachUser from './EachUser/EachUser'
 import Preloader from "../../components/Preloader/Preloader";
 
 
-export const AboutUs = (props) => {
+export const Members = (props) => {
 
     const [data, setData] = useState([])
 
