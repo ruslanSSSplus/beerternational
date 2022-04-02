@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/beerternational/static/css/main.12834bb3.css",
-    "main.js": "/beerternational/static/js/main.bdbd1d56.js",
+    "main.css": "/beerternational/static/css/main.ce6c1e56.css",
+    "main.js": "/beerternational/static/js/main.4fa505d5.js",
     "static/js/787.28cb0dcd.chunk.js": "/beerternational/static/js/787.28cb0dcd.chunk.js",
     "static/media/INSTASAMKA - LIPSI HA.mp3": "/beerternational/static/media/INSTASAMKA - LIPSI HA.dfbeab7d5873bf23088c.mp3",
     "static/media/04de2e31234507.564a1d23645bf.gif": "/beerternational/static/media/04de2e31234507.564a1d23645bf.1cbc65b12d68de6e3c23.gif",
+    "static/media/bigBeer.png": "/beerternational/static/media/bigBeer.df94cf9f3dc1337b7901.png",
+    "static/media/headRed.png": "/beerternational/static/media/headRed.bc0025dd8e47716f3e94.png",
     "static/media/uchastniki_temny.png": "/beerternational/static/media/uchastniki_temny.720ec6c20c1f20543a4d.png",
     "static/media/profil_svetl.png": "/beerternational/static/media/profil_svetl.80761ac654439dbf28ae.png",
+    "static/media/bigGena.png": "/beerternational/static/media/bigGena.75baebdc6694e0e8d8bb.png",
     "static/media/pivo_svetl.png": "/beerternational/static/media/pivo_svetl.19792bc44a45568b16d6.png",
     "static/media/pivo_temn.png": "/beerternational/static/media/pivo_temn.0c6a4475f38ffdc18413.png",
     "static/media/Frame.png": "/beerternational/static/media/Frame.d9e3025454489ebc5a65.png",
     "static/media/Frame-1.png": "/beerternational/static/media/Frame-1.2b9075bd09ff2d64572f.png",
     "index.html": "/beerternational/index.html",
-    "main.12834bb3.css.map": "/beerternational/static/css/main.12834bb3.css.map",
-    "main.bdbd1d56.js.map": "/beerternational/static/js/main.bdbd1d56.js.map",
+    "main.ce6c1e56.css.map": "/beerternational/static/css/main.ce6c1e56.css.map",
+    "main.4fa505d5.js.map": "/beerternational/static/js/main.4fa505d5.js.map",
     "787.28cb0dcd.chunk.js.map": "/beerternational/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.12834bb3.css",
-    "static/js/main.bdbd1d56.js"
+    "static/css/main.ce6c1e56.css",
+    "static/js/main.4fa505d5.js"
   ]
 }
