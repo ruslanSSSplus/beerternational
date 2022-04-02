@@ -36,7 +36,7 @@ export const InvitePage = (props) => {
         age: Yup.string()
             .required(<img alt={'error'} className={classes.error} src={errorPng}/>),
         social: Yup.string()
-            .required(<img alt={'error'} className={classes.error} src={errorPng}/>),
+            .required(<img alt={'error'} className={classes.error} src={errorPng}/>) ,
     })
 
     const encodeImageFileAsURL = (element) => {

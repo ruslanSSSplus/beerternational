@@ -4,10 +4,12 @@ import sveti from '../../components/Pictures/profil_svetl.png'
 import temn from '../../components/Pictures/uchastniki_temny.png'
 import EachUser from './EachUser/EachUser'
 import Preloader from "../../components/Preloader/Preloader";
+import {useNavigate} from 'react-router-dom';
 
 
 export const Members = (props) => {
 
+    const navigate = useNavigate();
     const [data, setData] = useState([])
 
     useEffect(() => {
@@ -37,6 +39,10 @@ export const Members = (props) => {
     let users = data.map((el) => <EachUser user={el} theme={props.theme} deleteUser={deleteUser} key={el.id}
                                            isLogin={props.isLogin}/>)
 
+    const redirect = () => {
+
+        navigate('/Login');
+    }
 
     return (<div>
             <h1> Участники </h1>
@@ -55,6 +61,9 @@ export const Members = (props) => {
                         : null}
                     {props.theme ? <img alt={'Pivo'}
                                         src={sveti}/> : null}
+                    <button onClick={ () => redirect()}>
+                        redir
+                    </button>
                 </div>
             </div>
         </div>

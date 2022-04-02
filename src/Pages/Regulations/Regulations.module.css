@@ -1,3 +1,41 @@
-.all{
-    font-size: 100px;
+.all {
+    display: grid;
+
+    height: 100%;
+    grid-template-areas:
+  'l '
+  'g';
+    grid-template-rows: 400px 1fr;
+}
+.allDay{
+    color: white;
+}
+
+.info {
+    display: grid;
+    height: 100%;
+    grid-template-areas:
+  'g p b';
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.jpg{
+    grid-area: l;
+    width: 100%;
+}
+
+.gen{
+    margin-top: 300px;
+    width: 100%;
+    grid-area: g;
+}
+.pravila{
+    text-align: center;
+    font-size: 30px ;
+    grid-area: p;
+}
+.beer{
+    margin-top: 300px;
+    width: 100%;
+
+    grid-area: b;
 }

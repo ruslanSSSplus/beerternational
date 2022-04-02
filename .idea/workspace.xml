@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8808b533-7d5b-4ec3-818f-134c1325d499" name="Changes" comment="bundlesd" />
+    <list default="true" id="8808b533-7d5b-4ec3-818f-134c1325d499" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Pages/Login/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/Login/Login.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Main/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Main/Main.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Main/Main.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Members/Members.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Members/Members.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Regulations/Regulations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Regulations/Regulations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Regulations/Regulations.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Regulations/Regulations.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/invitePage/invitePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/invitePage/invitePage.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,11 +42,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../work/social-network2.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../work/react_prosto" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ghoulSSSrank\Desktop\beerint\my-app\src\Pages\Login" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\rusla\OneDrive\Desktop\beer\beerternational\src\components" />
       <recent name="C:\Users\rusla\OneDrive\Desktop\beer\beerternational\src" />

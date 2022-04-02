@@ -22,19 +22,18 @@ export const Main = (props) => {
             <div className={classes.content}>
                 <h1 className={classes.jul72}> THE BEERTERNATIONAL <wbr/> 2022</h1>
                 <h2 className={classes.jul30}> GENAFOND CHAMPIONSHIP</h2>
-                <audio src={song} autoPlay="autoplay"> </audio>
                 <div className={classes.info}>
                     <p className={cn({
                         [classes.day]: props.theme === true
                     }, classes.nightSmall)}> Ежегодный пивной турнир среди членов клуба Genafond
                         возвращается! Запаситесь
-                        терпением и пивом, докажите вашим зависникам, что именно вы достойны звания чемпиона. Перепейте их,
+                        терпением и пивом,<br /> докажите вашим зависникам, что именно вы достойны звания чемпиона.<br /> Перепейте их,
                         перестреляйте или красиво сойдите с дистанции.
                     </p>
                     <p className={cn({
                         [classes.day]: props.theme === true
                     }, classes.nightSmall)}> Успейте подать заявку и побороться за звание лучшего подпиваса 2022ого года.
-                        Ваша победа в вашем бокале!
+                        <br /> Ваша победа в вашем бокале!
                     </p>
                     <button className={cn({
                         [classes.dayZayvka]: props.theme === true
