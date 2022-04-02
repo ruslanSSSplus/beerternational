@@ -96,6 +96,7 @@ const App = () => {
                 </div>
 
             </Content>
+
         </div>
     </HashRouter>);
 }

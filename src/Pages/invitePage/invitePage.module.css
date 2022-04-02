@@ -148,14 +148,12 @@ position: absolute;
 
 .labelInput
 {
-
     border-radius: 100px;
     margin-left: 87px;
     cursor: pointer;
 
 }
-.labelInput:hover{
-}
+
 
 
 .inputPng:hover{

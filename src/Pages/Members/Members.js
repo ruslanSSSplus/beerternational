@@ -34,7 +34,6 @@ export const Members = (props) => {
         }).then(response => response.json())
             .then(response => setData(response.reverse()))
     }
-    console.log(data[0]===undefined )
 
     let users = data.map((el) => <EachUser user={el} theme={props.theme} deleteUser={deleteUser} key={el.id}
                                            isLogin={props.isLogin}/>)
@@ -44,26 +43,22 @@ export const Members = (props) => {
         navigate('/Login');
     }
 
-    return (<div>
+    return (<div className={classes.page}>
             <h1> Участники </h1>
             <div className={classes.all}>
 
-                { data[0]===undefined ? <div>
-                    <Preloader/>
-                </div> :
+                {data[0] === undefined ? <div>
+                        <Preloader/>
+                    </div> :
                     <div className={classes.content}>
-                {users}
+                        {users}
                     </div>}
 
                 <div className={classes.pivo}>
-                    {!props.theme ? <img alt={'Pivo'}
-                                         src={temn}/>
-                        : null}
-                    {props.theme ? <img alt={'Pivo'}
-                                        src={sveti}/> : null}
-                    <button onClick={ () => redirect()}>
-                        redir
-                    </button>
+                    <img alt={'Pivo'} onClick={() => redirect()}
+                         src={props.theme ? sveti : temn}/>
+
+
                 </div>
             </div>
         </div>

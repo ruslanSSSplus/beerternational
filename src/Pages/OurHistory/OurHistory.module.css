@@ -1,70 +1,150 @@
 
+.page{
+    animation-name: animereveal;
+    animation-duration: 2s;
+}
+
+@keyframes animereveal {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.allDay{
+    color: white;
+}
+
 
 .all {
     display: grid;
     grid-template-areas:
-  'a n'
-    'd s'
-'x x';
-    grid-template-columns: 250px 250px ;
-    grid-template-rows: 300px 200px 100px ;
-    margin-top: 50px;
-    left: 35%;
-    height: 600px;
-    width: 500px;
+    'l'
+    'p'
+    'a'
+    'b';
+    grid-template-rows: 350px 140px 35px 35px ;
+    left: 43%;
+    height: 700px;
+    width: 274px;
     position: absolute;
-    text-align:  center;
+    text-align: center;
     border-radius: 15px;
     z-index: 1;
     overflow: hidden;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    background-color: #e3cd93;
+    background-image: url('../../components/Pictures/bandl_fon.png');
+    background-size: 100%;
+    animation-name: animetetop;
+    animation-duration: 0.4s;
+}
+
+@keyframes animetetop {
+    from{
+        top: -300px;
+        opacity: 0;
+    }
+    to{
+        top: 130px;
+        opacity: 1;
+    }
+}
+
+.allClose{
+    display: grid;
+    grid-template-areas:
+    'l'
+    'p'
+    'a'
+    'b';
+    grid-template-rows: 350px 140px 35px 35px ;
+    left: 43%;
+    height: 700px;
+    width: 274px;
+    position: absolute;
+    text-align: center;
+    border-radius: 15px;
+    z-index: 1;
+    overflow: hidden;
+    background-image: url('../../components/Pictures/bandl_fon.png');
+    background-size: 100%;
+    animation-name: animetebot;
+    animation-duration: 0.4s;
+}
+@keyframes animetebot {
+    from{
+        top: 130px;
+        opacity: 1;
+    }
+    to{
+        top: 500px;
+        opacity: 0;
+    }
 }
 
 
-
-.name {
-    grid-area: n;
-}
-
-.surname {
-    grid-area: s;
-}
 
 .close {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     font-size: 30px;
     position: absolute;
-    right: 0;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
 }
 
-.description {
-    grid-area: d;
-}
 
 .logo {
-    grid-area: a;
+    margin-top: 35px;
+
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.picture {
+    width: 180px;
+    height: 100px;
+}
+
+
+
+.audio1 {
     width: 200px;
-    height: 200px;
-    border-radius: 100px;
+    height: 20px;
 }
-.audio
-{
-    grid-area: x;
+.audio2 {
 
-    width: 300px;
-    height: 50px;
+    width: 200px;
+    height: 20px;
 }
-.bundle{
-    border-radius: 300px;
-    width: 300px;
-    height: 300px;
 
-    margin: 20px;
-}
-.firstLine
-{
-    display: flex;
+
+.firstLine {
+    display: grid;
+    grid-template-areas:
+    'a b s d';
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 400px;
     width: 100%;
+    text-align: center;
+    border: solid 2px red;
+}
+
+.secondLine {
+    display: grid;
+    grid-template-areas:
+    'a b s d';
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    border: solid 2px yellow;
+}
+
+.bundle {
+    margin-top: 10px;
+    max-height: 380px;
+    max-width: 100%;
+
 }

@@ -14,7 +14,6 @@ export const Main = (props) => {
         setIisOpen(true)
     }
     let close = () => {
-        console.log('close')
         setIisOpen(false)
     }
     return (

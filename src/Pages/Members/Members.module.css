@@ -1,4 +1,22 @@
 
+.page{
+    animation-name: animereveal;
+    animation-duration: 2s;
+}
+
+@keyframes animereveal {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.allDay{
+    color: white;
+}
+
+
 .all {
     display: grid;
     width: 100%;
