@@ -10,10 +10,19 @@ import logoKeks from "../../components/Pictures/logoKeks.png"
 import logoMike from "../../components/Pictures/logoMike.png"
 import logoMaks from "../../components/Pictures/logoMax.png"
 import logoRuslan from "../../components/Pictures/logoRuslan.png"
+import logoGenaDay from "../../components/Pictures/logoGenaDay.png"
+import logoTimurDay from "../../components/Pictures/logoTimurDay.png"
+import logoPashaDay from "../../components/Pictures/logoPashaDay.png"
+import logoKeksDay from "../../components/Pictures/logoKeksDay.png"
+import logoMikeDay from "../../components/Pictures/logoMikeDay.png"
+import logoMaksDay from "../../components/Pictures/logoMaksDay.png"
+import logoRuslanDay from "../../components/Pictures/logoRuslanDay.png"
+
+
 
 import aud from '../../components/Pictures/audioBETA.png'
 
-export const OurHistory = () => {
+export const OurHistory = (props) => {
 
     const pic = 'https://klike.net/uploads/posts/2021-01/1611131113_2.jpg'
 
@@ -76,21 +85,21 @@ export const OurHistory = () => {
                 </div> : null}
 
             <div className={classes.firstLine}>
-                <div><img src={logoKeks} onClick={() => chooseBundle(0)} alt={'bundle'} className={classes.bundle}/>
+                <div><img src={props.theme ? logoKeksDay : logoKeks} onClick={() => chooseBundle(0)} alt={'bundle'} className={classes.bundle}/>
                 </div>
-                <div><img src={logoGena} onClick={() => chooseBundle(1)} alt={'bundle'} className={classes.bundle}/>
+                <div><img src={props.theme ? logoGenaDay : logoGena} onClick={() => chooseBundle(1)} alt={'bundle'} className={classes.bundle}/>
                 </div>
-                <div><img src={logoPasha} onClick={() => chooseBundle(2)} alt={'bundle'} className={classes.bundle}/>
+                <div><img src={props.theme ? logoPashaDay : logoPasha} onClick={() => chooseBundle(2)} alt={'bundle'} className={classes.bundle}/>
                 </div>
-                <div><img src={logoTimur} onClick={() => chooseBundle(3)} alt={'bundle'} className={classes.bundle}/>
+                <div><img src={props.theme ? logoTimurDay : logoTimur} onClick={() => chooseBundle(3)} alt={'bundle'} className={classes.bundle}/>
                 </div>
             </div>
             <div className={classes.secondLine}>
-                <div><img src={logoMike} onClick={() => chooseBundle(4)} alt={'bundle'} className={classes.bundle}/>
+                <div><img src={props.theme ? logoMikeDay : logoMike} onClick={() => chooseBundle(4)} alt={'bundle'} className={classes.bundle}/>
                 </div>
-                <div><img src={logoMaks} onClick={() => chooseBundle(5)} alt={'bundle'} className={classes.bundle}/>
+                <div><img src={props.theme ? logoMaksDay : logoMaks} onClick={() => chooseBundle(5)} alt={'bundle'} className={classes.bundle}/>
                 </div>
-                <div><img src={logoRuslan} onClick={() => chooseBundle(6)} alt={'bundle'} className={classes.bundle}/>
+                <div><img src={props.theme ? logoRuslanDay : logoRuslan} onClick={() => chooseBundle(6)} alt={'bundle'} className={classes.bundle}/>
                 </div>
                 <div><img src={pic} onClick={() => chooseBundle(7)} alt={'bundle'} className={classes.bundle}/></div>
             </div>
