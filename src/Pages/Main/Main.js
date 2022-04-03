@@ -4,7 +4,6 @@ import cn from "classnames";
 import sveti from '../../components/Pictures/pivo_svetl.png'
 import temn from '../../components/Pictures/pivo_temn.png'
 import {InvitePage} from "../invitePage/invitePage";
-import song from '../../components/voices/INSTASAMKA - LIPSI HA.mp3'
 
 
 export const Main = (props) => {

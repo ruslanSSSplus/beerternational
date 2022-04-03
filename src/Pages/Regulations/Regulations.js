@@ -1,6 +1,5 @@
 import React from 'react';
 import classes from './Regulations.module.css'
-import {Field, Form, Formik} from "formik";
 import header from '../../components/Pictures/headRed.png'
 import bigGena from '../../components/Pictures/bigGena.png'
 import bigBeer from '../../components/Pictures/bigBeer.png'

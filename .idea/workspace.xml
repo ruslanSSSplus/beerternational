@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8808b533-7d5b-4ec3-818f-134c1325d499" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Pages/Login/Login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pages/Login/Login.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Main/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Main/Main.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Main/Main.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Members/Members.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Members/Members.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Regulations/Regulations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Regulations/Regulations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Regulations/Regulations.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Regulations/Regulations.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/invitePage/invitePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/invitePage/invitePage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +33,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../work/react_prosto" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -82,6 +74,7 @@
       <updated>1648637457240</updated>
       <workItem from="1648637459052" duration="4274000" />
       <workItem from="1648769450785" duration="10827000" />
+      <workItem from="1648939893064" duration="691000" />
     </task>
     <task id="LOCAL-00001" summary="bundles">
       <created>1648810681068</created>
