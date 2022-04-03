@@ -3,6 +3,7 @@
 .night {
     height: 100%;
     width: 100%;
+    min-width: 1200px;
     min-height: 1100px;
     background-color: #1D1D1D;
     font-family: 'Raleway', sans-serif;
