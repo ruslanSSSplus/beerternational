@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/beerternational/static/css/main.a34a6203.css",
+    "main.css": "/beerternational/static/css/main.45d02f55.css",
     "main.js": "/beerternational/static/js/main.d94cb9e3.js",
     "static/js/787.28cb0dcd.chunk.js": "/beerternational/static/js/787.28cb0dcd.chunk.js",
     "static/media/logoMike.png": "/beerternational/static/media/logoMike.9334ef13e7e349e12831.png",
@@ -33,12 +33,12 @@
     "static/media/Frame-1.png": "/beerternational/static/media/Frame-1.2b9075bd09ff2d64572f.png",
     "static/media/maxAudioFirst.mp3": "/beerternational/static/media/maxAudioFirst.ccce3fb7330f4a5427b4.mp3",
     "index.html": "/beerternational/index.html",
-    "main.a34a6203.css.map": "/beerternational/static/css/main.a34a6203.css.map",
+    "main.45d02f55.css.map": "/beerternational/static/css/main.45d02f55.css.map",
     "main.d94cb9e3.js.map": "/beerternational/static/js/main.d94cb9e3.js.map",
     "787.28cb0dcd.chunk.js.map": "/beerternational/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a34a6203.css",
+    "static/css/main.45d02f55.css",
     "static/js/main.d94cb9e3.js"
   ]
 }
