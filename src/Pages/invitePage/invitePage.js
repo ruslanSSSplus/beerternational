@@ -68,7 +68,6 @@ export const InvitePage = (props) => {
     }
 
     const redirect = () => {
-        console.log('try')
         navigate('/Members');
     }
 

@@ -11,6 +11,7 @@ import logoMike from "../../components/Pictures/logoMike.png"
 import logoMaks from "../../components/Pictures/logoMax.png"
 import logoRuslan from "../../components/Pictures/logoRuslan.png"
 
+import aud from '../../components/Pictures/audioBETA.png'
 
 export const OurHistory = () => {
 
@@ -19,25 +20,39 @@ export const OurHistory = () => {
     const [member, setMember] = useState(0)
     const [isOpen, setIsOpen] = useState(false)
     const [closing, setClosing] = useState(false)
+    const [bigPicture, setBigPicture] = useState(false)
 
 
-    const chooseBundle = async (who) => {
-        await setIsOpen(false)
-        setMember(who)
-        setIsOpen(true)
+    const openPicture = () =>{
+        setBigPicture(true)
     }
 
+    const closePng= ()=>{
+        setBigPicture(false)
+    }
+    const chooseBundle = async (who) => {
+        if(!bigPicture){
+            await setIsOpen(false)
+            setMember(who)
+            setIsOpen(true)
+        }
+    }
     const closeBundle = async () => {
         await setClosing(true)
         setTimeout(() => setIsOpen(false), 300)
         setTimeout(() => setClosing(false), 305)
     }
 
-
-    const openPicture = () => {
-
+    const soundClickFirst = (who) => {
+        let audio = new Audio()
+        audio.src = arrayOfMembers[who].audioFirst
+        audio.autoplay = true
     }
-
+    const soundClickSecond = (who) => {
+        let audio = new Audio()
+        audio.src = arrayOfMembers[who].audioSecond
+        audio.autoplay = true
+    }
 
     return (<div className={classes.page}>
 
@@ -48,13 +63,13 @@ export const OurHistory = () => {
                               className={classes.logo}/></div>
                     <div><img src={arrayOfMembers[member].picture} alt={'picture'}
                               className={classes.picture}
-                              onClick={openPicture()}
+                              onClick={()=>openPicture()}
                     /></div>
                     <div>
-                        <audio controls src={arrayOfMembers[member].audioFirst} className={classes.audio1}>d</audio>
+                        <img src={aud} className={classes.audio1} onClick={()=> soundClickFirst(member)}/>
                     </div>
                     <div>
-                        <audio controls src={arrayOfMembers[member].audioSecond} className={classes.audio2}>d</audio>
+                        <img src={aud} className={classes.audio2} onClick={()=> soundClickSecond(member)}/>
                     </div>
                     <img alt={'close'} className={classes.close} onClick={() => closeBundle()}
                          src={closeElement}/>
@@ -78,10 +93,10 @@ export const OurHistory = () => {
                 <div><img src={logoRuslan} onClick={() => chooseBundle(6)} alt={'bundle'} className={classes.bundle}/>
                 </div>
                 <div><img src={pic} onClick={() => chooseBundle(7)} alt={'bundle'} className={classes.bundle}/></div>
-
             </div>
-
-
+            {bigPicture ? <button className={classes.openedPicture} onClick={()=> closePng() }> <img src={arrayOfMembers[member].picture} alt={'pic'}
+            className={classes.bigPicture}/> <img  alt={'close'} src={closeElement} className={classes.close}/> </button>
+            :null}
         </div>
 
 

@@ -1,18 +1,19 @@
 
-.page{
+.page {
     animation-name: animereveal;
     animation-duration: 2s;
 }
 
 @keyframes animereveal {
-    from{
+    from {
         opacity: 0;
     }
-    to{
+    to {
         opacity: 1;
     }
 }
-.allDay{
+
+.allDay {
     color: white;
 }
 
@@ -24,7 +25,7 @@
     'p'
     'a'
     'b';
-    grid-template-rows: 350px 140px 35px 35px ;
+    grid-template-rows: 350px 140px 35px 35px;
     left: 43%;
     height: 700px;
     width: 274px;
@@ -40,24 +41,24 @@
 }
 
 @keyframes animetetop {
-    from{
+    from {
         top: -300px;
         opacity: 0;
     }
-    to{
+    to {
         top: 130px;
         opacity: 1;
     }
 }
 
-.allClose{
+.allClose {
     display: grid;
     grid-template-areas:
     'l'
     'p'
     'a'
     'b';
-    grid-template-rows: 350px 140px 35px 35px ;
+    grid-template-rows: 350px 140px 35px 35px;
     left: 43%;
     height: 700px;
     width: 274px;
@@ -71,17 +72,17 @@
     animation-name: animetebot;
     animation-duration: 0.4s;
 }
+
 @keyframes animetebot {
-    from{
+    from {
         top: 130px;
         opacity: 1;
     }
-    to{
+    to {
         top: 500px;
         opacity: 0;
     }
 }
-
 
 
 .close {
@@ -89,8 +90,8 @@
     height: 30px;
     font-size: 30px;
     position: absolute;
-    right: 15px;
-    top: 15px;
+    right: 10px;
+    top: 10px;
     cursor: pointer;
 }
 
@@ -108,11 +109,11 @@
 }
 
 
-
 .audio1 {
     width: 200px;
     height: 20px;
 }
+
 .audio2 {
 
     width: 200px;
@@ -147,4 +148,50 @@
     max-height: 380px;
     max-width: 100%;
 
+}
+
+.openedPicture {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.bigPicture {
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    left: 15%;
+    top: 125px;
+
+    animation-name: scale;
+    animation-duration: 0.4s;
+}
+
+@keyframes scale {
+    from {
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        transform: scale(0);
+        opacity: 1;
+    }
+    to {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+.smallPicture {
+    display: none;
 }

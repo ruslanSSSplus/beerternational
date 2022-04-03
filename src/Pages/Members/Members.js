@@ -12,14 +12,21 @@ export const Members = (props) => {
     const navigate = useNavigate();
     const [data, setData] = useState([])
 
+
     useEffect(() => {
+        let isMounted = true;
         fetch('https://glacial-crag-96225.herokuapp.com/getUsers1', {
             method: 'GET',
             headers: {
                 'Content-type': 'application/json',
             },
         }).then(response => response.json())
-            .then(response => setData(response.reverse()))
+            .then(response => {
+                if (isMounted) setData(response.reverse())
+            })
+        return () => {
+            isMounted = false
+        }
     }, [])
 
 
