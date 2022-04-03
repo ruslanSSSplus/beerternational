@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8808b533-7d5b-4ec3-818f-134c1325d499" name="Changes" comment="bundlesd">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Main/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Main/Main.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Main/Main.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Members/Members.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Members/Members.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Members/Members.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Members/Members.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/OurHistory/OurHistory.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/OurHistory/OurHistory.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/OurHistory/OurHistory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/OurHistory/OurHistory.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +76,7 @@
       <workItem from="1648769450785" duration="10827000" />
       <workItem from="1648939893064" duration="9284000" />
       <workItem from="1649002011770" duration="3063000" />
+      <workItem from="1649005483925" duration="152000" />
     </task>
     <task id="LOCAL-00001" summary="bundles">
       <created>1648810681068</created>

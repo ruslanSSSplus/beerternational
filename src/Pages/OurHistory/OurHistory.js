@@ -61,15 +61,15 @@ export const OurHistory = () => {
                 <div className={closing ? classes.allClose : classes.all}>
                     <div><img src={arrayOfMembers[member].logo} alt={'loog'}
                               className={classes.logo}/></div>
-                    <div><img src={arrayOfMembers[member].picture} alt={'picture'}
+                    <div><img src={arrayOfMembers[member].picture} alt={'wallPaper'}
                               className={classes.picture}
                               onClick={()=>openPicture()}
                     /></div>
                     <div>
-                        <img src={aud} className={classes.audio1} onClick={()=> soundClickFirst(member)}/>
+                        <img src={aud} className={classes.audio1} onClick={()=> soundClickFirst(member)} alt={'audio'}/>
                     </div>
                     <div>
-                        <img src={aud} className={classes.audio2} onClick={()=> soundClickSecond(member)}/>
+                        <img src={aud} className={classes.audio2} onClick={()=> soundClickSecond(member)} alt={'audio'}/>
                     </div>
                     <img alt={'close'} className={classes.close} onClick={() => closeBundle()}
                          src={closeElement}/>
