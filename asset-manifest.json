@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/beerternational/static/css/main.765b4808.css",
-    "main.js": "/beerternational/static/js/main.0dbc61a5.js",
+    "main.js": "/beerternational/static/js/main.2649a5b4.js",
     "static/js/787.28cb0dcd.chunk.js": "/beerternational/static/js/787.28cb0dcd.chunk.js",
     "static/media/DEAD BLONDE - Мальчик на девятке.mp3": "/beerternational/static/media/DEAD BLONDE - Мальчик на девятке.6f52de6d69a5b8f37384.mp3",
     "static/media/INSTASAMKA - LIPSI HA.mp3": "/beerternational/static/media/INSTASAMKA - LIPSI HA.dfbeab7d5873bf23088c.mp3",
@@ -25,11 +25,11 @@
     "static/media/Frame-1.png": "/beerternational/static/media/Frame-1.2b9075bd09ff2d64572f.png",
     "index.html": "/beerternational/index.html",
     "main.765b4808.css.map": "/beerternational/static/css/main.765b4808.css.map",
-    "main.0dbc61a5.js.map": "/beerternational/static/js/main.0dbc61a5.js.map",
+    "main.2649a5b4.js.map": "/beerternational/static/js/main.2649a5b4.js.map",
     "787.28cb0dcd.chunk.js.map": "/beerternational/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.765b4808.css",
-    "static/js/main.0dbc61a5.js"
+    "static/js/main.2649a5b4.js"
   ]
 }
