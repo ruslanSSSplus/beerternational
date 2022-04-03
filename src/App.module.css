@@ -1,33 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Raleway:wght@200;300&display=swap');
 
 .night {
-
     height: 100%;
     width: 100%;
-    min-width: 1500px;
     min-height: 1100px;
     background-color: #1D1D1D;
     font-family: 'Raleway', sans-serif;
     font-weight: 200;
+    display: grid;
+    grid-template-areas:
+  'm'
+'c';
+    grid-template-rows: 100px 1fr;
 }
-
 .day {
     background-color: white;
 }
 
 .menu {
+    grid-area: m;
     width: 100%;
     background: transparent;
     font-size: 30px;
     padding: 20px;
     display: flex;
 }
+.content{
+    grid-area: c;
+}
 
 .nightMain {
-
     color: white;
     padding: 10px;
-
 }
 
 .dayMain {
@@ -56,7 +60,7 @@
 
     color: white;
     padding: 10px;
-    margin-left: 30px;
+    margin-left: 1%;
 }
 
 .dayOurHistory {
@@ -70,7 +74,7 @@
 .nightRegulations {
     color: white;
     padding: 10px;
-    margin-left: 30px;
+    margin-left: 1%;
 }
 
 .dayRegulations {
@@ -98,7 +102,7 @@
     color: black;
     background-color: #e3cd93;
     border-radius: 100px;
-    margin-left: 140px;
+    margin-left: 3%;
 
 }
 
@@ -119,7 +123,7 @@
     height: 50px;
     width: 50px;
     margin-top: 10px;
-    margin-left: 50px;
+    margin-left: 2%;
     border-radius: 100px;
     border: 0;
 }

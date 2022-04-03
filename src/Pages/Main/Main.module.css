@@ -63,9 +63,10 @@
     width: 100%;
     grid-template-areas:
   'c p';
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr 2fr;
     animation-name: animereveal;
     animation-duration: 2s;
+
 }
 
 @keyframes animereveal {
@@ -77,11 +78,15 @@
     }
 }
 .pivo {
+
+
+    width: 100%;
     grid-area: p;
 }
 
 
 .content {
+
     margin-top: 5%;
     margin-left: 3%;
     grid-area: c;

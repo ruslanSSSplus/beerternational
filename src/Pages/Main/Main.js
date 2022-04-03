@@ -8,6 +8,11 @@ import {InvitePage} from "../invitePage/invitePage";
 
 export const Main = (props) => {
 
+
+
+
+
+
     let [isOpen, setIisOpen] = useState(false)
     let show = () => {
         setIisOpen(true)
@@ -41,11 +46,11 @@ export const Main = (props) => {
             </div>
             </div>
 
-                <div className={classes.pivo}>
-                   <img alt={'Pivo'}
-                                   src={props.theme ? sveti : temn}
-                                         className={classes.pivoPng}/>
-                </div>
+
+           <img alt={'Pivo'}
+                  src={props.theme ? sveti : temn}
+                  className={classes.pivo}/>
+
             {isOpen ?
                 <div className={classes.inviteBlank}>
                     <InvitePage close={close} theme={props.theme}/>

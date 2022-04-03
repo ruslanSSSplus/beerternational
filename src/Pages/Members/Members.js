@@ -13,6 +13,7 @@ export const Members = (props) => {
     const [data, setData] = useState([])
 
 
+
     useEffect(() => {
         let isMounted = true;
         fetch('https://glacial-crag-96225.herokuapp.com/getUsers1', {
@@ -61,12 +62,12 @@ export const Members = (props) => {
                         {users}
                     </div>}
 
-                <div className={classes.pivo}>
+
                     <img alt={'Pivo'} onClick={() => redirect()}
-                         src={props.theme ? sveti : temn}/>
+                         src={props.theme ? sveti : temn} className={classes.pivo}/>
 
 
-                </div>
+
             </div>
         </div>
 
