@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/beerternational/static/css/main.4427ed32.css",
-    "main.js": "/beerternational/static/js/main.4c5782a6.js",
+    "main.css": "/beerternational/static/css/main.a34a6203.css",
+    "main.js": "/beerternational/static/js/main.8939bebc.js",
     "static/js/787.28cb0dcd.chunk.js": "/beerternational/static/js/787.28cb0dcd.chunk.js",
     "static/media/logoMike.png": "/beerternational/static/media/logoMike.9334ef13e7e349e12831.png",
     "static/media/logoGena.png": "/beerternational/static/media/logoGena.b59dacdebba0f0f399de.png",
@@ -33,12 +33,12 @@
     "static/media/Frame-1.png": "/beerternational/static/media/Frame-1.2b9075bd09ff2d64572f.png",
     "static/media/maxAudioFirst.mp3": "/beerternational/static/media/maxAudioFirst.ccce3fb7330f4a5427b4.mp3",
     "index.html": "/beerternational/index.html",
-    "main.4427ed32.css.map": "/beerternational/static/css/main.4427ed32.css.map",
-    "main.4c5782a6.js.map": "/beerternational/static/js/main.4c5782a6.js.map",
+    "main.a34a6203.css.map": "/beerternational/static/css/main.a34a6203.css.map",
+    "main.8939bebc.js.map": "/beerternational/static/js/main.8939bebc.js.map",
     "787.28cb0dcd.chunk.js.map": "/beerternational/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4427ed32.css",
-    "static/js/main.4c5782a6.js"
+    "static/css/main.a34a6203.css",
+    "static/js/main.8939bebc.js"
   ]
 }
