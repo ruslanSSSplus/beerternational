@@ -1,49 +1,22 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import classes from './Members.module.css'
 import sveti from '../../components/Pictures/profil_svetl.png'
 import temn from '../../components/Pictures/uchastniki_temny.png'
 import EachUser from './EachUser/EachUser'
-import Preloader from "../../components/Preloader/Preloader";
 import {useNavigate} from 'react-router-dom';
+import {useSelector} from "react-redux";
 
 
 export const Members = (props) => {
 
     const navigate = useNavigate();
-    const [data, setData] = useState([])
 
 
 
-    useEffect(() => {
-        let isMounted = true;
-        fetch('https://glacial-crag-96225.herokuapp.com/getUsers1', {
-            method: 'GET',
-            headers: {
-                'Content-type': 'application/json',
-            },
-        }).then(response => response.json())
-            .then(response => {
-                if (isMounted) setData(response.reverse())
-            })
-        return () => {
-            isMounted = false
-        }
-    }, [])
 
 
-    const deleteUser = (uid) => {
-        fetch('https://glacial-crag-96225.herokuapp.com/del', {
-            method: 'POST',
-            headers: {
-                'Content-type': 'application/json',
 
-            },
-            body: JSON.stringify({uid})
-        }).then(response => response.json())
-            .then(response => setData(response.reverse()))
-    }
-
-    let users = data.map((el) => <EachUser user={el} theme={props.theme} deleteUser={deleteUser} key={el.id}
+    let users = props.members.map((el) => <EachUser user={el} theme={props.theme} deleteUser={props.deleteUser} key={el.id}
                                            isLogin={props.isLogin}/>)
 
     const redirect = () => {
@@ -55,9 +28,6 @@ export const Members = (props) => {
             <h1> Участники </h1>
             <div className={classes.all}>
 
-                {data[0] === undefined ? <div>
-                        <Preloader/>
-                    </div> :
                     <div className={classes.content}>
                         {users}
                     </div>}

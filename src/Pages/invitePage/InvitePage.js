@@ -2,8 +2,6 @@ import React, {useState} from 'react';
 import classes from './invitePage.module.css'
 import {Field, Form, Formik, ErrorMessage} from "formik";
 import * as Yup from "yup";
-
-import avaDefault from '../../components/Pictures/avatar.png'
 import inviteButton from '../../components/Pictures/inviteBut.png'
 import galochka from '../../components/Pictures/galochka.png'
 import inputPng from '../../components/Pictures/input.png'
@@ -12,18 +10,11 @@ import closeButtonDay from '../../components/Pictures/closeDay.png'
 import errorPng from '../../components/Pictures/error.png'
 
 import cn from "classnames";
-import {v4 as uuidv4} from 'uuid';
-import {useNavigate} from 'react-router-dom';
+
 
 
 export const InvitePage = (props) => {
 
-
-    const navigate = useNavigate();
-
-    const [data, setData] = useState(null)
-    const [avatar, setAvatar] = useState(avaDefault)
-    const [isSend, setIsSend] = useState(false)
 
     const initialValues = {
         name: '', age: '', social: '',
@@ -40,36 +31,13 @@ export const InvitePage = (props) => {
     })
 
     const encodeImageFileAsURL = (element) => {
-        let file = element.target.files[0];
-        let reader = new FileReader();
-        reader.onloadend = function () {
-            setAvatar(reader.result)
-        }
-        reader.readAsDataURL(file);
+        props.encodeImageFileAsURL(element)
     }
 
-    const onSubmit = (values) => {
-        setData('Loading...')
-        setIsSend(true)
-        submit(values.name, values.age, values.social)
+    const onSubmit = async (values) => {
+        props.onSubmit(values)
     }
 
-    const submit = async (name, age, social) => {
-        let data = {
-            name: name, age: age, social: social, photo: avatar, id: uuidv4()
-        }
-        await fetch('https://glacial-crag-96225.herokuapp.com/api', {
-            method: 'POST', headers: {
-                'Content-type': 'application/json',
-            }, body: JSON.stringify(data)
-        }).then(response => response.json())
-            .then(response => setData(response.message))
-        setTimeout(redirect, 2000);
-    }
-
-    const redirect = () => {
-        navigate('/Members');
-    }
 
     return (<div>
         <Formik initialValues={initialValues} onSubmit={onSubmit} validationSchema={validationSchema}
@@ -87,14 +55,14 @@ export const InvitePage = (props) => {
                     <div><Field className={classes.field} placeholder={'VK'} type='text'
                                 name='social'
                                 component='input'/><span><ErrorMessage name='social'/></span></div>
-                    <div className={props.theme ? classes.responseDay : classes.responseNight}>{!data ? null : <p className={classes.response}> {data} </p>}</div>
+                    <div className={props.theme ? classes.responseDay : classes.responseNight}>{!props.data ? null : <p className={classes.response}> {props.data} </p>}</div>
                 </div>
                 <div className={cn({
                     [classes.pivoDay]: props.theme === true
                 }, classes.pivoNight)}>
                     <img className={classes.photo}
                          alt={'photoAva'}
-                         src={avatar}/>
+                         src={props.avatar}/>
                     <div className={classes.chooseFile}>
                         <label htmlFor="ava" className={classes.labelInput}>
                             <img src={inputPng} alt={'ava'}
@@ -102,9 +70,9 @@ export const InvitePage = (props) => {
                         <input onChange={encodeImageFileAsURL} type={'file'} name='photo' id="ava"
                                className={classes.customfileinput}/>
                     </div>
-                    <button type="submit" disabled={!!data} className={classes.invite}><p>
-                        <img src={isSend ? galochka : inviteButton}
-                             alt={'button'} className={isSend ? classes.inviteButton2 : classes.inviteButton}/>
+                    <button type="submit" disabled={!!props.data} className={classes.invite}><p>
+                        <img src={props.isSend ? galochka : inviteButton}
+                             alt={'button'} className={props.isSend ? classes.inviteButton2 : classes.inviteButton}/>
                     </p>
                     </button>
                 </div>

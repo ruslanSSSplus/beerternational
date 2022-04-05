@@ -2,8 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8808b533-7d5b-4ec3-818f-134c1325d499" name="Changes" comment="bundlesd">
+      <change afterPath="$PROJECT_DIR$/src/Pages/Members/MembersContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/invitePage/InvitePageContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/historyReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/invitePageReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/loginReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/membersReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/reduxStore.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/invitePageAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/invitePageAPI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/loginAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/loginAPI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/membersAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/membersAPI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Login/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Main/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Members/Members.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Members/Members.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/OurHistory/OurHistory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/OurHistory/OurHistory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/invitePage/invitePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/invitePage/InvitePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,13 +51,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../backbeerint" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ghoulSSSrank\Desktop\beerint\my-app\src\Redux" />
       <recent name="C:\Users\ghoulSSSrank\Desktop\beerint\my-app\src\Pages\Login" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -78,6 +97,8 @@
       <workItem from="1649002011770" duration="3063000" />
       <workItem from="1649005483925" duration="207000" />
       <workItem from="1649016124346" duration="1732000" />
+      <workItem from="1649142101679" duration="5438000" />
+      <workItem from="1649166283723" duration="8733000" />
     </task>
     <task id="LOCAL-00001" summary="bundles">
       <created>1648810681068</created>

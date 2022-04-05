@@ -1,10 +1,16 @@
 import React from 'react';
 import classes from './Login.module.css'
 import { Field, Form, Formik} from "formik";
+import {getLoginizationThunkCreater} from "../../Redux/loginReducer";
+import {useDispatch, useSelector} from "react-redux";
+import {useNavigate} from "react-router-dom";
 
 
-export const Login = (props) => {
+export const Login = () => {
 
+    const navigate = useNavigate();
+    const {isLogin} = useSelector((state) => state.login)
+    const dispatch = useDispatch()
 
 
     const initialValues = {
@@ -12,8 +18,15 @@ export const Login = (props) => {
         password: '',
     }
 
-    const onSubmit = (values) => {
-        props.submitLogin(values)
+
+    const onSubmit = async (values) => {
+       await dispatch(getLoginizationThunkCreater(values))
+        setTimeout(redirect, 1000);
+    }
+
+
+    const redirect = () => {
+        navigate('/Members');
     }
 
 
@@ -28,7 +41,7 @@ export const Login = (props) => {
                                 name='password'
                                 component='input'/></div>
                     <button type="submit"> Login</button>
-                    {props.isLogin ? "вы ввели верный пароль" : "Пароль неверный или не введен"}
+                    {isLogin ? "вы ввели верный пароль" : "Пароль неверный или не введен"}
                 </Form>
             </Formik>
 

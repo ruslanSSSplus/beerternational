@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import classes from './OurHistory.module.css'
 import {arrayOfMembers} from "./legendsMassive";
 import closeElement from '../../components/Pictures/close.png'
-
+import {useDispatch, useSelector} from "react-redux";
 import logoGena from "../../components/Pictures/logoGena.png"
 import logoTimur from "../../components/Pictures/logoTimur.png"
 import logoPasha from "../../components/Pictures/logoPasha.png"
@@ -21,35 +21,29 @@ import logoRuslanDay from "../../components/Pictures/logoRuslanDay.png"
 
 
 import aud from '../../components/Pictures/audioBETA.png'
+import {actions, chooseBundleThunkCreater, closeBundleThunkCreater} from "../../Redux/historyReducer";
+
 
 export const OurHistory = (props) => {
 
     const pic = 'https://klike.net/uploads/posts/2021-01/1611131113_2.jpg'
 
-    const [member, setMember] = useState(0)
-    const [isOpen, setIsOpen] = useState(false)
-    const [closing, setClosing] = useState(false)
-    const [bigPicture, setBigPicture] = useState(false)
-
-
+    const dispatch = useDispatch()
+    const {member, isOpen, closing, bigPicture} = useSelector((state) => state.history)
+    
     const openPicture = () =>{
-        setBigPicture(true)
+        dispatch(actions.putIsBigPicture(true))
     }
 
     const closePng= ()=>{
-        setBigPicture(false)
+        dispatch(actions.putIsBigPicture(false))
     }
+
     const chooseBundle = async (who) => {
-        if(!bigPicture){
-            await setIsOpen(false)
-            setMember(who)
-            setIsOpen(true)
-        }
+        dispatch(chooseBundleThunkCreater(who))
     }
-    const closeBundle = async () => {
-        await setClosing(true)
-        setTimeout(() => setIsOpen(false), 300)
-        setTimeout(() => setClosing(false), 305)
+    const closeBundle = () => {
+        dispatch(closeBundleThunkCreater())
     }
 
     const soundClickFirst = (who) => {

@@ -14,7 +14,7 @@ import DM_LIGHT from './components/Pictures/DM_LIGHT.png'
 import DM_DARK from './components/Pictures/DM_DARK.png'
 import VK from './components/Pictures/entypo-social_vk-with-circle.png'
 import {Login} from "./Pages/Login/Login";
-
+import {MembersContainer} from "./Pages/Members/MembersContainer";
 
 
 const {Content} = Layout;
@@ -23,20 +23,7 @@ const {Content} = Layout;
 const App = () => {
 
     const [theme, setTheme] = useState(false)
-    const [isLogin, setIsLogin] = useState(false)
 
-
-    const submitLogin = (values) =>{
-
-        fetch('https://glacial-crag-96225.herokuapp.com/login', {
-            method: 'POST',
-            headers: {
-                'Content-type': 'application/json',
-            },
-            body: JSON.stringify(values)
-        }).then(response => response.json())
-            .then(response => setIsLogin(response.access))
-    }
 
 
     const changeTheme = () => {
@@ -88,9 +75,9 @@ const App = () => {
                         <Route path="/" element={<Navigate replace to="/Main"/>}/>
                         <Route path='/Main' element={<Main theme={theme}/>}> </Route>
                         <Route path='/OurHistory' element={<OurHistory theme={theme}/>}> </Route>
-                        <Route path='/Members' element={<Members theme={theme} isLogin={isLogin}/>}> </Route>
+                        <Route path='/Members' element={<MembersContainer theme={theme}/>}> </Route>
                         <Route path='/Regulations' element={<Regulations theme={theme} />}> </Route>
-                        <Route path='/Login' element={<Login theme={theme} submitLogin={submitLogin} isLogin={isLogin}/>}> </Route>
+                        <Route path='/Login' element={<Login theme={theme} />}> </Route>
                         {/*<Route path='/InvitePage' element={<InvitePage theme={theme}/>}> </Route>*/}
                     </Routes>
                 </div>

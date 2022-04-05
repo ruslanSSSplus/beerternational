@@ -3,14 +3,11 @@ import classes from './Main.module.css'
 import cn from "classnames";
 import sveti from '../../components/Pictures/pivo_svetl.png'
 import temn from '../../components/Pictures/pivo_temn.png'
-import {InvitePage} from "../invitePage/invitePage";
+import {InvitePage} from "../invitePage/InvitePage";
+import {InvitePageContainer} from "../invitePage/InvitePageContainer";
 
 
 export const Main = (props) => {
-
-
-
-
 
 
     let [isOpen, setIisOpen] = useState(false)
@@ -20,6 +17,8 @@ export const Main = (props) => {
     let close = () => {
         setIisOpen(false)
     }
+
+
     return (
         <div className={classes.all}>
             <div className={classes.content}>
@@ -53,7 +52,7 @@ export const Main = (props) => {
 
             {isOpen ?
                 <div className={classes.inviteBlank}>
-                    <InvitePage close={close} theme={props.theme}/>
+                    <InvitePageContainer close={close} theme={props.theme}/>
                 </div> : null
             }
         </div>
