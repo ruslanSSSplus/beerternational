@@ -32,6 +32,14 @@ import pavelAudioFirst from '../../components/voices/pavelAudioFirst.mp3'
 import nikitaAudioFirst from '../../components/voices/nikitaAudioFirst.mp3'
 import nikitaAudioSecond from '../../components/voices/nikitaAudioSecond.mp3'
 
+import nikitaWall from '../../components/Pictures/nikitaWall.png'
+import genaWall from '../../components/Pictures/geraWall.png'
+import pashaWall from '../../components/Pictures/pashaWall.png'
+import timurWall from '../../components/Pictures/timurWall.png'
+import mikeWall from '../../components/Pictures/mikeWall.png'
+import maxWall from '../../components/Pictures/maxWall.png'
+import ruslanWall from '../../components/Pictures/ruslanWall.png'
+import sergeyWall from '../../components/Pictures/sergeyWall.png'
 
 
 
@@ -41,48 +49,48 @@ export const arrayOfMembers = [
         audioFirst: nikitaAudioFirst,
         audioSecond: nikitaAudioSecond,
         logo: logoKeks,
-        picture: 'https://img1.akspic.ru/previews/1/3/0/5/4/145031/145031-glaz-krug-rozovyj-resnichka-graficeskij_dizajn-500x.jpg',
+        picture: nikitaWall,
     },
     {
         audioFirst: maxAudioFirst,
         audioSecond: genaAudioSecond,
         logo: logoGena,
-        picture: 'https://img1.akspic.ru/previews/1/3/0/5/4/145031/145031-glaz-krug-rozovyj-resnichka-graficeskij_dizajn-500x.jpg',
+        picture: genaWall,
     },
     {
         audioFirst: pavelAudioFirst,
         audioSecond: maxAudioFirst,
         logo: logoPasha,
-        picture: 'https://img1.akspic.ru/previews/1/3/0/5/4/145031/145031-glaz-krug-rozovyj-resnichka-graficeskij_dizajn-500x.jpg',
+        picture: pashaWall,
     },
     {
         audioFirst: timurAudioFirst,
         audioSecond: timurAudioSecond,
         logo: logoTimur,
-        picture: 'https://img1.akspic.ru/previews/1/3/0/5/4/145031/145031-glaz-krug-rozovyj-resnichka-graficeskij_dizajn-500x.jpg',
+        picture: timurWall,
     },
     {
         audioFirst: maxAudioFirst,
         audioSecond: maxAudioFirst,
         logo: logoMike,
-        picture: 'https://img1.akspic.ru/previews/1/3/0/5/4/145031/145031-glaz-krug-rozovyj-resnichka-graficeskij_dizajn-500x.jpg',
+        picture: mikeWall,
     },
     {
         audioFirst: maxAudioFirst,
         audioSecond: maxAudioSecond,
         logo: logoMaks,
-        picture: 'https://img1.akspic.ru/previews/1/3/0/5/4/145031/145031-glaz-krug-rozovyj-resnichka-graficeskij_dizajn-500x.jpg',
+        picture: maxWall,
     },
     {
         audioFirst: ruslanAudioFirst,
         audioSecond: maxAudioFirst,
         logo: logoRuslan,
-        picture: 'https://img1.akspic.ru/previews/1/3/0/5/4/145031/145031-glaz-krug-rozovyj-resnichka-graficeskij_dizajn-500x.jpg',
+        picture: ruslanWall,
     },
     {
         audioFirst: sergeyAudioFirst,
         audioSecond: maxAudioFirst,
         logo: 'https://klike.net/uploads/posts/2021-01/1611131113_2.jpg',
-        picture: 'https://img1.akspic.ru/previews/1/3/0/5/4/145031/145031-glaz-krug-rozovyj-resnichka-graficeskij_dizajn-500x.jpg',
+        picture: sergeyWall,
     },
 ]
