@@ -4,16 +4,12 @@ import sveti from '../../components/Pictures/profil_svetl.png'
 import temn from '../../components/Pictures/uchastniki_temny.png'
 import EachUser from './EachUser/EachUser'
 import {useNavigate} from 'react-router-dom';
-import {useSelector} from "react-redux";
+
 
 
 export const Members = (props) => {
 
     const navigate = useNavigate();
-
-
-
-
 
 
     let users = props.members.map((el) => <EachUser user={el} theme={props.theme} deleteUser={props.deleteUser} key={el.id}

@@ -2,26 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8808b533-7d5b-4ec3-818f-134c1325d499" name="Changes" comment="bundlesd">
-      <change afterPath="$PROJECT_DIR$/src/Pages/Members/MembersContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pages/invitePage/InvitePageContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/historyReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/invitePageReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/loginReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/membersReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/reduxStore.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/invitePageAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/invitePageAPI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/loginAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/loginAPI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/membersAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/membersAPI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Login/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Main/Main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Members/Members.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Members/Members.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/OurHistory/OurHistory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/OurHistory/OurHistory.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/invitePage/invitePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/invitePage/InvitePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pictures/logoKeksDay.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pictures/logoKeksDay.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pictures/logoMaksDay.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pictures/logoMaksDay.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pictures/logoMax.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pictures/logoMax.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pictures/logoMikeDay.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pictures/logoMikeDay.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pictures/logoPashaDay.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pictures/logoPashaDay.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pictures/logoRuslanDay.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pictures/logoRuslanDay.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,6 +87,8 @@
       <workItem from="1649016124346" duration="1732000" />
       <workItem from="1649142101679" duration="5438000" />
       <workItem from="1649166283723" duration="8733000" />
+      <workItem from="1649184334730" duration="1530000" />
+      <workItem from="1649244376455" duration="601000" />
     </task>
     <task id="LOCAL-00001" summary="bundles">
       <created>1648810681068</created>
