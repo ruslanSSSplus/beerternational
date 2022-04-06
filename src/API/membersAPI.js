@@ -10,7 +10,6 @@ export const getMembersAPI = () => {
 }
 
 export const deleteMemberAPI = (uid) => {
-    console.log('try api')
     return   fetch('https://glacial-crag-96225.herokuapp.com/del', {
         method: 'POST',
         headers: {
@@ -20,5 +19,4 @@ export const deleteMemberAPI = (uid) => {
         body: JSON.stringify({uid})
     }).then(response => response.json()) .then(response =>
         (response.reverse()))
-
 }

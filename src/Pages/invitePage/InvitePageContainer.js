@@ -21,7 +21,7 @@ export const InvitePageContainer = (props) => {
     }
 
     const onSubmit = async (values) => {
-        dispatch(submitThunkCreater(values.name, values.age, values.social, avatar))
+       await dispatch(submitThunkCreater(values.name, values.age, values.social, avatar))
         setTimeout(redirect, 2000);
     }
 

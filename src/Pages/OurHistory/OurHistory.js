@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect} from 'react';
 import classes from './OurHistory.module.css'
 import {arrayOfMembers} from "./legendsMassive";
 import closeElement from '../../components/Pictures/close.png'
@@ -21,7 +21,12 @@ import logoRuslanDay from "../../components/Pictures/logoRuslanDay.png"
 
 
 import aud from '../../components/Pictures/audioBETA.png'
-import {actions, chooseBundleThunkCreater, closeBundleThunkCreater} from "../../Redux/historyReducer";
+import {
+    actions,
+    chooseBundleThunkCreater,
+    cleanDataThunkCreater,
+    closeBundleThunkCreater
+} from "../../Redux/historyReducer";
 
 
 export const OurHistory = (props) => {
@@ -30,7 +35,16 @@ export const OurHistory = (props) => {
 
     const dispatch = useDispatch()
     const {member, isOpen, closing, bigPicture} = useSelector((state) => state.history)
-    
+
+    useEffect(() => {
+
+        return () => {
+            dispatch(cleanDataThunkCreater())
+        }
+    }, [])
+
+
+
     const openPicture = () =>{
         dispatch(actions.putIsBigPicture(true))
     }

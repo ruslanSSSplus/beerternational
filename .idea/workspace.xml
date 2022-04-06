@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8808b533-7d5b-4ec3-818f-134c1325d499" name="Changes" comment="bundlesd">
-      <change beforePath="$PROJECT_DIR$/src/components/Pictures/timurWall.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pictures/timurWall.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/membersAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/membersAPI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/OurHistory/OurHistory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/OurHistory/OurHistory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/invitePage/InvitePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/invitePage/InvitePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/invitePage/InvitePageContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/invitePage/InvitePageContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/historyReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/historyReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +87,7 @@
       <workItem from="1649166283723" duration="8733000" />
       <workItem from="1649184334730" duration="1530000" />
       <workItem from="1649244376455" duration="601000" />
-      <workItem from="1649262584882" duration="1300000" />
+      <workItem from="1649262584882" duration="2078000" />
     </task>
     <task id="LOCAL-00001" summary="bundles">
       <created>1648810681068</created>
