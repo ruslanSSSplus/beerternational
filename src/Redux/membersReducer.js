@@ -29,11 +29,9 @@ export const getMembersThunkCreater = () => {
     }
 }
 export const deleteMemberThunkCreater = (uid) => {
-    console.log('try disp')
     return async (dispatch) => {
         const response = await deleteMemberAPI(uid)
         dispatch(actions.deleteMember(response))
-        console.log(response)
     }
 }
 

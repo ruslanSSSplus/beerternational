@@ -1,4 +1,3 @@
-
 import avaDefault from '../components/Pictures/avatar.png'
 import {submitInviteAPI} from "../API/invitePageAPI";
 
@@ -30,12 +29,16 @@ const invitePageReducer = (state = initialState, action) => {
 
 export const putPhotoThunkCreater = (element) => {
     return async (dispatch) => {
-        let file = element.target.files[0];
-        let reader = new FileReader();
-        reader.onloadend = function () {
-            dispatch(actions.putPhoto(reader.result))
+        if (window.FileReader) {
+            let file = element.target.files[0];
+            let reader = new FileReader();
+            reader.onloadend = function () {
+                dispatch(actions.putPhoto(reader.result))
+            }
+            if (file && file.type.match('image.*')) {
+                reader.readAsDataURL(file);
+            }
         }
-        reader.readAsDataURL(file);
     }
 }
 export const submitThunkCreater = (name, age, social, avatar) => {
