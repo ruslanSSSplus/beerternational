@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './Members.module.css'
-import sveti from '../../components/Pictures/profil_svetl.png'
-import temn from '../../components/Pictures/uchastniki_temny.png'
+import sveti from '../../assets/Pictures/profil_svetl.png'
+import temn from '../../assets/Pictures/uchastniki_temny.png'
 import EachUser from './EachUser/EachUser'
 import {useNavigate} from 'react-router-dom';
 

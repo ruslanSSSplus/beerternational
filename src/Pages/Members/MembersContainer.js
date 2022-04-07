@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import Preloader from "../../components/Preloader/Preloader";
 import {useDispatch, useSelector} from "react-redux";
 import {deleteMemberThunkCreater, getMembersThunkCreater} from "../../Redux/membersReducer";
@@ -15,7 +15,7 @@ export const MembersContainer = (props) => {
         dispatch(deleteMemberThunkCreater(uid))
     }
 
-    useEffect(async  () => {
+    useEffect(  () => {
         dispatch(getMembersThunkCreater())
     }, [])
 

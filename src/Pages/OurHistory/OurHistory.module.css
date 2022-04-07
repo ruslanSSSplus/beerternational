@@ -1,6 +1,6 @@
 
 .page {
-    text-align: center;
+    justify-content: center;
     animation-name: animereveal;
     animation-duration: 2s;
 }
@@ -14,9 +14,7 @@
     }
 }
 
-.allDay {
-    color: white;
-}
+
 
 
 .all {
@@ -27,15 +25,15 @@
     'a'
     'b';
     grid-template-rows: 350px 140px 35px 35px;
-    left: 43%;
     height: 700px;
     width: 274px;
     position: absolute;
     text-align: center;
     border-radius: 15px;
     z-index: 1;
+    left: 43%;
     overflow: hidden;
-    background-image: url('../../components/Pictures/bandl_fon.png');
+    background-image: url('../../assets/Pictures/bandl_fon.png');
     background-size: 100%;
     animation-name: animetetop;
     animation-duration: 0.4s;
@@ -68,7 +66,7 @@
     border-radius: 15px;
     z-index: 1;
     overflow: hidden;
-    background-image: url('../../components/Pictures/bandl_fon.png');
+    background-image: url('../../assets/Pictures/bandl_fon.png');
     background-size: 100%;
     animation-name: animetebot;
     animation-duration: 0.4s;
@@ -125,23 +123,16 @@
 .firstLine {
     display: grid;
     grid-template-areas:
-    'a b s d';
+    'a b s d'
+'e f g v';
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    height: 400px;
+    grid-template-rows: 1fr 1fr;
+    height: 800px;
     width: 100%;
     text-align: center;
 }
 
-.secondLine {
-    display: grid;
-    grid-template-areas:
-    'a b s d';
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    height: 400px;
-    width: 100%;
-    text-align: center;
 
-}
 
 .bundle {
     margin-top: 10px;

@@ -1,8 +1,8 @@
 import React from 'react';
 import classes from './Regulations.module.css'
-import header from '../../components/Pictures/headRed.png'
-import bigGena from '../../components/Pictures/bigGena.png'
-import bigBeer from '../../components/Pictures/bigBeer.png'
+import header from '../../assets/Pictures/headRed.png'
+import bigGena from '../../assets/Pictures/bigGena.png'
+import bigBeer from '../../assets/Pictures/bigBeer.png'
 import cn from "classnames";
 
 export const Regulations = (props) => {

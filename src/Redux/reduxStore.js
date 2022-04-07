@@ -1,5 +1,5 @@
-import {applyMiddleware, combineReducers, createStore, compose, Action} from "redux";
-import thunkMiddleware, {ThunkAction} from 'redux-thunk'
+import {applyMiddleware, combineReducers, createStore, compose} from "redux";
+import thunkMiddleware from 'redux-thunk'
 import loginReducer from "./loginReducer";
 import membersReducer from "./membersReducer";
 import invitePageReducer from "./invitePageReducer";

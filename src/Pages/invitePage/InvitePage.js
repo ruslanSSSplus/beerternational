@@ -2,12 +2,12 @@ import React from 'react';
 import classes from './invitePage.module.css'
 import {Field, Form, Formik, ErrorMessage} from "formik";
 import * as Yup from "yup";
-import inviteButton from '../../components/Pictures/inviteBut.png'
-import galochka from '../../components/Pictures/galochka.png'
-import inputPng from '../../components/Pictures/input.png'
-import closeButton from '../../components/Pictures/close.png'
-import closeButtonDay from '../../components/Pictures/closeDay.png'
-import errorPng from '../../components/Pictures/error.png'
+import inviteButton from '../../assets/Pictures/inviteBut.png'
+import galochka from '../../assets/Pictures/galochka.png'
+import inputPng from '../../assets/Pictures/input.png'
+import closeButton from '../../assets/Pictures/close.png'
+import closeButtonDay from '../../assets/Pictures/closeDay.png'
+import errorPng from '../../assets/Pictures/error.png'
 
 import cn from "classnames";
 

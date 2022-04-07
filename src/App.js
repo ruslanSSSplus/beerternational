@@ -5,14 +5,13 @@ import React, {useState} from "react";
 import {Layout} from 'antd';
 import {Main} from "./Pages/Main/Main";
 import {OurHistory} from "./Pages/OurHistory/OurHistory";
-import {Members} from "./Pages/Members/Members";
 import {Regulations} from "./Pages/Regulations/Regulations";
 import cn from "classnames";
-import svetl from './components/Pictures/Frame.png'
-import temn from './components/Pictures/Frame-1.png'
-import DM_LIGHT from './components/Pictures/DM_LIGHT.png'
-import DM_DARK from './components/Pictures/DM_DARK.png'
-import VK from './components/Pictures/entypo-social_vk-with-circle.png'
+import svetl from './assets/Pictures/Frame.png'
+import temn from './assets/Pictures/Frame-1.png'
+import DM_LIGHT from './assets/Pictures/DM_LIGHT.png'
+import DM_DARK from './assets/Pictures/DM_DARK.png'
+import VK from './assets/Pictures/entypo-social_vk-with-circle.png'
 import {Login} from "./Pages/Login/Login";
 import {MembersContainer} from "./Pages/Members/MembersContainer";
 

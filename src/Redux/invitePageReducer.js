@@ -1,4 +1,4 @@
-import avaDefault from '../components/Pictures/avatar.png'
+import avaDefault from '../assets/Pictures/avatar.png'
 import {submitInviteAPI} from "../API/invitePageAPI";
 
 const PUT_PHOTO = 'INVITE/PUT_PHOTO';

@@ -1,9 +1,8 @@
 import React, {useState} from 'react';
 import classes from './Main.module.css'
 import cn from "classnames";
-import sveti from '../../components/Pictures/pivo_svetl.png'
-import temn from '../../components/Pictures/pivo_temn.png'
-import {InvitePage} from "../invitePage/InvitePage";
+import sveti from '../../assets/Pictures/pivo_svetl.png'
+import temn from '../../assets/Pictures/pivo_temn.png'
 import {InvitePageContainer} from "../invitePage/InvitePageContainer";
 
 

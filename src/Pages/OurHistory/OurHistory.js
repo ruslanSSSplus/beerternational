@@ -1,26 +1,26 @@
 import React, {useEffect} from 'react';
 import classes from './OurHistory.module.css'
 import {arrayOfMembers} from "./legendsMassive";
-import closeElement from '../../components/Pictures/close.png'
+import closeElement from '../../assets/Pictures/close.png'
 import {useDispatch, useSelector} from "react-redux";
-import logoGena from "../../components/Pictures/logoGena.png"
-import logoTimur from "../../components/Pictures/logoTimur.png"
-import logoPasha from "../../components/Pictures/logoPasha.png"
-import logoKeks from "../../components/Pictures/logoKeks.png"
-import logoMike from "../../components/Pictures/logoMike.png"
-import logoMaks from "../../components/Pictures/logoMax.png"
-import logoRuslan from "../../components/Pictures/logoRuslan.png"
-import logoGenaDay from "../../components/Pictures/logoGenaDay.png"
-import logoTimurDay from "../../components/Pictures/logoTimurDay.png"
-import logoPashaDay from "../../components/Pictures/logoPashaDay.png"
-import logoKeksDay from "../../components/Pictures/logoKeksDay.png"
-import logoMikeDay from "../../components/Pictures/logoMikeDay.png"
-import logoMaksDay from "../../components/Pictures/logoMaksDay.png"
-import logoRuslanDay from "../../components/Pictures/logoRuslanDay.png"
+import logoGena from "../../assets/Pictures/logoGena.png"
+import logoTimur from "../../assets/Pictures/logoTimur.png"
+import logoPasha from "../../assets/Pictures/logoPasha.png"
+import logoKeks from "../../assets/Pictures/logoKeks.png"
+import logoMike from "../../assets/Pictures/logoMike.png"
+import logoMaks from "../../assets/Pictures/logoMax.png"
+import logoRuslan from "../../assets/Pictures/logoRuslan.png"
+import logoGenaDay from "../../assets/Pictures/logoGenaDay.png"
+import logoTimurDay from "../../assets/Pictures/logoTimurDay.png"
+import logoPashaDay from "../../assets/Pictures/logoPashaDay.png"
+import logoKeksDay from "../../assets/Pictures/logoKeksDay.png"
+import logoMikeDay from "../../assets/Pictures/logoMikeDay.png"
+import logoMaksDay from "../../assets/Pictures/logoMaksDay.png"
+import logoRuslanDay from "../../assets/Pictures/logoRuslanDay.png"
 
 
 
-import aud from '../../components/Pictures/audioBETA.png'
+import aud from '../../assets/Pictures/audioBETA.png'
 import {
     actions,
     chooseBundleThunkCreater,
@@ -101,8 +101,7 @@ export const OurHistory = (props) => {
                 </div>
                 <div><img src={props.theme ? logoTimurDay : logoTimur} onClick={() => chooseBundle(3)} alt={'bundle'} className={classes.bundle}/>
                 </div>
-            </div>
-            <div className={classes.secondLine}>
+
                 <div><img src={props.theme ? logoMikeDay : logoMike} onClick={() => chooseBundle(4)} alt={'bundle'} className={classes.bundle}/>
                 </div>
                 <div><img src={props.theme ? logoMaksDay : logoMaks} onClick={() => chooseBundle(5)} alt={'bundle'} className={classes.bundle}/>
