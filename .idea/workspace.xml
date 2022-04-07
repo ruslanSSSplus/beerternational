@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8808b533-7d5b-4ec3-818f-134c1325d499" name="Changes" comment="animation added">
+    <list default="true" id="8808b533-7d5b-4ec3-818f-134c1325d499" name="Changes" comment="fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Members/MembersContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Members/MembersContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Reducers/membersReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducers/membersReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +84,7 @@
       <workItem from="1649184334730" duration="1530000" />
       <workItem from="1649244376455" duration="601000" />
       <workItem from="1649262584882" duration="3453000" />
+      <workItem from="1649356939979" duration="677000" />
     </task>
     <task id="LOCAL-00001" summary="bundles">
       <created>1648810681068</created>
@@ -129,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649345435426</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix">
+      <created>1649346642977</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1649346642977</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,8 +155,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="bundles" />
     <MESSAGE value="bundlesd" />
-    <MESSAGE value="fix" />
     <MESSAGE value="animation added" />
-    <option name="LAST_COMMIT_MESSAGE" value="animation added" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
 </project>
