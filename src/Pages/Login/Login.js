@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './Login.module.css'
 import { Field, Form, Formik} from "formik";
-import {getLoginizationThunkCreater} from "../../Redux/loginReducer";
+import {getLoginizationThunkCreater} from "../../Redux/Reducers/loginReducer";
 import {useDispatch, useSelector} from "react-redux";
 import {useNavigate} from "react-router-dom";
 

@@ -1,4 +1,4 @@
-import {deleteMemberAPI, getMembersAPI} from "../API/membersAPI";
+import {deleteMemberAPI, getMembersAPI} from "../../API/membersAPI";
 
 
 const GET_MEMBERS = 'MEMBERS/GET_MEMBERS';

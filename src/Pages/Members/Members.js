@@ -32,7 +32,7 @@ export const Members = (props) => {
 
 
                     <img alt={'Pivo'} onClick={() => redirect()}
-                         src={props.theme ? sveti : temn} className={classes.pivo} data-aos="fade-left"/>
+                         src={props.theme ? sveti : temn} className={classes.pivo} />
 
 
 

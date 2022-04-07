@@ -1,9 +1,9 @@
 import {applyMiddleware, combineReducers, createStore, compose} from "redux";
 import thunkMiddleware from 'redux-thunk'
-import loginReducer from "./loginReducer";
-import membersReducer from "./membersReducer";
-import invitePageReducer from "./invitePageReducer";
-import historyReducer from "./historyReducer";
+import loginReducer from "./Reducers/loginReducer";
+import membersReducer from "./Reducers/membersReducer";
+import invitePageReducer from "./Reducers/invitePageReducer";
+import historyReducer from "./Reducers/historyReducer";
 
 
 let rootReducer = combineReducers({

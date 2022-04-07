@@ -2,7 +2,7 @@ import React from 'react';
 import {useNavigate} from 'react-router-dom';
 
 import {useDispatch, useSelector} from "react-redux";
-import {putPhotoThunkCreater, submitThunkCreater} from "../../Redux/invitePageReducer";
+import {putPhotoThunkCreater, submitThunkCreater} from "../../Redux/Reducers/invitePageReducer";
 import {InvitePage} from "./InvitePage";
 
 

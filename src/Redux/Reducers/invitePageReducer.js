@@ -1,5 +1,5 @@
-import avaDefault from '../assets/Pictures/avatar.png'
-import {submitInviteAPI} from "../API/invitePageAPI";
+import avaDefault from '../../assets/Pictures/avatar.png'
+import {submitInviteAPI} from "../../API/invitePageAPI";
 
 const PUT_PHOTO = 'INVITE/PUT_PHOTO';
 const PUT_DATA = 'INVITE/PUT_DATA';

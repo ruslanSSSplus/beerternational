@@ -26,7 +26,7 @@ import {
     chooseBundleThunkCreater,
     cleanDataThunkCreater,
     closeBundleThunkCreater
-} from "../../Redux/historyReducer";
+} from "../../Redux/Reducers/historyReducer";
 
 
 export const OurHistory = (props) => {

@@ -56,10 +56,7 @@ export const Main = (props) => {
            <img alt={'Pivo'}
                   src={props.theme ? sveti : temn}
                   className={classes.pivo}
-                data-aos="fade-left"
-                data-aos-anchor="#example-anchor"
-                data-aos-offset="500"
-                data-aos-duration="500"/>
+                />
 
             {isOpen ?
                 <div className={classes.inviteBlank}>

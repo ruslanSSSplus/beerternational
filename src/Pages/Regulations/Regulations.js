@@ -22,7 +22,7 @@ export const Regulations = (props) => {
                 <img alt={'logofull'} src={header} className={classes.jpg} data-aos="fade-down"/>
 
             <div className={classes.info}>
-                <img alt={'logofull'} src={bigGena} className={classes.gen} data-aos="fade-right"/>
+                <img alt={'logofull'} src={bigGena} className={classes.gen} />
 
             <div className={classes.pravila}>
                <p  data-aos="zoom-in"> <span className={classes.light}  >The Beerternational 2022 </span> проводится в коллаборации с <span className={classes.light}> GenaFond </span> </p>
@@ -64,7 +64,7 @@ export const Regulations = (props) => {
                 <span className={classes.light}> ∙ Торнадо</span><br />
                     </p>
             </div >
-                <img alt={'logofull'} src={bigBeer} className={classes.beer} data-aos="fade-left"/>
+                <img alt={'logofull'} src={bigBeer} className={classes.beer} />
             </div>
 
         </div>

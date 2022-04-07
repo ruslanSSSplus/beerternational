@@ -1,4 +1,4 @@
-import {submitLoginAPI} from "../API/loginAPI";
+import {submitLoginAPI} from "../../API/loginAPI";
 
 const iS_LOGIN = 'LOGIN/iS_LOGIN';
 
