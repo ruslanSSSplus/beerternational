@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8808b533-7d5b-4ec3-818f-134c1325d499" name="Changes" comment="animation added">
-      <change afterPath="$PROJECT_DIR$/src/Routing/AllLinks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Routing/AllRoutes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Login/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Main/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Members/Members.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Members/Members.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Members/MembersContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Members/MembersContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/OurHistory/OurHistory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/OurHistory/OurHistory.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Regulations/Regulations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Regulations/Regulations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/invitePage/InvitePageContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/invitePage/InvitePageContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/historyReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducers/historyReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/invitePageReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducers/invitePageReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/loginReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducers/loginReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/membersReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducers/membersReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/reduxStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/reduxStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Reducers/membersReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducers/membersReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649343363538</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="animation added">
+      <created>1649345435426</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1649345435426</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

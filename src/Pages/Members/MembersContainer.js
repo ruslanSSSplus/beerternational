@@ -11,7 +11,8 @@ export const MembersContainer = (props) => {
     const {isLogin} = useSelector((state) => state.login)
     const dispatch = useDispatch()
 
-    const deleteUser = async (uid) => {
+    const deleteUser = (uid) => {
+        console.log('try delete')
         dispatch(deleteMemberThunkCreater(uid))
     }
 
