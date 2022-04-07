@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/beerternational/static/css/main.1da11b47.css",
-    "main.js": "/beerternational/static/js/main.e537933d.js",
+    "main.css": "/beerternational/static/css/main.abda55d6.css",
+    "main.js": "/beerternational/static/js/main.a7cf69b6.js",
     "static/js/787.28cb0dcd.chunk.js": "/beerternational/static/js/787.28cb0dcd.chunk.js",
     "static/media/timurWall.png": "/beerternational/static/media/timurWall.f0930053e7873888c428.png",
     "static/media/pashaWall.png": "/beerternational/static/media/pashaWall.c4e373846d55e1694ef1.png",
@@ -34,26 +34,26 @@
     "static/media/logoGenaDay.png": "/beerternational/static/media/logoGenaDay.e4a406b348a6bcc3ff48.png",
     "static/media/profil_svetl.png": "/beerternational/static/media/profil_svetl.80761ac654439dbf28ae.png",
     "static/media/sergeyAudioFirst.mp3": "/beerternational/static/media/sergeyAudioFirst.3e2ef2ba6f4479dced86.mp3",
+    "static/media/logoKeksDay.png": "/beerternational/static/media/logoKeksDay.17d960b0bac31c8e6e0f.png",
     "static/media/bigGena.png": "/beerternational/static/media/bigGena.75baebdc6694e0e8d8bb.png",
     "static/media/logoPashaDay.png": "/beerternational/static/media/logoPashaDay.a4bb38d442a4119dca60.png",
     "static/media/pivo_svetl.png": "/beerternational/static/media/pivo_svetl.19792bc44a45568b16d6.png",
     "static/media/timurAudioSecond.mp3": "/beerternational/static/media/timurAudioSecond.963b544ce577e2bed3b1.mp3",
     "static/media/nikitaAudioFirst.mp3": "/beerternational/static/media/nikitaAudioFirst.dd9694d09c7d70852fba.mp3",
-    "static/media/logoKeksDay.png": "/beerternational/static/media/logoKeksDay.c48ad2e383e10331096b.png",
     "static/media/pivo_temn.png": "/beerternational/static/media/pivo_temn.0c6a4475f38ffdc18413.png",
     "static/media/maxAudioSecond.mp3": "/beerternational/static/media/maxAudioSecond.76d6272871b7160ecfba.mp3",
     "static/media/Frame.png": "/beerternational/static/media/Frame.d9e3025454489ebc5a65.png",
     "static/media/audioBETA.png": "/beerternational/static/media/audioBETA.839e5d060a8b32277add.png",
     "static/media/Frame-1.png": "/beerternational/static/media/Frame-1.2b9075bd09ff2d64572f.png",
     "static/media/maxAudioFirst.mp3": "/beerternational/static/media/maxAudioFirst.ccce3fb7330f4a5427b4.mp3",
-    "static/media/logoTimurDay.png": "/beerternational/static/media/logoTimurDay.b7692ab658eae369fb46.png",
+    "static/media/logoTimurDay.png": "/beerternational/static/media/logoTimurDay.05d67949370bdb0c21d1.png",
     "index.html": "/beerternational/index.html",
-    "main.1da11b47.css.map": "/beerternational/static/css/main.1da11b47.css.map",
-    "main.e537933d.js.map": "/beerternational/static/js/main.e537933d.js.map",
+    "main.abda55d6.css.map": "/beerternational/static/css/main.abda55d6.css.map",
+    "main.a7cf69b6.js.map": "/beerternational/static/js/main.a7cf69b6.js.map",
     "787.28cb0dcd.chunk.js.map": "/beerternational/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1da11b47.css",
-    "static/js/main.e537933d.js"
+    "static/css/main.abda55d6.css",
+    "static/js/main.a7cf69b6.js"
   ]
 }
