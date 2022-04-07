@@ -1,12 +1,14 @@
 import React from 'react';
 import classes from './EachUser.module.css'
-
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 const EachUser = (props) => {
 
+    AOS.init();
 
     return (
-        <div className={classes.all}>
+        <div className={classes.all} data-aos="fade-right">
            <img src={props.user.photo} alt={'ava'} className={classes.ava}/>
             <div className={classes.name}>Имя - {props.user.name}</div>
             <div className={classes.age}>Возраст - {props.user.age}</div>

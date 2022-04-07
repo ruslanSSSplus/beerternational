@@ -65,7 +65,7 @@
   'c p';
     grid-template-columns: 3fr 2fr;
     animation-name: animereveal;
-    animation-duration: 2s;
+    animation-duration: 1s;
 
 }
 
@@ -78,8 +78,6 @@
     }
 }
 .pivo {
-
-
     width: 100%;
     grid-area: p;
 }

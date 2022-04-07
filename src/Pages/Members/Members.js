@@ -4,11 +4,13 @@ import sveti from '../../assets/Pictures/profil_svetl.png'
 import temn from '../../assets/Pictures/uchastniki_temny.png'
 import EachUser from './EachUser/EachUser'
 import {useNavigate} from 'react-router-dom';
-
+import AOS from "aos";
+import 'aos/dist/aos.css';
 
 
 export const Members = (props) => {
 
+    AOS.init();
     const navigate = useNavigate();
 
 
@@ -30,7 +32,7 @@ export const Members = (props) => {
 
 
                     <img alt={'Pivo'} onClick={() => redirect()}
-                         src={props.theme ? sveti : temn} className={classes.pivo}/>
+                         src={props.theme ? sveti : temn} className={classes.pivo} data-aos="fade-left"/>
 
 
 

@@ -4,10 +4,15 @@ import cn from "classnames";
 import sveti from '../../assets/Pictures/pivo_svetl.png'
 import temn from '../../assets/Pictures/pivo_temn.png'
 import {InvitePageContainer} from "../invitePage/InvitePageContainer";
+import AOS from 'aos'
+import 'aos/dist/aos.css';
+
+
 
 
 export const Main = (props) => {
 
+    AOS.init();
 
     let [isOpen, setIisOpen] = useState(false)
     let show = () => {
@@ -20,7 +25,10 @@ export const Main = (props) => {
 
     return (
         <div className={classes.all}>
-            <div className={classes.content}>
+            <div className={classes.content}  data-aos="fade-right"
+                 data-aos-anchor="#example-anchor"
+                 data-aos-offset="500"
+                 data-aos-duration="500">
                 <h1 className={classes.jul72}> THE BEERTERNATIONAL <wbr/> 2022</h1>
                 <h2 className={classes.jul30}> GENAFOND CHAMPIONSHIP</h2>
                 <div className={classes.info}>
@@ -47,7 +55,11 @@ export const Main = (props) => {
 
            <img alt={'Pivo'}
                   src={props.theme ? sveti : temn}
-                  className={classes.pivo}/>
+                  className={classes.pivo}
+                data-aos="fade-left"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="500"
+                data-aos-duration="500"/>
 
             {isOpen ?
                 <div className={classes.inviteBlank}>
