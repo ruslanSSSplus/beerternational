@@ -3,7 +3,7 @@ import logoGena from "../../assets/Pictures/logoGena.png"
 import logoTimur from "../../assets/Pictures/logoTimur.png"
 import logoPasha from "../../assets/Pictures/logoPasha.png"
 import logoKeks from "../../assets/Pictures/logoKeks.png"
-// import logoSergey from "../../components/Pictures/logoSergey.png"
+import logoSergey from "../../assets/Pictures/logoSergey.png"
 import logoMike from "../../assets/Pictures/logoMike.png"
 import logoMaks from "../../assets/Pictures/logoMax.png"
 import logoRuslan from "../../assets/Pictures/logoRuslan.png"
@@ -90,7 +90,7 @@ export const arrayOfMembers = [
     {
         audioFirst: sergeyAudioFirst,
         audioSecond: maxAudioFirst,
-        logo: 'https://klike.net/uploads/posts/2021-01/1611131113_2.jpg',
+        logo: logoSergey,
         picture: sergeyWall,
     },
 ]

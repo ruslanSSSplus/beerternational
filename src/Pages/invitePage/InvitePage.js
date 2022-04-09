@@ -17,14 +17,15 @@ export const InvitePage = (props) => {
 
 
     const initialValues = {
-        name: '', age: '', social: '',
+        name: '', beer: '', social: '',
     }
 
 
     const validationSchema = Yup.object({
         name: Yup.string()
-            .required(<img alt={'error'} className={classes.error} src={errorPng}/>),
-        age: Yup.string()
+            .required(<img alt={'error'} className={classes.error} src={errorPng}/>)
+            .matches(/^[aA-zZ\s]+$/, ' '),
+        beer: Yup.string()
             .required(<img alt={'error'} className={classes.error} src={errorPng}/>),
         social: Yup.string()
             .required(<img alt={'error'} className={classes.error} src={errorPng}/>) ,
@@ -46,11 +47,11 @@ export const InvitePage = (props) => {
 
                 <div className={classes.content}>
                     <div><Field className={classes.field} placeholder={'Имя'} type='text' name='name'
-                                component='input'/><span><ErrorMessage name='name'/></span>
+                                component='input' /><span><ErrorMessage name='name'/></span>
                     </div>
-                    <div><Field className={classes.field} placeholder={'Возраст'}
-                                type='number' name='age'
-                                component='input'/><span ><ErrorMessage name='age'/></span>
+                    <div><Field className={classes.field} placeholder={'Любимое пиво'}
+                                type='text' name='beer'
+                                component='input'/><span ><ErrorMessage name='beer'/></span>
                     </div>
                     <div><Field className={classes.field} placeholder={'VK'} type='text'
                                 name='social'

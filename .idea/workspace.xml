@@ -3,6 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="8808b533-7d5b-4ec3-818f-134c1325d499" name="Changes" comment="fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/invitePageAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/invitePageAPI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/membersAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/membersAPI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Members/EachUser/EachUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Members/EachUser/EachUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/OurHistory/OurHistory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/OurHistory/OurHistory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/OurHistory/legendsMassive.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/OurHistory/legendsMassive.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/invitePage/InvitePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/invitePage/InvitePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/invitePage/InvitePageContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/invitePage/InvitePageContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Reducers/invitePageReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducers/invitePageReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Pictures/logoTimurDay.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Pictures/logoTimurDay.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +94,7 @@
       <workItem from="1649244376455" duration="601000" />
       <workItem from="1649262584882" duration="3453000" />
       <workItem from="1649356939979" duration="677000" />
+      <workItem from="1649512208066" duration="3246000" />
     </task>
     <task id="LOCAL-00001" summary="bundles">
       <created>1648810681068</created>

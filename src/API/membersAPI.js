@@ -1,5 +1,5 @@
 export const getMembersAPI = () => {
-   return  fetch('https://glacial-crag-96225.herokuapp.com/getUsers1', {
+    return  fetch('https://glacial-crag-96225.herokuapp.com/getUsers', {
         method: 'GET',
         headers: {
             'Content-type': 'application/json',

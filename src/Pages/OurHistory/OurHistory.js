@@ -3,6 +3,7 @@ import classes from './OurHistory.module.css'
 import {arrayOfMembers} from "./legendsMassive";
 import closeElement from '../../assets/Pictures/close.png'
 import {useDispatch, useSelector} from "react-redux";
+
 import logoGena from "../../assets/Pictures/logoGena.png"
 import logoTimur from "../../assets/Pictures/logoTimur.png"
 import logoPasha from "../../assets/Pictures/logoPasha.png"
@@ -10,6 +11,8 @@ import logoKeks from "../../assets/Pictures/logoKeks.png"
 import logoMike from "../../assets/Pictures/logoMike.png"
 import logoMaks from "../../assets/Pictures/logoMax.png"
 import logoRuslan from "../../assets/Pictures/logoRuslan.png"
+import logoSergey from "../../assets/Pictures/logoSergey.png"
+
 import logoGenaDay from "../../assets/Pictures/logoGenaDay.png"
 import logoTimurDay from "../../assets/Pictures/logoTimurDay.png"
 import logoPashaDay from "../../assets/Pictures/logoPashaDay.png"
@@ -17,7 +20,7 @@ import logoKeksDay from "../../assets/Pictures/logoKeksDay.png"
 import logoMikeDay from "../../assets/Pictures/logoMikeDay.png"
 import logoMaksDay from "../../assets/Pictures/logoMaksDay.png"
 import logoRuslanDay from "../../assets/Pictures/logoRuslanDay.png"
-
+import logoSergeyDay from "../../assets/Pictures/logoSergeyDay.png"
 
 
 import aud from '../../assets/Pictures/audioBETA.png'
@@ -30,8 +33,6 @@ import {
 
 
 export const OurHistory = (props) => {
-
-    const pic = 'https://klike.net/uploads/posts/2021-01/1611131113_2.jpg'
 
     const dispatch = useDispatch()
     const {member, isOpen, closing, bigPicture} = useSelector((state) => state.history)
@@ -108,7 +109,7 @@ export const OurHistory = (props) => {
                 </div>
                 <div><img src={props.theme ? logoRuslanDay : logoRuslan} onClick={() => chooseBundle(6)} alt={'bundle'} className={classes.bundle}/>
                 </div>
-                <div><img src={pic} onClick={() => chooseBundle(7)} alt={'bundle'} className={classes.bundle}/></div>
+                <div><img src={props.theme ? logoSergeyDay : logoSergey} onClick={() => chooseBundle(7)} alt={'bundle'} className={classes.bundle}/></div>
             </div>
             {bigPicture ? <button className={classes.openedPicture} onClick={()=> closePng() }> <img src={arrayOfMembers[member].picture} alt={'pic'}
             className={classes.bigPicture}/> <img  alt={'close'} src={closeElement} className={classes.close}/> </button>

@@ -41,11 +41,11 @@ export const putPhotoThunkCreater = (element) => {
         }
     }
 }
-export const submitThunkCreater = (name, age, social, avatar) => {
+export const submitThunkCreater = (name, beer, social, avatar) => {
     return async (dispatch) => {
         dispatch(actions.putData('Loading...'))
         dispatch(actions.putIsSend(true))
-        let response = await submitInviteAPI(name, age, social, avatar)
+        let response = await submitInviteAPI(name, beer, social, avatar)
         dispatch(actions.putData(response))
     }
 }
