@@ -23,8 +23,7 @@ export const InvitePage = (props) => {
 
     const validationSchema = Yup.object({
         name: Yup.string()
-            .required(<img alt={'error'} className={classes.error} src={errorPng}/>)
-            .matches(/^[aA-zZ\s]+$/, ' '),
+            .required(<img alt={'error'} className={classes.error} src={errorPng}/>),
         beer: Yup.string()
             .required(<img alt={'error'} className={classes.error} src={errorPng}/>),
         social: Yup.string()
