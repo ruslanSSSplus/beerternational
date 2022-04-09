@@ -1,43 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherish&family=Raleway:wght@200;300&display=swap');
 
-.page{
-    animation-name: animereveal;
-    animation-duration: 1s;
-}
 
-@keyframes animereveal {
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
-.allDay{
+
+.allDay {
     color: white;
 }
-
 
 .all {
     display: grid;
     width: 100%;
     min-height: 1000px;
-
     grid-template-areas:
+     'l l'
+    'c m'
     'c p';
-    grid-template-columns: 60% 40%;
-
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 160px 500px 1fr ;
+    animation-name: animereveal;
+    animation-duration: 1s;
 }
-.pivo{
-    margin-top: 10%;
-    grid-area: p;
+
+@keyframes animereveal {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.logoNight{
+    text-align: center;
+    font-family: 'Cherish', cursive;
+    color: #1d1d1d;
+    font-size: 100px;
+    grid-area: l;
     width: 100%;
-}
-.content{
-
     margin-top: 20px;
+    background-image: linear-gradient(to right, transparent, #e3cd93, transparent);
+}
+.logoDay{
+    color: white;
+}
+.commentator {
+    grid-area: m;
+    font-size: 40px;
+    color: #e3cd93;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    margin-top: 35px;
+}
+.com{
+    margin-right: 135px;
+}
+.previos {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    grid-area: p;
+    text-align: center;
+    font-size: 40px;
+    color: #e3cd93;
+}
+
+.content {
+    grid-template-areas:
+     'n'
+    's';
+    grid-template-rows: 160px 1fr ;
     margin-left: 5%;
     grid-area: c;
     text-align: center;
+    margin-top: 35px;
 }
+.spisok{
+    font-size: 40px;
+    color: #e3cd93;
+    margin-right: 26px;
+}
+.nightUsers{
+    color: white;
+    margin-left: 22% ;
 
-
+}
+.dayUsers{
+    color: #1d1d1d;
+    margin-left: 22% ;
+}
+.others{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    font-size: 25px;
+}
+.beerint{
+    font-size: 50px;
+}
+.timur{
+    font-size: 40px;
+}

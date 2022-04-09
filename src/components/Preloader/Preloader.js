@@ -1,8 +1,7 @@
-import preloader from '../../assets/Pictures/04de2e31234507.564a1d23645bf.gif'
+import classes from './Prealoader.module.css'
 
 const Preloader = () => {
-    return <div>
-        <img src={preloader} alt={'loading'}/>
+    return <div className={classes.spiner}>
     </div>
 }
 

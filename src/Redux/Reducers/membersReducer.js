@@ -3,10 +3,11 @@ import {deleteMemberAPI, getMembersAPI} from "../../API/membersAPI";
 
 const GET_MEMBERS = 'MEMBERS/GET_MEMBERS';
 const DELETE_MEMBER = 'MEMBERS/DELETE_MEMBER';
-
+const IS_LOADING = 'MEMBERS/IS_LOADING';
 
 let initialState = {
-    members: []
+    members: [],
+    isLoading: true
 }
 
 
@@ -17,6 +18,8 @@ const membersReducer = (state = initialState, action) => {
             return {...state, members: action.members}
         case DELETE_MEMBER:
             return {...state, members: action.members}
+        case IS_LOADING:
+            return {...state, isLoading: action.data}
         default:
             return state;
     }
@@ -24,15 +27,19 @@ const membersReducer = (state = initialState, action) => {
 
 export const getMembersThunkCreater = () => {
     return async (dispatch) => {
+        dispatch(actions.isLoadingDone(true))
         const response = await getMembersAPI()
-        dispatch(actions.getMembers(response))
+        await dispatch(actions.getMembers(response))
+        dispatch(actions.isLoadingDone(false))
+
     }
 }
 export const deleteMemberThunkCreater = (uid) => {
-    console.log('try')
     return async (dispatch) => {
+        dispatch(actions.isLoadingDone(true))
         const response = await deleteMemberAPI(uid)
-        dispatch(actions.deleteMember(response))
+        await dispatch(actions.deleteMember(response))
+        dispatch(actions.isLoadingDone(false))
     }
 }
 
@@ -45,6 +52,10 @@ export const actions = {
     deleteMember: (members)  => ({
         type: GET_MEMBERS,
         members,
+    }),
+    isLoadingDone: (data)  => ({
+        type: IS_LOADING,
+        data
     })
 }
 

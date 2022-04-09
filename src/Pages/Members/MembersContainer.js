@@ -1,18 +1,23 @@
 import React, {useEffect} from 'react';
-import Preloader from "../../components/Preloader/Preloader";
 import {useDispatch, useSelector} from "react-redux";
 import {deleteMemberThunkCreater, getMembersThunkCreater} from "../../Redux/Reducers/membersReducer";
 import {Members} from "./Members";
+import {useNavigate} from "react-router-dom";
 
 
 export const MembersContainer = (props) => {
 
-    const {members} = useSelector((state) => state.members)
+    const {members, isLoading} = useSelector((state) => state.members)
     const {isLogin} = useSelector((state) => state.login)
     const dispatch = useDispatch()
+    const navigate = useNavigate();
+
+
+    const loginization = () => {
+        navigate('/Login');
+    }
 
     const deleteUser = (uid) => {
-        console.log('try delete')
         dispatch(deleteMemberThunkCreater(uid))
     }
 
@@ -22,8 +27,7 @@ export const MembersContainer = (props) => {
 
     return (
         <div>
-            {members[0]=== undefined ? <Preloader /> :
-                <Members members={members} deleteUser={deleteUser} theme={props.theme} isLogin={isLogin}/>}
+                <Members members={members} deleteUser={deleteUser} theme={props.theme} isLogin={isLogin} isLoading={isLoading} loginization={loginization}/>}
         </div>
 
 
