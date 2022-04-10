@@ -47,13 +47,12 @@
     grid-area: m;
     font-size: 40px;
     color: #e3cd93;
-    text-align: center;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     margin-top: 35px;
 }
 .com{
-    margin-right: 135px;
+    margin-left: 20% ;
 }
 .previos {
     font-family: 'Raleway', sans-serif;
@@ -69,24 +68,22 @@
      'n'
     's';
     grid-template-rows: 160px 1fr ;
-    margin-left: 5%;
     grid-area: c;
-    text-align: center;
     margin-top: 35px;
 }
 .spisok{
+    margin-left: 20% ;
     font-size: 40px;
     color: #e3cd93;
-    margin-right: 26px;
+
 }
 .nightUsers{
     color: white;
-    margin-left: 22% ;
-
+    margin-left: 14% ;
 }
 .dayUsers{
     color: #1d1d1d;
-    margin-left: 22% ;
+    margin-left: 14% ;
 }
 .others{
     font-family: 'Raleway', sans-serif;

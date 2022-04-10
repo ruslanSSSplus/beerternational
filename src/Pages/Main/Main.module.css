@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Raleway:wght@200;300&display=swap');
 
+
 .jul72 {
     font-family: 'Julius Sans One', 'Arial', "Times New Roman", sans-serif;
     color: #e3cd93;
@@ -84,7 +85,6 @@
 
 
 .content {
-
     margin-top: 5%;
     margin-left: 3%;
     grid-area: c;

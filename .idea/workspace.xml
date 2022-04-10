@@ -3,10 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="8808b533-7d5b-4ec3-818f-134c1325d499" name="Changes" comment="fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Members/Members.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Members/Members.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Main/Main.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Main/Main.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Members/EachUser/EachUser.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Members/EachUser/EachUser.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Members/Members.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Members/Members.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Members/MembersContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Members/MembersContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Regulations/Regulations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Regulations/Regulations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +96,7 @@
       <workItem from="1649586248037" duration="883000" />
       <workItem from="1649587193315" duration="8000" />
       <workItem from="1649587239555" duration="767000" />
-      <workItem from="1649597425975" duration="818000" />
+      <workItem from="1649597425975" duration="7900000" />
     </task>
     <task id="LOCAL-00001" summary="bundles">
       <created>1648810681068</created>
