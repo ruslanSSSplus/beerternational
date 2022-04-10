@@ -3,7 +3,6 @@ import {useDispatch, useSelector} from "react-redux";
 import {deleteMemberThunkCreater, getMembersThunkCreater} from "../../Redux/Reducers/membersReducer";
 import {Members} from "./Members";
 import {useNavigate} from "react-router-dom";
-import Preloader from "../../components/Preloader/Preloader";
 
 
 export const MembersContainer = (props) => {

@@ -6,6 +6,8 @@ import 'aos/dist/aos.css';
 import evgeniaPng from '../../assets/Pictures/evgenia.jpg'
 import cn from "classnames";
 import Preloader from "../../components/Preloader/Preloader";
+import nagrada from '../../assets/Pictures/nagrada.png'
+
 
 export const Members = (props) => {
 
@@ -42,8 +44,8 @@ export const Members = (props) => {
             </div>
             <div className={classes.previos}>
                 <p> Предыдущие результаты</p>
-                <p className={classes.beerint}> THE<br/> BEERTERNATIONAL<br/> 2021</p>
-                <p><span className={classes.timur}> Тимур - 6 минут</span><br/>
+                <p className={classes.beerint}> The<br/> Beerternational<br/> 2021</p>
+                <p><span className={classes.timur}> <img src={nagrada} className={classes.nagrada} alt={'nagrada'}/> Тимур - 6 минут</span><br/>
                     <span className={classes.others}>
                        Руслан - 8 минут<br/>
                    Максим - 10 минут<br/>

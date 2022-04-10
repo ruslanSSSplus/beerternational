@@ -8,6 +8,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css';
 
 
+
 export const Regulations = (props) => {
 
 
@@ -46,10 +47,10 @@ export const Regulations = (props) => {
                     </p>
                 <p data-aos="zoom-in">
                 <span className={classes.light }>Основания для дисквалификации: </span><br />
-                Не успеть выпить пиво за 3 минуты<br />
-                Отказаться пить<br />
-                Проблеваться<br />
-                Уснуть<br />
+                    ∙ Не успеть выпить пиво за 3 минуты<br />
+                    ∙ Отказаться пить<br />
+                    ∙ Проблеваться<br />
+                    ∙ Уснуть<br />
                     </p>
                 <p data-aos="zoom-in">
                 После окончания пяти раундов - турнир завершается. <br />

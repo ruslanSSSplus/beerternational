@@ -6,8 +6,7 @@
       <change beforePath="$PROJECT_DIR$/src/Pages/Members/Members.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Members/Members.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Members/Members.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Members/Members.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Members/MembersContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Members/MembersContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/Pictures/logoGenaNight.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Pictures/logoGenaNight.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Preloader/Prealoader.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Preloader/Prealoader.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Regulations/Regulations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Regulations/Regulations.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +36,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../backbeerint" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -92,7 +91,10 @@
       <workItem from="1649356939979" duration="677000" />
       <workItem from="1649512208066" duration="3246000" />
       <workItem from="1649520235264" duration="9753000" />
-      <workItem from="1649586248037" duration="656000" />
+      <workItem from="1649586248037" duration="883000" />
+      <workItem from="1649587193315" duration="8000" />
+      <workItem from="1649587239555" duration="767000" />
+      <workItem from="1649597425975" duration="818000" />
     </task>
     <task id="LOCAL-00001" summary="bundles">
       <created>1648810681068</created>
