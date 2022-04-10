@@ -1,11 +1,11 @@
-.spiner{
+.spiner {
     margin-top: 100px;
     margin-left: 180px;
     height: 100px;
     width: 100px;
     border: 5px solid rgba(150, 150, 150, 0.2);
     border-radius: 100px;
-    border-top-color: rgba(150, 150, 150) ;
+    border-top-color: #e3cd93;
     animation: rotate 2s 0s infinite ease-in-out;
 }
 
@@ -13,7 +13,7 @@
     0% {
         transform: rotate(0);
     }
-    100%{
+    100% {
         transform: rotate(360deg);
     }
 }

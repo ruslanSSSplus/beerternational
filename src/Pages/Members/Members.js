@@ -29,7 +29,7 @@ export const Members = (props) => {
             <div className={cn({
                 [classes.logoDay]: props.theme === true
             }, classes.logoNight)}>
-                The Beerternational 2
+                The  Beerternational 2
             </div>
 
             <div className={classes.commentator}>
