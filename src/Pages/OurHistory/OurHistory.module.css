@@ -119,6 +119,20 @@
     height: 20px;
 }
 
+.audioBlockInside{
+    color: #e3cd93;
+    font-size: 15px;
+    margin-left: 35px;
+    background-color: gray;
+    width: 200px;
+    height: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+
 
 .firstLine {
     display: grid;

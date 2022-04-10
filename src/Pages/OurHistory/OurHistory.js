@@ -83,12 +83,11 @@ export const OurHistory = (props) => {
                               className={classes.picture}
                               onClick={()=>openPicture()}
                     /></div>
-                    <div>
-                        <img src={aud} className={classes.audio1} onClick={()=> soundClickFirst(member)} alt={'audio'}/>
-                    </div>
-                    <div>
-                        <img src={aud} className={classes.audio2} onClick={()=> soundClickSecond(member)} alt={'audio'}/>
-                    </div>
+                        {/*<img src={aud} className={classes.audio1} onClick={()=> soundClickFirst(member)} alt={'audio'}/>*/}
+                        <div className={classes.audioBlockInside} onClick={()=> soundClickFirst(member)}> я хороший я хороший </div>
+                        {/*<img src={aud} className={classes.audio2} onClick={()=> soundClickSecond(member)} alt={'audio'}/>*/}
+                        <div className={classes.audioBlockInside} onClick={()=> soundClickSecond(member)}> я хороший я хороший </div>
+
                     <img alt={'close'} className={classes.close} onClick={() => closeBundle()}
                          src={closeElement}/>
                 </div> : null}
