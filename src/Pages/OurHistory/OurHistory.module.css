@@ -121,7 +121,7 @@
 
 .audioBlockInside{
     color: #e3cd93;
-    font-size: 15px;
+    font-size: 16px;
     margin-left: 35px;
     background-color: gray;
     width: 200px;
@@ -129,7 +129,9 @@
     border-radius: 10px;
     cursor: pointer;
 }
-
+.dinamik{
+    width: 15px;
+}
 
 
 

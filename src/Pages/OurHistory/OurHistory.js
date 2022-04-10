@@ -4,6 +4,8 @@ import {arrayOfMembers} from "./legendsMassive";
 import closeElement from '../../assets/Pictures/close.png'
 import {useDispatch, useSelector} from "react-redux";
 
+import dinamik from '../../assets/Pictures/DINAMIK.png'
+
 import logoGenaNight from "../../assets/Pictures/logoGenaNight.png"
 import logoTimurNight from "../../assets/Pictures/logoTimurNight.png"
 import logoPashaNight from "../../assets/Pictures/logoPashaNight.png"
@@ -45,12 +47,11 @@ export const OurHistory = (props) => {
     }, [])
 
 
-
-    const openPicture = () =>{
+    const openPicture = () => {
         dispatch(actions.putIsBigPicture(true))
     }
 
-    const closePng= ()=>{
+    const closePng = () => {
         dispatch(actions.putIsBigPicture(false))
     }
 
@@ -81,38 +82,56 @@ export const OurHistory = (props) => {
                               className={classes.logo}/></div>
                     <div><img src={arrayOfMembers[member].picture} alt={'wallPaper'}
                               className={classes.picture}
-                              onClick={()=>openPicture()}
+                              onClick={() => openPicture()}
                     /></div>
-                        {/*<img src={aud} className={classes.audio1} onClick={()=> soundClickFirst(member)} alt={'audio'}/>*/}
-                        <div className={classes.audioBlockInside} onClick={()=> soundClickFirst(member)}> я хороший я хороший </div>
-                        {/*<img src={aud} className={classes.audio2} onClick={()=> soundClickSecond(member)} alt={'audio'}/>*/}
-                        <div className={classes.audioBlockInside} onClick={()=> soundClickSecond(member)}> я хороший я хороший </div>
+                    {/*<img src={aud} className={classes.audio1} onClick={()=> soundClickFirst(member)} alt={'audio'}/>*/}
+                    <div className={classes.audioBlockInside} onClick={() => soundClickFirst(member)}><img src={dinamik}
+                                                                                                           className={classes.dinamik}
+                                                                                                           alt={'din'}/> я
+                        хороший я хороший
+                    </div>
+                    {/*<img src={aud} className={classes.audio2} onClick={()=> soundClickSecond(member)} alt={'audio'}/>*/}
+                    <div className={classes.audioBlockInside} onClick={() => soundClickSecond(member)}><img
+                        src={dinamik}
+                        className={classes.dinamik}
+                        alt={'din'}/> я хороший я хороший
+                    </div>
 
                     <img alt={'close'} className={classes.close} onClick={() => closeBundle()}
                          src={closeElement}/>
                 </div> : null}
 
             <div className={classes.firstLine}>
-                <div><img src={props.theme ? logoKeksDay : logoKeksNight} onClick={() => chooseBundle(0)} alt={'bundle'} className={classes.bundle}/>
+                <div><img src={props.theme ? logoKeksDay : logoKeksNight} onClick={() => chooseBundle(0)} alt={'bundle'}
+                          className={classes.bundle}/>
                 </div>
-                <div><img src={props.theme ? logoGenaDay : logoGenaNight} onClick={() => chooseBundle(1)} alt={'bundle'} className={classes.bundle}/>
+                <div><img src={props.theme ? logoGenaDay : logoGenaNight} onClick={() => chooseBundle(1)} alt={'bundle'}
+                          className={classes.bundle}/>
                 </div>
-                <div><img src={props.theme ? logoPashaDay : logoPashaNight} onClick={() => chooseBundle(2)} alt={'bundle'} className={classes.bundle}/>
+                <div><img src={props.theme ? logoPashaDay : logoPashaNight} onClick={() => chooseBundle(2)}
+                          alt={'bundle'} className={classes.bundle}/>
                 </div>
-                <div><img src={props.theme ? logoTimurDay : logoTimurNight} onClick={() => chooseBundle(3)} alt={'bundle'} className={classes.bundle}/>
+                <div><img src={props.theme ? logoTimurDay : logoTimurNight} onClick={() => chooseBundle(3)}
+                          alt={'bundle'} className={classes.bundle}/>
                 </div>
 
-                <div><img src={props.theme ? logoMikeDay : logoMikeNight} onClick={() => chooseBundle(4)} alt={'bundle'} className={classes.bundle}/>
+                <div><img src={props.theme ? logoMikeDay : logoMikeNight} onClick={() => chooseBundle(4)} alt={'bundle'}
+                          className={classes.bundle}/>
                 </div>
-                <div><img src={props.theme ? logoMaksDay : logoMaksNight} onClick={() => chooseBundle(5)} alt={'bundle'} className={classes.bundle}/>
+                <div><img src={props.theme ? logoMaksDay : logoMaksNight} onClick={() => chooseBundle(5)} alt={'bundle'}
+                          className={classes.bundle}/>
                 </div>
-                <div><img src={props.theme ? logoRuslanDay : logoRuslanNight} onClick={() => chooseBundle(6)} alt={'bundle'} className={classes.bundle}/>
+                <div><img src={props.theme ? logoRuslanDay : logoRuslanNight} onClick={() => chooseBundle(6)}
+                          alt={'bundle'} className={classes.bundle}/>
                 </div>
-                <div><img src={props.theme ? logoSergeyDay : logoSergeyNight} onClick={() => chooseBundle(7)} alt={'bundle'} className={classes.bundle}/></div>
+                <div><img src={props.theme ? logoSergeyDay : logoSergeyNight} onClick={() => chooseBundle(7)}
+                          alt={'bundle'} className={classes.bundle}/></div>
             </div>
-            {bigPicture ? <button className={classes.openedPicture} onClick={()=> closePng() }> <img src={arrayOfMembers[member].picture} alt={'pic'}
-            className={classes.bigPicture}/> <img  alt={'close'} src={closeElement} className={classes.close}/> </button>
-            :null}
+            {bigPicture ? <button className={classes.openedPicture} onClick={() => closePng()}><img
+                    src={arrayOfMembers[member].picture} alt={'pic'}
+                    className={classes.bigPicture}/> <img alt={'close'} src={closeElement} className={classes.close}/>
+                </button>
+                : null}
         </div>
 
 
