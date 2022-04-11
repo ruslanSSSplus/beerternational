@@ -47,10 +47,10 @@ export const arrayOfMembers = [{
     logo: logoKeks,
     picture: nikitaWall,
 }, {
-    audioFirst: ['Ну я пока бутерброд...', genaAudioFirst],
-    audioSecond: ['Год на кухне просто...', genaAudioSecond],
-    logo: logoGena,
-    picture: genaWall,
+    audioFirst: ['Ты как звездочку...', ruslanAudioFirst],
+    audioSecond: ['Слышь чурка ебучая...', ruslanAudioSecond],
+    logo: logoRuslan,
+    picture: ruslanWall,
 }, {
     audioFirst: ['Сдохни мразь...', pavelAudioFirst],
     audioSecond: ['Да я тебя похороню...', pavelAudioSecond],
@@ -72,10 +72,10 @@ export const arrayOfMembers = [{
     logo: logoMaks,
     picture: maxWall,
 }, {
-    audioFirst: ['Ты как звездочку...', ruslanAudioFirst],
-    audioSecond: ['Слышь чурка ебучая...', ruslanAudioSecond],
-    logo: logoRuslan,
-    picture: ruslanWall,
+    audioFirst: ['Ну я пока бутерброд...', genaAudioFirst],
+    audioSecond: ['Год на кухне просто...', genaAudioSecond],
+    logo: logoGena,
+    picture: genaWall,
 }, {
     audioFirst: ['Ладно, ебашь', sergeyAudioFirst],
     audioSecond: ['Зачем я это...', sergeyAudioSecond],

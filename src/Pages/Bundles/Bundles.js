@@ -97,25 +97,31 @@ export const Bundles = (props) => {
                 <div><img src={props.theme ? logoKeksDay : logoKeksNight} onClick={() => chooseBundle(0)} alt={'bundle'}
                           className={classes.bundle}/>
                 </div>
-                <div><img src={props.theme ? logoGenaDay : logoGenaNight} onClick={() => chooseBundle(1)} alt={'bundle'}
-                          className={classes.bundle}/>
+
+
+                <div><img src={props.theme ? logoRuslanDay : logoRuslanNight} onClick={() => chooseBundle(1)}
+                          alt={'bundle'} className={classes.bundle}/>
                 </div>
                 <div><img src={props.theme ? logoPashaDay : logoPashaNight} onClick={() => chooseBundle(2)}
                           alt={'bundle'} className={classes.bundle}/>
                 </div>
+
                 <div><img src={props.theme ? logoTimurDay : logoTimurNight} onClick={() => chooseBundle(3)}
                           alt={'bundle'} className={classes.bundle}/>
                 </div>
 
-                <div><img src={props.theme ? logoMikeDay : logoMikeNight} onClick={() => chooseBundle(4)} alt={'bundle'}
+                <div><img src={props.theme ? logoMikeDay : logoMikeNight} onClick={() => chooseBundle(4)}
+                          alt={'bundle'}
                           className={classes.bundle}/>
                 </div>
-                <div><img src={props.theme ? logoMaksDay : logoMaksNight} onClick={() => chooseBundle(5)} alt={'bundle'}
+                <div><img src={props.theme ? logoMaksDay : logoMaksNight} onClick={() => chooseBundle(5)}
+                          alt={'bundle'}
                           className={classes.bundle}/>
                 </div>
-                <div><img src={props.theme ? logoRuslanDay : logoRuslanNight} onClick={() => chooseBundle(6)}
-                          alt={'bundle'} className={classes.bundle}/>
+                <div><img src={props.theme ? logoGenaDay : logoGenaNight} onClick={() => chooseBundle(6)} alt={'bundle'}
+                          className={classes.bundle}/>
                 </div>
+
                 <div><img src={props.theme ? logoSergeyDay : logoSergeyNight} onClick={() => chooseBundle(7)}
                           alt={'bundle'} className={classes.bundle}/></div>
             </div>
