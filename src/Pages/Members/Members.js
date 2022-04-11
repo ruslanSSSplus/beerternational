@@ -20,7 +20,7 @@ export const Members = (props) => {
     const evgenia = {
         photo: evgeniaPng,
         name: 'Евгения',
-        beer: 'Сидр',
+        beer: 'Cидр chester',
         social: 'https://vk.com/evgeniasims'
     }
 
@@ -31,7 +31,7 @@ export const Members = (props) => {
             <div className={cn({
                 [classes.logoDay]: props.theme === true
             }, classes.logoNight)}>
-                The  Beerternational 2
+                The Beerternational 2
             </div>
 
             <div className={classes.commentator}>
@@ -58,7 +58,7 @@ export const Members = (props) => {
             </div>
 
             <div className={classes.content}>
-                <div className={classes.spisok} onClick={()=> props.loginization()}>
+                <div className={classes.spisok} onClick={() => props.loginization()}>
                     Список участников
                 </div>
                 <div className={props.theme ? classes.dayUsers : classes.nightUsers}>

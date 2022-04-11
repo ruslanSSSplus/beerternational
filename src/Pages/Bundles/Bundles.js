@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import classes from './OurHistory.module.css'
+import classes from './Bundles.module.css'
 import {arrayOfMembers} from "./legendsMassive";
 import closeElement from '../../assets/Pictures/close.png'
 import {useDispatch, useSelector} from "react-redux";
@@ -25,19 +25,18 @@ import logoRuslanDay from "../../assets/Pictures/logoRuslanDay.png"
 import logoSergeyDay from "../../assets/Pictures/logoSergeyDay.png"
 
 
-import aud from '../../assets/Pictures/audioBETA.png'
 import {
     actions,
     chooseBundleThunkCreater,
     cleanDataThunkCreater,
     closeBundleThunkCreater
-} from "../../Redux/Reducers/historyReducer";
+} from "../../Redux/Reducers/bundlesReducer";
 
 
-export const OurHistory = (props) => {
+export const Bundles = (props) => {
 
     const dispatch = useDispatch()
-    const {member, isOpen, closing, bigPicture} = useSelector((state) => state.history)
+    const {member, isOpen, closing, bigPicture} = useSelector((state) => state.bundles)
 
     useEffect(() => {
 
@@ -64,12 +63,12 @@ export const OurHistory = (props) => {
 
     const soundClickFirst = (who) => {
         let audio = new Audio()
-        audio.src = arrayOfMembers[who].audioFirst
+        audio.src = arrayOfMembers[who].audioFirst[1]
         audio.autoplay = true
     }
     const soundClickSecond = (who) => {
         let audio = new Audio()
-        audio.src = arrayOfMembers[who].audioSecond
+        audio.src = arrayOfMembers[who].audioSecond[1]
         audio.autoplay = true
     }
 
@@ -87,14 +86,13 @@ export const OurHistory = (props) => {
                     {/*<img src={aud} className={classes.audio1} onClick={()=> soundClickFirst(member)} alt={'audio'}/>*/}
                     <div className={classes.audioBlockInside} onClick={() => soundClickFirst(member)}><img src={dinamik}
                                                                                                            className={classes.dinamik}
-                                                                                                           alt={'din'}/> я
-                        хороший я хороший
+                                                                                                           alt={'din'}/> {arrayOfMembers[member].audioFirst[0]}
                     </div>
                     {/*<img src={aud} className={classes.audio2} onClick={()=> soundClickSecond(member)} alt={'audio'}/>*/}
                     <div className={classes.audioBlockInside} onClick={() => soundClickSecond(member)}><img
                         src={dinamik}
                         className={classes.dinamik}
-                        alt={'din'}/> я хороший я хороший
+                        alt={'din'}/> {arrayOfMembers[member].audioSecond[0]}
                     </div>
 
                     <img alt={'close'} className={classes.close} onClick={() => closeBundle()}

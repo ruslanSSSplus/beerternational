@@ -13,7 +13,7 @@ let initialState = {
 }
 
 
-const historyReducer = (state = initialState, action) => {
+const bundlesReducer = (state = initialState, action) => {
     switch (action.type) {
         case MEMBER:
             return {...state, member: action.member}
@@ -82,4 +82,4 @@ export const actions = {
 }
 
 
-export default historyReducer;
+export default bundlesReducer;

@@ -3,14 +3,14 @@ import thunkMiddleware from 'redux-thunk'
 import loginReducer from "./Reducers/loginReducer";
 import membersReducer from "./Reducers/membersReducer";
 import invitePageReducer from "./Reducers/invitePageReducer";
-import historyReducer from "./Reducers/historyReducer";
+import bundlesReducer from "./Reducers/bundlesReducer";
 
 
 let rootReducer = combineReducers({
     login: loginReducer,
     members: membersReducer,
     invitePage: invitePageReducer,
-    history: historyReducer
+    bundles: bundlesReducer
 })
 
 

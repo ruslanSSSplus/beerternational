@@ -26,9 +26,9 @@ export const AllLinks = ({theme, changeTheme}) => {
             [classes.dayMembers]: theme === true
         }, classes.nightMembers)}>Участники</Link>
 
-        <Link to='/OurHistory' className={cn({
+        <Link to='/Bundles' className={cn({
             [classes.dayOurHistory]: theme === true
-        }, classes.nightOurHistory)}>История</Link>
+        }, classes.nightOurHistory)}>Бандлы</Link>
 
         <Link to='/Regulations' className={cn({
             [classes.dayRegulations]: theme === true
