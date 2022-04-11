@@ -18,8 +18,7 @@ const App = () => {
         setTheme(!theme)
     }
 
-    return (
-        <div className={cn({
+    return (<div className={cn({
             [classes.day]: theme === true
         }, classes.night)}>
 
@@ -29,8 +28,7 @@ const App = () => {
                 <AllRoutes theme={theme}/>
             </Content>
 
-        </div>
-    );
+        </div>);
 }
 
 

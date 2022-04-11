@@ -15,8 +15,6 @@
 }
 
 
-
-
 .all {
     display: grid;
     grid-template-areas:
@@ -119,7 +117,7 @@
     height: 20px;
 }
 
-.audioBlockInside{
+.audioBlockInside {
     color: #e3cd93;
     font-size: 16px;
     margin-left: 35px;
@@ -132,18 +130,18 @@
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
 }
-.audioBlockInside:hover{
+
+.audioBlockInside:hover {
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
     transform: scale(1.05);
 }
-.dinamik{
+
+.dinamik {
     margin-bottom: 3px;
     width: 15px;
     margin-left: 5px;
 }
-
-
 
 
 .firstLine {
@@ -157,7 +155,6 @@
     width: 100%;
     text-align: center;
 }
-
 
 
 .bundle {

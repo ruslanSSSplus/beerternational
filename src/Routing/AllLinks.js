@@ -12,13 +12,13 @@ import DM_DARK from "../assets/Pictures/DM_DARK.png";
 export const AllLinks = ({theme, changeTheme}) => {
 
 
-    return ( <div className={classes.menu}>
+    return (<div className={classes.menu}>
 
         <Link to="/Main" className={cn({
             [classes.dayMain]: theme === true
         }, classes.nightMain)}>
             <img alt={'logo'}
-                 src = {theme ? svetl : temn }  className={classes.logo}
+                 src={theme ? svetl : temn} className={classes.logo}
             />
         </Link>
 
@@ -35,12 +35,12 @@ export const AllLinks = ({theme, changeTheme}) => {
         }, classes.nightRegulations)}>Правила</Link>
 
         <div className={classes.gena}>
-            <a href={'https://vk.com/clubgenafond'} className={classes.gena2} >
+            <a href={'https://vk.com/clubgenafond'} className={classes.gena2}>
                 <img className={classes.icon}
                      alt={'icon'}
-                     src={VK}/> GenaFond  </a>
-    </div>
-            <img src={theme ? DM_LIGHT :DM_DARK} className={classes.dayNight} onClick={() => changeTheme()} alt={'theme'}/>
+                     src={VK}/> GenaFond </a>
         </div>
-    );
+        <img src={theme ? DM_LIGHT : DM_DARK} className={classes.dayNight} onClick={() => changeTheme()}
+             alt={'theme'}/>
+    </div>);
 }

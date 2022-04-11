@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cherish&family=Raleway:wght@200;300&display=swap');
 
 
-
 .allDay {
     color: white;
 }
@@ -16,7 +15,7 @@
     'c m'
     'c p';
     grid-template-columns: 50% 50%;
-    grid-template-rows: 150px 500px 1fr ;
+    grid-template-rows: 150px 500px 1fr;
     animation-name: animereveal;
     animation-duration: 1s;
 }
@@ -29,7 +28,8 @@
         opacity: 1;
     }
 }
-.logoNight{
+
+.logoNight {
 
     text-align: center;
     font-family: 'Cherish', cursive;
@@ -39,7 +39,8 @@
     width: 100%;
     background-image: linear-gradient(to right, transparent, #e3cd93, transparent);
 }
-.logoDay{
+
+.logoDay {
     color: white;
 }
 
@@ -51,9 +52,11 @@
     font-weight: 300;
     margin-top: 35px;
 }
-.com{
-    margin-left: 20% ;
+
+.com {
+    margin-left: 20%;
 }
+
 .previos {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
@@ -67,38 +70,45 @@
     grid-template-areas:
      'n'
     's';
-    grid-template-rows: 160px 1fr ;
+    grid-template-rows: 160px 1fr;
     grid-area: c;
     margin-top: 35px;
 }
-.spisok{
-    margin-left: 20% ;
+
+.spisok {
+    margin-left: 20%;
     font-size: 40px;
     color: #e3cd93;
 
 }
-.nightUsers{
+
+.nightUsers {
     color: white;
-    margin-left: 14% ;
+    margin-left: 14%;
 }
-.dayUsers{
+
+.dayUsers {
     color: #1d1d1d;
-    margin-left: 14% ;
+    margin-left: 14%;
 }
-.others{
+
+.others {
     font-family: 'Raleway', sans-serif;
     font-weight: 200;
     font-size: 25px;
     line-height: 48px;
 }
-.beerint{
+
+.beerint {
     line-height: 51px;
     font-size: 50px;
 }
-.timur{
+
+.timur {
     line-height: 48px;
     font-size: 40px;
 }
-.nagrada{
+
+.nagrada {
 
 }

@@ -10,15 +10,13 @@ import {Login} from "../Pages/Login/Login";
 export const AllRoutes = ({theme}) => {
 
 
-    return (
-        <Routes>
-            <Route path="/" element={<Navigate replace to="/Main"/>}/>
-            <Route path='/Main' element={<Main theme={theme}/>}> </Route>
-            <Route path='/Bundles' element={<Bundles theme={theme}/>}> </Route>
-            <Route path='/Members' element={<MembersContainer theme={theme}/>}> </Route>
-            <Route path='/Regulations' element={<Regulations theme={theme}/>}> </Route>
-            <Route path='/Login' element={<Login theme={theme}/>}> </Route>
-            {/*<Route path='/InvitePage' element={<InvitePage theme={theme}/>}> </Route>*/}
-        </Routes>
-    );
+    return (<Routes>
+        <Route path="/" element={<Navigate replace to="/Main"/>}/>
+        <Route path='/Main' element={<Main theme={theme}/>}> </Route>
+        <Route path='/Bundles' element={<Bundles theme={theme}/>}> </Route>
+        <Route path='/Members' element={<MembersContainer theme={theme}/>}> </Route>
+        <Route path='/Regulations' element={<Regulations theme={theme}/>}> </Route>
+        <Route path='/Login' element={<Login theme={theme}/>}> </Route>
+        {/*<Route path='/InvitePage' element={<InvitePage theme={theme}/>}> </Route>*/}
+    </Routes>);
 }

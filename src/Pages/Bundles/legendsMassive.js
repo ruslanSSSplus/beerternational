@@ -41,53 +41,44 @@ import ruslanWall from '../../assets/Pictures/ruslanWall.png'
 import sergeyWall from '../../assets/Pictures/sergeyWall.png'
 
 
-export const arrayOfMembers = [
-    {
-        audioFirst: ['Я твою мать на бал...', nikitaAudioFirst],
-        audioSecond: ['Пачка чапмана, а не...', nikitaAudioSecond],
-        logo: logoKeks,
-        picture: nikitaWall,
-    },
-    {
-        audioFirst: ['Ну я пока бутерброд...', genaAudioFirst],
-        audioSecond: ['Год на кухне просто...', genaAudioSecond],
-        logo: logoGena,
-        picture: genaWall,
-    },
-    {
-        audioFirst: ['Сдохни мразь...', pavelAudioFirst],
-        audioSecond: ['Да я тебя похороню...', pavelAudioSecond],
-        logo: logoPasha,
-        picture: pashaWall,
-    },
-    {
-        audioFirst: ['Я жду голосовые...', timurAudioFirst],
-        audioSecond: ['Респект бро', timurAudioSecond],
-        logo: logoTimur,
-        picture: timurWall,
-    },
-    {
-        audioFirst: ['Гадза', mikeAudioFirst],
-        audioSecond: ['Пошла ты нахуй и...', mikeAudioSecond],
-        logo: logoMike,
-        picture: mikeWall,
-    },
-    {
-        audioFirst: ['AAAAAAAA', maxAudioFirst],
-        audioSecond: ['Хуй малафья пизда', maxAudioSecond],
-        logo: logoMaks,
-        picture: maxWall,
-    },
-    {
-        audioFirst: ['Ты как звездочку...', ruslanAudioFirst],
-        audioSecond: ['Слышь чурка ебучая...', ruslanAudioSecond],
-        logo: logoRuslan,
-        picture: ruslanWall,
-    },
-    {
-        audioFirst: ['Ладно, ебашь', sergeyAudioFirst],
-        audioSecond: ['Зачем я это...', sergeyAudioSecond],
-        logo: logoSergey,
-        picture: sergeyWall,
-    },
-]
+export const arrayOfMembers = [{
+    audioFirst: ['Я твою мать на бал...', nikitaAudioFirst],
+    audioSecond: ['Пачка чапмана, а не...', nikitaAudioSecond],
+    logo: logoKeks,
+    picture: nikitaWall,
+}, {
+    audioFirst: ['Ну я пока бутерброд...', genaAudioFirst],
+    audioSecond: ['Год на кухне просто...', genaAudioSecond],
+    logo: logoGena,
+    picture: genaWall,
+}, {
+    audioFirst: ['Сдохни мразь...', pavelAudioFirst],
+    audioSecond: ['Да я тебя похороню...', pavelAudioSecond],
+    logo: logoPasha,
+    picture: pashaWall,
+}, {
+    audioFirst: ['Я жду голосовые...', timurAudioFirst],
+    audioSecond: ['Респект бро', timurAudioSecond],
+    logo: logoTimur,
+    picture: timurWall,
+}, {
+    audioFirst: ['Гадза', mikeAudioFirst],
+    audioSecond: ['Пошла ты нахуй и...', mikeAudioSecond],
+    logo: logoMike,
+    picture: mikeWall,
+}, {
+    audioFirst: ['AAAAAAAA', maxAudioFirst],
+    audioSecond: ['Хуй малафья пизда', maxAudioSecond],
+    logo: logoMaks,
+    picture: maxWall,
+}, {
+    audioFirst: ['Ты как звездочку...', ruslanAudioFirst],
+    audioSecond: ['Слышь чурка ебучая...', ruslanAudioSecond],
+    logo: logoRuslan,
+    picture: ruslanWall,
+}, {
+    audioFirst: ['Ладно, ебашь', sergeyAudioFirst],
+    audioSecond: ['Зачем я это...', sergeyAudioSecond],
+    logo: logoSergey,
+    picture: sergeyWall,
+},]

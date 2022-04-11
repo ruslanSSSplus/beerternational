@@ -7,9 +7,7 @@ const PUT_IS_SEND = 'INVITE/PUT_IS_SEND';
 
 
 let initialState = {
-    avatar: avaDefault,
-    isSend: false,
-    data: null
+    avatar: avaDefault, isSend: false, data: null
 }
 
 
@@ -52,16 +50,11 @@ export const submitThunkCreater = (name, beer, social, avatar) => {
 
 export const actions = {
     putPhoto: (photo) => ({
-        type: PUT_PHOTO,
-        photo,
-    }),
-    putData: (data) => ({
-        type: PUT_DATA,
-        data,
-    }),
-    putIsSend: (data) => ({
-        type: PUT_IS_SEND,
-        data,
+        type: PUT_PHOTO, photo,
+    }), putData: (data) => ({
+        type: PUT_DATA, data,
+    }), putIsSend: (data) => ({
+        type: PUT_IS_SEND, data,
     }),
 }
 

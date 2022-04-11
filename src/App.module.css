@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Raleway:wght@200;300&display=swap');
 
 
-
-
-
 .night {
     height: 100%;
     width: 100%;
@@ -18,6 +15,7 @@
 'c';
     grid-template-rows: 100px 1fr;
 }
+
 .day {
     background-color: white;
 }
@@ -30,7 +28,8 @@
     padding: 20px;
     display: flex;
 }
-.content{
+
+.content {
     grid-area: c;
 }
 
@@ -115,14 +114,17 @@
     color: black;
     box-shadow: 5px 5px 5px #c7b68b;
 }
-.gena2{
+
+.gena2 {
 
     font-size: 30px;
     color: black;
 }
-.gena2:hover{
+
+.gena2:hover {
     color: black;
 }
+
 .dayNight {
     cursor: pointer;
     height: 50px;
@@ -140,7 +142,7 @@
 }
 
 
-.logo{
+.logo {
     height: 70px;
     width: 70px;
 }

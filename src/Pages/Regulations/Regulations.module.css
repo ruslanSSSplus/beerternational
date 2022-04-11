@@ -1,5 +1,4 @@
 
-
 .all {
     display: grid;
 
@@ -13,17 +12,17 @@
 }
 
 @keyframes animereveal {
-    from{
+    from {
         opacity: 0;
     }
-    to{
+    to {
         opacity: 1;
     }
 }
-.allDay{
+
+.allDay {
     color: white;
 }
-
 
 
 .info {
@@ -33,34 +32,38 @@
   'g p b';
     grid-template-columns: 1fr 1fr 1fr;
 }
-.jpg{
+
+.jpg {
     grid-area: l;
     width: 100%;
 }
 
-.gen{
+.gen {
     margin-top: 300px;
     width: 100%;
     grid-area: g;
 }
-.pravila{
+
+.pravila {
     text-align: center;
-    font-size: 31px ;
+    font-size: 31px;
     grid-area: p;
     transform: translate(0px, 0px);
     transition: all 0.8s ease 0s;
 }
-.beer{
+
+.beer {
     margin-top: 300px;
     width: 100%;
     grid-area: b;
 }
-.reglament{
+
+.reglament {
     font-size: 50px;
     color: #e3cd93;
 }
-.light
-{
+
+.light {
 
     font-family: 'Raleway', sans-serif;
     font-weight: 300;

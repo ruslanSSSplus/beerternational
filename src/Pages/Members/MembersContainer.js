@@ -25,10 +25,8 @@ export const MembersContainer = (props) => {
         dispatch(getMembersThunkCreater())
     }, [])
 
-    return (
-        <div>
-            <Members members={members} deleteUser={deleteUser} theme={props.theme} isLogin={isLogin}
-                     isLoading={isLoading} loginization={loginization}/>}
-        </div>
-    )
+    return (<div>
+        <Members members={members} deleteUser={deleteUser} theme={props.theme} isLogin={isLogin}
+                 isLoading={isLoading} loginization={loginization}/>}
+    </div>)
 }

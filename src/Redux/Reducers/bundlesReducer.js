@@ -1,4 +1,3 @@
-
 const MEMBER = 'HISTORY/MEMBER';
 const IS_OPEN = 'HISTORY/IS_OPEN';
 const IS_CLOSING = 'HISTORY/IS_CLOSING';
@@ -6,10 +5,7 @@ const IS_BIG_PICTURE = 'HISTORY/IS_BIG_PICTURE';
 const CLEAN_DATA = 'HISTORY/CLEAN_DATA';
 
 let initialState = {
-    member: 0,
-    isOpen: false,
-    closing: false,
-    bigPicture: false
+    member: 0, isOpen: false, closing: false, bigPicture: false
 }
 
 
@@ -24,24 +20,22 @@ const bundlesReducer = (state = initialState, action) => {
         case IS_BIG_PICTURE:
             return {...state, bigPicture: action.data}
         case CLEAN_DATA:
-            return {...state,
-                member: 0,
-                isOpen: false,
-                closing: false,
-                bigPicture: false}
+            return {
+                ...state, member: 0, isOpen: false, closing: false, bigPicture: false
+            }
         default:
             return state;
     }
 }
 
 
-
 export const closeBundleThunkCreater = () => {
     return async (dispatch) => {
-    await dispatch(actions.putIsClosing(true))
-    setTimeout(() => dispatch(actions.putIsOpen(false)), 300)
-    setTimeout(() => dispatch(actions.putIsClosing(false)), 305)
-}}
+        await dispatch(actions.putIsClosing(true))
+        setTimeout(() => dispatch(actions.putIsOpen(false)), 300)
+        setTimeout(() => dispatch(actions.putIsClosing(false)), 305)
+    }
+}
 
 export const chooseBundleThunkCreater = (who) => {
     return async (dispatch) => {
@@ -53,7 +47,7 @@ export const chooseBundleThunkCreater = (who) => {
 }
 
 export const cleanDataThunkCreater = () => {
-    return  (dispatch) => {
+    return (dispatch) => {
         dispatch(actions.cleanData())
     }
 }
@@ -61,22 +55,14 @@ export const cleanDataThunkCreater = () => {
 
 export const actions = {
     putMember: (member) => ({
-        type: MEMBER,
-        member,
-    }),
-    putIsOpen: (data) => ({
-        type: IS_OPEN,
-        data,
-    }),
-    putIsClosing: (data) => ({
-        type: IS_CLOSING,
-        data,
-    }),
-    putIsBigPicture: (data) => ({
-        type: IS_BIG_PICTURE,
-        data,
-    }),
-    cleanData: () => ({
+        type: MEMBER, member,
+    }), putIsOpen: (data) => ({
+        type: IS_OPEN, data,
+    }), putIsClosing: (data) => ({
+        type: IS_CLOSING, data,
+    }), putIsBigPicture: (data) => ({
+        type: IS_BIG_PICTURE, data,
+    }), cleanData: () => ({
         type: CLEAN_DATA,
     }),
 }

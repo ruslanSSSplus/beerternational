@@ -18,14 +18,10 @@ export const Members = (props) => {
                                                     isLogin={props.isLogin}/>)
 
     const evgenia = {
-        photo: evgeniaPng,
-        name: 'Евгения',
-        beer: 'Cидр chester',
-        social: 'https://vk.com/evgeniasims'
+        photo: evgeniaPng, name: 'Евгения', beer: 'Cидр chester', social: 'https://vk.com/evgeniasims'
     }
 
-    return (
-        <div className={classes.all}>
+    return (<div className={classes.all}>
 
 
             <div className={cn({

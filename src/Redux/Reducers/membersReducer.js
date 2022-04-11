@@ -6,14 +6,12 @@ const DELETE_MEMBER = 'MEMBERS/DELETE_MEMBER';
 const IS_LOADING = 'MEMBERS/IS_LOADING';
 
 let initialState = {
-    members: [],
-    isLoading: true
+    members: [], isLoading: true
 }
 
 
-
 const membersReducer = (state = initialState, action) => {
-    switch (action.type){
+    switch (action.type) {
         case GET_MEMBERS:
             return {...state, members: action.members}
         case DELETE_MEMBER:
@@ -45,17 +43,12 @@ export const deleteMemberThunkCreater = (uid) => {
 
 
 export const actions = {
-    getMembers: (members)  => ({
-        type: GET_MEMBERS,
-        members,
-    }),
-    deleteMember: (members)  => ({
-        type: GET_MEMBERS,
-        members,
-    }),
-    isLoadingDone: (data)  => ({
-        type: IS_LOADING,
-        data
+    getMembers: (members) => ({
+        type: GET_MEMBERS, members,
+    }), deleteMember: (members) => ({
+        type: GET_MEMBERS, members,
+    }), isLoadingDone: (data) => ({
+        type: IS_LOADING, data
     })
 }
 

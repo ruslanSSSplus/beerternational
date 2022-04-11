@@ -21,15 +21,15 @@ export const InvitePageContainer = (props) => {
     }
 
     const onSubmit = async (values) => {
-       await dispatch(submitThunkCreater(values.name, values.beer, values.social, avatar))
+        await dispatch(submitThunkCreater(values.name, values.beer, values.social, avatar))
         setTimeout(redirect, 2000);
     }
-
 
 
     const redirect = () => {
         navigate('/Members');
     }
 
-    return ( <InvitePage onSubmit={onSubmit} close={props.close}  theme={props.theme} encodeImageFileAsURL={encodeImageFileAsURL} avatar={avatar} isSend={isSend} data={data} />);
+    return (<InvitePage onSubmit={onSubmit} close={props.close} theme={props.theme}
+                        encodeImageFileAsURL={encodeImageFileAsURL} avatar={avatar} isSend={isSend} data={data}/>);
 }

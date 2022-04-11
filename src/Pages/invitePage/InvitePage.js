@@ -12,7 +12,6 @@ import errorPng from '../../assets/Pictures/error.png'
 import cn from "classnames";
 
 
-
 export const InvitePage = (props) => {
 
 
@@ -23,11 +22,9 @@ export const InvitePage = (props) => {
 
     const validationSchema = Yup.object({
         name: Yup.string()
+            .required(<img alt={'error'} className={classes.error} src={errorPng}/>), beer: Yup.string()
+            .required(<img alt={'error'} className={classes.error} src={errorPng}/>), social: Yup.string()
             .required(<img alt={'error'} className={classes.error} src={errorPng}/>),
-        beer: Yup.string()
-            .required(<img alt={'error'} className={classes.error} src={errorPng}/>),
-        social: Yup.string()
-            .required(<img alt={'error'} className={classes.error} src={errorPng}/>) ,
     })
 
     const encodeImageFileAsURL = (element) => {
@@ -46,16 +43,17 @@ export const InvitePage = (props) => {
 
                 <div className={classes.content}>
                     <div><Field className={classes.field} placeholder={'Имя'} type='text' name='name'
-                                component='input' /><span><ErrorMessage name='name'/></span>
+                                component='input'/><span><ErrorMessage name='name'/></span>
                     </div>
                     <div><Field className={classes.field} placeholder={'Любимое пиво'}
                                 type='text' name='beer'
-                                component='input'/><span ><ErrorMessage name='beer'/></span>
+                                component='input'/><span><ErrorMessage name='beer'/></span>
                     </div>
                     <div><Field className={classes.field} placeholder={'VK'} type='text'
                                 name='social'
                                 component='input'/><span><ErrorMessage name='social'/></span></div>
-                    <div className={props.theme ? classes.responseDay : classes.responseNight}>{!props.data ? null : <p className={classes.response}> {props.data} </p>}</div>
+                    <div className={props.theme ? classes.responseDay : classes.responseNight}>{!props.data ? null :
+                        <p className={classes.response}> {props.data} </p>}</div>
                 </div>
                 <div className={cn({
                     [classes.pivoDay]: props.theme === true

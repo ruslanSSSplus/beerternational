@@ -26,10 +26,7 @@ import logoSergeyDay from "../../assets/Pictures/logoSergeyDay.png"
 
 
 import {
-    actions,
-    chooseBundleThunkCreater,
-    cleanDataThunkCreater,
-    closeBundleThunkCreater
+    actions, chooseBundleThunkCreater, cleanDataThunkCreater, closeBundleThunkCreater
 } from "../../Redux/Reducers/bundlesReducer";
 
 
@@ -44,7 +41,6 @@ export const Bundles = (props) => {
             dispatch(cleanDataThunkCreater())
         }
     }, [])
-
 
     const openPicture = () => {
         dispatch(actions.putIsBigPicture(true))
@@ -83,12 +79,10 @@ export const Bundles = (props) => {
                               className={classes.picture}
                               onClick={() => openPicture()}
                     /></div>
-                    {/*<img src={aud} className={classes.audio1} onClick={()=> soundClickFirst(member)} alt={'audio'}/>*/}
                     <div className={classes.audioBlockInside} onClick={() => soundClickFirst(member)}><img src={dinamik}
                                                                                                            className={classes.dinamik}
                                                                                                            alt={'din'}/> {arrayOfMembers[member].audioFirst[0]}
                     </div>
-                    {/*<img src={aud} className={classes.audio2} onClick={()=> soundClickSecond(member)} alt={'audio'}/>*/}
                     <div className={classes.audioBlockInside} onClick={() => soundClickSecond(member)}><img
                         src={dinamik}
                         className={classes.dinamik}
@@ -126,10 +120,9 @@ export const Bundles = (props) => {
                           alt={'bundle'} className={classes.bundle}/></div>
             </div>
             {bigPicture ? <button className={classes.openedPicture} onClick={() => closePng()}><img
-                    src={arrayOfMembers[member].picture} alt={'pic'}
-                    className={classes.bigPicture}/> <img alt={'close'} src={closeElement} className={classes.close}/>
-                </button>
-                : null}
+                src={arrayOfMembers[member].picture} alt={'pic'}
+                className={classes.bigPicture}/> <img alt={'close'} src={closeElement} className={classes.close}/>
+            </button> : null}
         </div>
 
 

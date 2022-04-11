@@ -8,8 +8,6 @@ import AOS from 'aos'
 import 'aos/dist/aos.css';
 
 
-
-
 export const Main = (props) => {
 
     AOS.init();
@@ -23,9 +21,8 @@ export const Main = (props) => {
     }
 
 
-    return (
-        <div className={classes.all}>
-            <div className={classes.content}  data-aos="fade-right"
+    return (<div className={classes.all}>
+            <div className={classes.content} data-aos="fade-right"
                  data-aos-anchor="#example-anchor"
                  data-aos-offset="500"
                  data-aos-duration="500">
@@ -36,33 +33,33 @@ export const Main = (props) => {
                         [classes.day]: props.theme === true
                     }, classes.nightSmall)}> Ежегодный пивной турнир среди членов клуба Genafond
                         возвращается! Запаситесь
-                        терпением и пивом,<br /> докажите вашим зависникам, что именно вы достойны звания чемпиона.<br /> Перепейте их,
+                        терпением и пивом,<br/> докажите вашим зависникам, что именно вы достойны звания
+                        чемпиона.<br/> Перепейте их,
                         перестреляйте или красиво сойдите с дистанции.
                     </p>
                     <p className={cn({
                         [classes.day]: props.theme === true
-                    }, classes.nightSmall)}> Успейте подать заявку и побороться за звание лучшего подпиваса 2022ого года.
-                        <br /> Ваша победа в вашем бокале!
+                    }, classes.nightSmall)}> Успейте подать заявку и побороться за звание лучшего подпиваса 2022ого
+                        года.
+                        <br/> Ваша победа в вашем бокале!
                     </p>
                     <button className={cn({
                         [classes.dayZayvka]: props.theme === true
-                    }, classes.nightZayvka)} onClick={()=> show()}>
+                    }, classes.nightZayvka)} onClick={() => show()}>
                         <p className={classes.invite}> Подать заявку </p>
-                   </button>
+                    </button>
+                </div>
             </div>
-            </div>
 
 
-           <img alt={'Pivo'}
-                  src={props.theme ? sveti : temn}
-                  className={classes.pivo}
-                />
+            <img alt={'Pivo'}
+                 src={props.theme ? sveti : temn}
+                 className={classes.pivo}
+            />
 
-            {isOpen ?
-                <div className={classes.inviteBlank}>
-                    <InvitePageContainer close={close} theme={props.theme}/>
-                </div> : null
-            }
+            {isOpen ? <div className={classes.inviteBlank}>
+                <InvitePageContainer close={close} theme={props.theme}/>
+            </div> : null}
         </div>
 
     )

@@ -12,13 +12,14 @@
     font-weight: 200;
 }
 
-.info{
+.info {
     font-size: 21px;
     Line-height: 30px;
     margin-top: 40px;
     grid-area: i;
 }
-.ava{
+
+.ava {
     border-radius: 100px;
     border: solid 2px #e3cd93;
     grid-area: a;
@@ -27,19 +28,24 @@
     margin-left: 50px;
     margin-top: 20px;
 }
-.name{
+
+.name {
 
 }
-.age{
+
+.age {
 
 }
-.social{
-  color: inherit;
-}
-.social:hover{
+
+.social {
     color: inherit;
 }
-.deleteUser{
+
+.social:hover {
+    color: inherit;
+}
+
+.deleteUser {
     color: red;
     font-size: 20px;
 }

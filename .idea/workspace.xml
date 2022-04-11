@@ -2,29 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8808b533-7d5b-4ec3-818f-134c1325d499" name="Changes" comment="fix">
-      <change afterPath="$PROJECT_DIR$/src/Pages/Bundles/legendsMassive.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/invitePageAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/invitePageAPI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/loginAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/loginAPI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/membersAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/membersAPI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Bundles/Bundles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Bundles/Bundles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Bundles/Bundles.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Bundles/Bundles.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Bundles/legendsMassive.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Bundles/legendsMassive.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Login/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Login/Login.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Login/Login.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Main/Main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Main/Main.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Main/Main.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Members/EachUser/EachUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Members/EachUser/EachUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Members/EachUser/EachUser.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Members/EachUser/EachUser.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Members/Members.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Members/Members.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/OurHistory/OurHistory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Bundles/Bundles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/OurHistory/OurHistory.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Bundles/Bundles.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/OurHistory/legendsMassive.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Reducers/historyReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducers/bundlesReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/reduxStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/reduxStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Members/Members.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Members/Members.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Members/MembersContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Members/MembersContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Regulations/Regulations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Regulations/Regulations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Regulations/Regulations.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Regulations/Regulations.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/invitePage/InvitePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/invitePage/InvitePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/invitePage/InvitePageContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/invitePage/InvitePageContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/invitePage/invitePage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/invitePage/invitePage.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Reducers/bundlesReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducers/bundlesReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Reducers/invitePageReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducers/invitePageReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Reducers/loginReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducers/loginReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Reducers/membersReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducers/membersReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Routing/AllLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routing/AllLinks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Routing/AllRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routing/AllRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/voices/genaAudioSecond.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/voices/maxAudioFirst.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/voices/maxAudioSecond.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/voices/nikitaAudioFirst.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/voices/nikitaAudioSecond.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/voices/pavelAudioFirst.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/voices/ruslanAudiaFirst.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/voices/sergeyAudioFirst.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/voices/timurAudioFirst.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/voices/timurAudioSecond.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +120,7 @@
       <workItem from="1649587239555" duration="767000" />
       <workItem from="1649597425975" duration="12283000" />
       <workItem from="1649677204105" duration="3842000" />
-      <workItem from="1649681087697" duration="831000" />
+      <workItem from="1649681087697" duration="1270000" />
     </task>
     <task id="LOCAL-00001" summary="bundles">
       <created>1648810681068</created>
