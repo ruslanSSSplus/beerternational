@@ -1,4 +1,4 @@
-Link to site https://ruslansssplus.github.io/beerternational/#/Main
+
 
 BackEnd is located on Heroku
 
