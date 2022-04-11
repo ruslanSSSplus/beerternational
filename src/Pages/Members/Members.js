@@ -3,7 +3,7 @@ import classes from './Members.module.css'
 import EachUser from './EachUser/EachUser'
 import AOS from "aos";
 import 'aos/dist/aos.css';
-import evgeniaPng from '../../assets/Pictures/evgenia.jpg'
+import evgeniaPng from '../../assets/Pictures/marin.png'
 import cn from "classnames";
 import Preloader from "../../components/Preloader/Preloader";
 import nagrada from '../../assets/Pictures/nagrada.png'
