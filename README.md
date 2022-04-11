@@ -1,5 +1,7 @@
 Link to site https://ruslansssplus.github.io/beerternational/#/Main
 
+BackEnd is located on Heroku
+
 Libraries i used
 
 1. react
@@ -21,8 +23,8 @@ Libraries i used
  
  To install you need
 
-use git clone
-write "npm i"
-wait a few seconds/minutes
-write "npm start"
-thats all
+1. use git clone
+2. write "npm i"
+3. wait a few seconds/minutes
+4. write "npm start"
+5. thats all
