@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8808b533-7d5b-4ec3-818f-134c1325d499" name="Changes" comment="bundlesd">
-      <change afterPath="$PROJECT_DIR$/src/Pages/Login/LoginForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pages/Login/http/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pages/Login/services/AuthService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pages/Login/services/UserService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Reducers/authReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_04_2022_16_55__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_04_2022_16_55__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Login/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/reduxStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/reduxStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Login/http/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Login/http/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +33,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../BeerBackAuth" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -90,7 +81,8 @@
       <workItem from="1649002011770" duration="3063000" />
       <workItem from="1649005483925" duration="207000" />
       <workItem from="1649016124346" duration="1732000" />
-      <workItem from="1649843801873" duration="4848000" />
+      <workItem from="1649843801873" duration="5799000" />
+      <workItem from="1649867027401" duration="2060000" />
     </task>
     <task id="LOCAL-00001" summary="bundles">
       <created>1648810681068</created>
