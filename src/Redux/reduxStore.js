@@ -4,13 +4,15 @@ import loginReducer from "./Reducers/loginReducer";
 import membersReducer from "./Reducers/membersReducer";
 import invitePageReducer from "./Reducers/invitePageReducer";
 import bundlesReducer from "./Reducers/bundlesReducer";
+import authReducer from "./Reducers/authReducer";
 
 
 let rootReducer = combineReducers({
     login: loginReducer,
     members: membersReducer,
     invitePage: invitePageReducer,
-    bundles: bundlesReducer
+    bundles: bundlesReducer,
+    auth: authReducer
 })
 
 
