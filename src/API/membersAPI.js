@@ -1,5 +1,5 @@
 export const getMembersAPI = () => {
-    return fetch('https://glacial-crag-96225.herokuapp.com/getUsers', {
+    return fetch('https://allbackbeer.herokuapp.com/getUsers', {
         method: 'GET', headers: {
             'Content-type': 'application/json',
         },
@@ -8,7 +8,7 @@ export const getMembersAPI = () => {
 }
 
 export const deleteMemberAPI = (uid) => {
-    return fetch('https://glacial-crag-96225.herokuapp.com/del', {
+    return fetch('https://allbackbeer.herokuapp.com/del', {
         method: 'POST', headers: {
             'Content-type': 'application/json',
 
