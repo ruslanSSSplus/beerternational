@@ -42,8 +42,8 @@ export const loginThunkCreater = (email, password) => {
     return async (dispatch) => {
         try {
             const response = await AuthService.login(email, password);
-            console.log(response)
             localStorage.setItem('token', response.data.accessToken);
+            localStorage.setItem('refresh', response.data.refreshToken);
             dispatch(actions.setAuth(true))
             dispatch(actions.setUser(response.data.user))
         } catch (e) {
@@ -58,6 +58,7 @@ export const registrationThunkCreater = (email, password) => {
             const response = await AuthService.registration(email, password);
             console.log(response)
             localStorage.setItem('token', response.data.accessToken);
+            localStorage.setItem('refresh', response.data.refreshToken);
             dispatch(actions.setAuth(true))
             dispatch(actions.setUser(response.data.user))
         } catch (e) {
@@ -83,9 +84,16 @@ export const checkAuthThunkCreater = () => {
     return async (dispatch) => {
         dispatch(actions.setIsLoading(true))
         try {
-            const response = await axios.get(`${API_URL}/refresh`, {withCredentials: true})
+            const response = await axios.post(`${API_URL}/refresh`, {refreshToken: localStorage.getItem('refresh') ,withCredentials: true})
+            // const response = await fetch(`${API_URL}/refresh`, {
+            //     method: 'POST', headers: {
+            //         'Content-type': 'application/json',
+            //         'Access-Control-Allow-Origin': '*',
+            //         'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS'
+            //     }, body: JSON.stringify(localStorage.getItem('refreshToken')) } )
             console.log(response);
             localStorage.setItem('token', response.data.accessToken);
+            localStorage.setItem('refresh', response.data.refreshToken);
             dispatch(actions.setAuth(true))
             dispatch(actions.setUser(response.data.user))
         } catch (e) {

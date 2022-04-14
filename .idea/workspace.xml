@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8808b533-7d5b-4ec3-818f-134c1325d499" name="Changes" comment="bundlesd">
+    <list default="true" id="8808b533-7d5b-4ec3-818f-134c1325d499" name="Changes" comment="fix">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_04_2022_16_06__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_04_2022_16_06__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_04_2022_1_03__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_04_2022_1_03__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Login/http/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Login/http/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Reducers/authReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducers/authReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +36,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../backAuth" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -41,11 +44,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\rusla\OneDrive\Desktop\beer\beerternational\src\Pages\Login" />
+      <recent name="C:\Users\ghoulSSSrank\Desktop\beerint\my-app\src\Redux" />
       <recent name="C:\Users\ghoulSSSrank\Desktop\beerint\my-app\src\Pages\Login" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\rusla\OneDrive\Desktop\beer\beerternational\src\assets" />
+      <recent name="C:\Users\ghoulSSSrank\Desktop\beerint\my-app\src\Redux\Reducers" />
       <recent name="C:\Users\rusla\OneDrive\Desktop\beer\beerternational\src\components" />
       <recent name="C:\Users\rusla\OneDrive\Desktop\beer\beerternational\src" />
     </key>
@@ -81,8 +84,23 @@
       <workItem from="1649002011770" duration="3063000" />
       <workItem from="1649005483925" duration="207000" />
       <workItem from="1649016124346" duration="1732000" />
-      <workItem from="1649843801873" duration="5799000" />
-      <workItem from="1649867027401" duration="2060000" />
+      <workItem from="1649142101679" duration="5438000" />
+      <workItem from="1649166283723" duration="8733000" />
+      <workItem from="1649184334730" duration="1530000" />
+      <workItem from="1649244376455" duration="601000" />
+      <workItem from="1649262584882" duration="3453000" />
+      <workItem from="1649356939979" duration="677000" />
+      <workItem from="1649512208066" duration="3246000" />
+      <workItem from="1649520235264" duration="9753000" />
+      <workItem from="1649586248037" duration="883000" />
+      <workItem from="1649587193315" duration="8000" />
+      <workItem from="1649587239555" duration="767000" />
+      <workItem from="1649597425975" duration="12283000" />
+      <workItem from="1649677204105" duration="3842000" />
+      <workItem from="1649681087697" duration="2339000" />
+      <workItem from="1649685070242" duration="1000" />
+      <workItem from="1649686176767" duration="1190000" />
+      <workItem from="1649692539660" duration="709000" />
     </task>
     <task id="LOCAL-00001" summary="bundles">
       <created>1648810681068</created>
@@ -105,7 +123,56 @@
       <option name="project" value="LOCAL" />
       <updated>1648826088399</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix">
+      <created>1649267280833</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1649267280833</updated>
+    </task>
+    <task id="LOCAL-00005" summary="animation added">
+      <created>1649343363538</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1649343363538</updated>
+    </task>
+    <task id="LOCAL-00006" summary="animation added">
+      <created>1649345435426</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1649345435426</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix">
+      <created>1649346642977</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1649346642977</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix">
+      <created>1649682447278</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1649682447278</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix">
+      <created>1649693018914</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1649693018914</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fix">
+      <created>1649693073521</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1649693073521</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +192,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="bundles" />
     <MESSAGE value="bundlesd" />
-    <option name="LAST_COMMIT_MESSAGE" value="bundlesd" />
+    <MESSAGE value="animation added" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
 </project>

@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 
-export const API_URL = `https://beerauthback.herokuapp.com/api`
+export const API_URL = `https://allbackbeer.herokuapp.com/api`
 
 const $api = axios.create({
     withCredentials: true,
