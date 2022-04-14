@@ -57,9 +57,11 @@ export const Members = (props) => {
                 <div className={classes.spisok} onClick={() => props.loginization()}>
                     Список участников
                 </div>
-                <div className={props.theme ? classes.dayUsers : classes.nightUsers}>
+                {!!props.user.isActivated ? <div className={props.theme ? classes.dayUsers : classes.nightUsers}>
                     {props.isLoading ? <Preloader/> : users}
-                </div>
+                </div> :
+                    <div className={classes.block}> Для просмотра необходимо зарегестрироваться и подтвердить аккаунт </div>}
+
             </div>
             }
 

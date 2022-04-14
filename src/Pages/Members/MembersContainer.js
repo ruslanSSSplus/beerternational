@@ -8,13 +8,13 @@ import {useNavigate} from "react-router-dom";
 export const MembersContainer = (props) => {
 
     const {members, isLoading} = useSelector((state) => state.members)
-    const {isLogin} = useSelector((state) => state.login)
+    const {isLogin} = useSelector((state) => state.admin)
     const dispatch = useDispatch()
     const navigate = useNavigate();
-
+    const {user} = useSelector((state) => state.auth)
 
     const loginization = () => {
-        navigate('/Login');
+        navigate('/Admin');
     }
 
     const deleteUser = (uid) => {
@@ -27,6 +27,6 @@ export const MembersContainer = (props) => {
 
     return (<div>
         <Members members={members} deleteUser={deleteUser} theme={props.theme} isLogin={isLogin}
-                 isLoading={isLoading} loginization={loginization}/>}
+                 isLoading={isLoading} loginization={loginization} user={user}/>}
     </div>)
 }

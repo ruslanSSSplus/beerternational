@@ -1,57 +1,71 @@
-import React, {useEffect, useState} from 'react';
-import {LoginForm} from "./LoginForm";
-import UserService from "./services/UserService";
+import React, {useEffect} from 'react';
+import {LoginForm} from "../../components/LoginForm/LoginForm";
+// import UserService from "./services/UserService";
+import classes from './loginPage.module.css'
 import {useDispatch, useSelector} from "react-redux";
-import {checkAuthThunkCreater, logoutThunkCreater} from "../../Redux/Reducers/authReducer";
+import {
+    checkAuthThunkCreater,
+    loginThunkCreater,
+    logoutThunkCreater,
+    registrationThunkCreater
+} from "../../Redux/Reducers/authReducer";
+import Preloader from "../../components/Preloader/Preloader";
 
 export const Login = () => {
 
-    const [users, setUsers] = useState([]);
+    // const [users, setUsers] = useState([]);
 
     const dispatch = useDispatch()
     const {user,
         isAuth,
-        isLoading,} = useSelector((state) => state.auth)
+        isLoading, responseMessage} = useSelector((state) => state.auth)
 
-    useEffect(() => {
-        if (localStorage.getItem('token')) {
-            dispatch(checkAuthThunkCreater())
-        }
-    }, [])
-
-   const getUsers = async () => {
-        try {
-            const response = await UserService.fetchUsers();
-            setUsers(response.data);
-        } catch (e) {
-            console.log(e);
-        }
+    const login = (email, password) =>{
+        dispatch(loginThunkCreater(email, password))
+    }
+    const registration = (email, password) =>{
+        dispatch(registrationThunkCreater(email, password))
     }
 
+
+
+
+   // const getUsers = async () => {
+   //      try {
+   //          const response = await UserService.fetchUsers();
+   //          setUsers(response.data);
+   //      } catch (e) {
+   //          console.log(e);
+   //      }
+   //  }
+
+
+
     if (isLoading) {
-        return <div>Загрузка...</div>
+        return <Preloader />
     }
 
     if (!isAuth) {
         return (
             <div>
-                <LoginForm/>
-                <button onClick={() => getUsers()}>Получить пользователей</button>
+                <LoginForm login={login} registration={registration}/>
+                {/*<button onClick={() => getUsers()}>Получить пользователей</button>*/}
             </div>
         );
     }
 
     return (
-        <div>
+        <div className={classes.all}>
+
             <h1>{isAuth ? `Пользователь авторизован ${user.email}` : 'АВТОРИЗУЙТЕСЬ'}</h1>
             <h1>{user.isActivated ? 'Аккаунт подтвержден по почте' : 'ПОДТВЕРДИТЕ АККАУНТ!!!!'}</h1>
-            <button onClick={() => dispatch(logoutThunkCreater())}>Выйти</button>
-            <div>
-                <button onClick={getUsers}>Получить пользователей</button>
-            </div>
-            {users.map(user =>
-                <div key={user.email}>{user.email}</div>
-            )}
+            <h1> {responseMessage}</h1>
+            {/*<div>*/}
+            {/*    <button onClick={getUsers}>Получить пользователей</button>*/}
+            {/*</div>*/}
+            {/*{users.map(user =>*/}
+            {/*    <div key={user.email}>{user.email}</div>*/}
+            {/*)}*/}
         </div>
     );
 };

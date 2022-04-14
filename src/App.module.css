@@ -147,6 +147,16 @@
     width: 70px;
 }
 
+.loginNight{
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    margin-left: 1%;
+}
+.loginDay{
 
+    color: #1d1d1d;
+}
 
 

@@ -1,9 +1,15 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {useNavigate} from 'react-router-dom';
 
 import {useDispatch, useSelector} from "react-redux";
-import {putPhotoThunkCreater, submitThunkCreater} from "../../Redux/Reducers/invitePageReducer";
+import {
+    actions,
+    cleanThunkCreater,
+    putPhotoThunkCreater,
+    submitThunkCreater
+} from "../../Redux/Reducers/invitePageReducer";
 import {InvitePage} from "./InvitePage";
+import {cleanDataThunkCreater} from "../../Redux/Reducers/bundlesReducer";
 
 
 export const InvitePageContainer = (props) => {
@@ -12,7 +18,10 @@ export const InvitePageContainer = (props) => {
     const navigate = useNavigate();
 
 
+
     const {avatar, isSend, data} = useSelector((state) => state.invitePage)
+
+    const {user} = useSelector((state) => state.auth)
     const dispatch = useDispatch()
 
 
@@ -21,8 +30,13 @@ export const InvitePageContainer = (props) => {
     }
 
     const onSubmit = async (values) => {
-        await dispatch(submitThunkCreater(values.name, values.beer, values.social, avatar))
-        setTimeout(redirect, 2000);
+        if (user.isActivated) {
+            await dispatch(submitThunkCreater(values.name, values.beer, values.social, avatar))
+            setTimeout(redirect, 2000);
+        }
+        else {
+            dispatch(actions.putData('Для подачить заявки необходима регистрация'))
+        }
     }
 
 

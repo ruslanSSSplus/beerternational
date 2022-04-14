@@ -1,15 +1,25 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import cn from "classnames";
-
+import {useNavigate} from "react-router-dom";
 import classes from "../App.module.css";
 import svetl from "../assets/Pictures/Frame.png";
 import temn from "../assets/Pictures/Frame-1.png";
 import VK from "../assets/Pictures/entypo-social_vk-with-circle.png";
 import DM_LIGHT from "../assets/Pictures/DM_LIGHT.png";
 import DM_DARK from "../assets/Pictures/DM_DARK.png";
+import {logoutThunkCreater} from "../Redux/Reducers/authReducer";
 
-export const AllLinks = ({theme, changeTheme}) => {
+import {useDispatch} from "react-redux";
+
+export const AllLinks = ({theme, changeTheme, isAuth}) => {
+    const navigate = useNavigate();
+
+    const dispatch = useDispatch()
+
+    const redir = () =>{
+        navigate('/Login');
+    }
 
 
     return (<div className={classes.menu}>
@@ -42,5 +52,11 @@ export const AllLinks = ({theme, changeTheme}) => {
         </div>
         <img src={theme ? DM_LIGHT : DM_DARK} className={classes.dayNight} onClick={() => changeTheme()}
              alt={'theme'}/>
+
+        <button onClick={ !isAuth ? ()=> redir() : () => dispatch(logoutThunkCreater())} className={cn({
+                [classes.loginDay]: theme === true
+            }, classes.loginNight)}> {!isAuth ? 'Войти' : 'Выйти'} </button>
+
+
     </div>);
 }

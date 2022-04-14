@@ -8,7 +8,7 @@ let initialState = {
 }
 
 
-const loginReducer = (state = initialState, action) => {
+const adminReducer = (state = initialState, action) => {
     switch (action.type) {
         case iS_LOGIN:
             return {...state, isLogin: action.isLogin}
@@ -32,4 +32,4 @@ export const actions = {
 }
 
 
-export default loginReducer;
+export default adminReducer;

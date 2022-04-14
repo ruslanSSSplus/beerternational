@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import classes from './invitePage.module.css'
 import {Field, Form, Formik, ErrorMessage} from "formik";
 import * as Yup from "yup";
@@ -12,12 +12,16 @@ import errorPng from '../../assets/Pictures/error.png'
 import cn from "classnames";
 
 
+
+
 export const InvitePage = (props) => {
 
+    console.log(props.isSend)
 
     const initialValues = {
         name: '', beer: '', social: '',
     }
+
 
 
     const validationSchema = Yup.object({
@@ -68,7 +72,7 @@ export const InvitePage = (props) => {
                         <input onChange={encodeImageFileAsURL} type={'file'} name='photo' id="ava"
                                className={classes.customfileinput}/>
                     </div>
-                    <button type="submit" disabled={!!props.data} className={classes.invite}><p>
+                    <button type="submit" disabled={props.isSend} className={classes.invite}><p>
                         <img src={props.isSend ? galochka : inviteButton}
                              alt={'button'} className={props.isSend ? classes.inviteButton2 : classes.inviteButton}/>
                     </p>

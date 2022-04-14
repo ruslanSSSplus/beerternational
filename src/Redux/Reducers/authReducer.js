@@ -1,17 +1,18 @@
 import AuthService from "../../Pages/Login/services/AuthService";
 import axios from 'axios';
-import {API_URL} from "../../Pages/Login/http/index";
+import {API_URL} from "../../API/authAPI";
 
 const SET_AUTH = 'AUTH/SET_AUTH';
 const SET_USER = 'AUTH/SET_USER';
 const SET_LOADING = 'AUTH/SET_LOADING';
-
+const SET_RESPONSE = 'AUTH/SET_RESPONSE';
 
 
 let initialState = {
     user:  {},
     isAuth:  false,
     isLoading: false,
+    responseMessage: ''
 }
 
 
@@ -24,6 +25,8 @@ const authReducer = (state = initialState, action) => {
             return {...state, user: action.user}
         case SET_LOADING:
             return {...state, isLoading: action.bool}
+        case SET_RESPONSE:
+            return {...state, responseMessage: action.data}
         default:
             return state;
     }
@@ -35,6 +38,8 @@ export const actions = {
         type: SET_USER, user,
     }), setIsLoading: (bool) => ({
         type: SET_LOADING, bool,
+    }),setResponse: (data) => ({
+        type: SET_RESPONSE, data,
     }),
 }
 
@@ -47,6 +52,7 @@ export const loginThunkCreater = (email, password) => {
             dispatch(actions.setAuth(true))
             dispatch(actions.setUser(response.data.user))
         } catch (e) {
+            dispatch(actions.setResponse(e.response?.data?.message))
             console.log(e.response?.data?.message);
         }
     }
@@ -62,6 +68,7 @@ export const registrationThunkCreater = (email, password) => {
             dispatch(actions.setAuth(true))
             dispatch(actions.setUser(response.data.user))
         } catch (e) {
+            dispatch(actions.setResponse(e.response?.data?.message))
             console.log(e.response?.data?.message);
         }
     }
@@ -75,6 +82,7 @@ export const logoutThunkCreater = () => {
             dispatch(actions.setAuth(false))
             dispatch(actions.setUser({}))
         } catch (e) {
+            dispatch(actions.setResponse(e.response?.data?.message))
             console.log(e.response?.data?.message);
         }
     }
@@ -97,6 +105,7 @@ export const checkAuthThunkCreater = () => {
             dispatch(actions.setAuth(true))
             dispatch(actions.setUser(response.data.user))
         } catch (e) {
+            dispatch(actions.setResponse(e.response?.data?.message))
             console.log(e.response?.data?.message);
         } finally {
             dispatch(actions.setIsLoading(false))

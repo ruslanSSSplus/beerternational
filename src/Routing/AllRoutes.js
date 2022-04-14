@@ -6,6 +6,7 @@ import {Bundles} from "../Pages/Bundles/Bundles";
 import {MembersContainer} from "../Pages/Members/MembersContainer";
 import {Regulations} from "../Pages/Regulations/Regulations";
 import {Login} from "../Pages/Login/Login";
+import {AdminLogin} from "../Pages/Admin/AdminLogin";
 
 export const AllRoutes = ({theme}) => {
 
@@ -17,6 +18,7 @@ export const AllRoutes = ({theme}) => {
         <Route path='/Members' element={<MembersContainer theme={theme}/>}> </Route>
         <Route path='/Regulations' element={<Regulations theme={theme}/>}> </Route>
         <Route path='/Login' element={<Login theme={theme}/>}> </Route>
+        <Route path='/Admin' element={<AdminLogin theme={theme}/>}> </Route>
         {/*<Route path='/InvitePage' element={<InvitePage theme={theme}/>}> </Route>*/}
     </Routes>);
 }

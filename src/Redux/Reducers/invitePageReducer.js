@@ -7,7 +7,7 @@ const PUT_IS_SEND = 'INVITE/PUT_IS_SEND';
 
 
 let initialState = {
-    avatar: avaDefault, isSend: false, data: null
+    avatar: avaDefault, isSend: false, data: null,
 }
 
 
@@ -45,6 +45,12 @@ export const submitThunkCreater = (name, beer, social, avatar) => {
         dispatch(actions.putIsSend(true))
         let response = await submitInviteAPI(name, beer, social, avatar)
         dispatch(actions.putData(response))
+    }
+}
+export const cleanThunkCreater = () => {
+    return async (dispatch) => {
+        dispatch(actions.putData(null))
+        dispatch(actions.putPhoto(avaDefault))
     }
 }
 

@@ -1,5 +1,8 @@
+import {API_URL_OLD} from "./apiName";
+
+
 export const getMembersAPI = () => {
-    return fetch('https://allbackbeer.herokuapp.com/getUsers', {
+    return fetch(`${API_URL_OLD}/getUsers`, {
         method: 'GET', headers: {
             'Content-type': 'application/json',
         },

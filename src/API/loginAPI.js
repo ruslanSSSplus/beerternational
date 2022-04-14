@@ -1,5 +1,7 @@
+import {API_URL_OLD} from "./apiName";
+
 export const submitLoginAPI = (values) => {
-    return fetch('https://allbackbeer.herokuapp.com/login', {
+    return fetch(`${API_URL_OLD}/login`, {
         method: 'POST',
         headers: {
             'Content-type': 'application/json',

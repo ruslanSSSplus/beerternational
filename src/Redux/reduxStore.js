@@ -1,6 +1,6 @@
 import {applyMiddleware, combineReducers, createStore, compose} from "redux";
 import thunkMiddleware from 'redux-thunk'
-import loginReducer from "./Reducers/loginReducer";
+import adminReducer from "./Reducers/adminReducer";
 import membersReducer from "./Reducers/membersReducer";
 import invitePageReducer from "./Reducers/invitePageReducer";
 import bundlesReducer from "./Reducers/bundlesReducer";
@@ -8,7 +8,7 @@ import authReducer from "./Reducers/authReducer";
 
 
 let rootReducer = combineReducers({
-    login: loginReducer,
+    admin: adminReducer,
     members: membersReducer,
     invitePage: invitePageReducer,
     bundles: bundlesReducer,

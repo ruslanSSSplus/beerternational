@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import classes from './Main.module.css'
 import cn from "classnames";
 import sveti from '../../assets/Pictures/pivo_svetl.png'
@@ -6,19 +6,33 @@ import temn from '../../assets/Pictures/pivo_temn.png'
 import {InvitePageContainer} from "../invitePage/InvitePageContainer";
 import AOS from 'aos'
 import 'aos/dist/aos.css';
+import {useDispatch} from "react-redux";
+import {cleanThunkCreater} from "../../Redux/Reducers/invitePageReducer";
+import {cleanDataThunkCreater} from "../../Redux/Reducers/bundlesReducer";
+
 
 
 export const Main = (props) => {
 
     AOS.init();
 
+    useEffect(() => {
+
+        return () => {
+            dispatch(cleanThunkCreater())
+        }
+    }, [])
+
+    const dispatch = useDispatch()
     let [isOpen, setIisOpen] = useState(false)
     let show = () => {
         setIisOpen(true)
     }
     let close = () => {
+        dispatch(cleanThunkCreater())
         setIisOpen(false)
     }
+
 
 
     return (<div className={classes.all}>
