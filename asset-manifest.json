@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/beerternational/static/css/main.9ef1b2c3.css",
-    "main.js": "/beerternational/static/js/main.947c3467.js",
+    "main.css": "/beerternational/static/css/main.223dd20c.css",
+    "main.js": "/beerternational/static/js/main.d19038df.js",
     "static/js/787.28cb0dcd.chunk.js": "/beerternational/static/js/787.28cb0dcd.chunk.js",
     "static/media/timurWall.png": "/beerternational/static/media/timurWall.f0930053e7873888c428.png",
     "static/media/pashaWall.png": "/beerternational/static/media/pashaWall.c4e373846d55e1694ef1.png",
@@ -38,6 +38,8 @@
     "static/media/тима гс.mp3": "/beerternational/static/media/тима гс.a36b2e7089b8b646524e.mp3",
     "static/media/logoRuslanNight.png": "/beerternational/static/media/logoRuslanNight.2023aae5b7faab3e6eb0.png",
     "static/media/макс хуй малафья.mp3": "/beerternational/static/media/макс хуй малафья.565156ee9377a2da7d1b.mp3",
+    "static/media/auth_logoDay.png": "/beerternational/static/media/auth_logoDay.e6fc0e19a5d515f96911.png",
+    "static/media/auth_logoNight.png": "/beerternational/static/media/auth_logoNight.0c42e53c278c4a083f57.png",
     "static/media/logoMikeNight.png": "/beerternational/static/media/logoMikeNight.e9604331cef1bb6bd382.png",
     "static/media/logoMikeDay.png": "/beerternational/static/media/logoMikeDay.3a86d11179d791720311.png",
     "static/media/bandl_fon.png": "/beerternational/static/media/bandl_fon.bcd7cf21e2a50c7edcfb.png",
@@ -61,12 +63,12 @@
     "static/media/logoTimurNight.png": "/beerternational/static/media/logoTimurNight.3932440c2e950b802715.png",
     "static/media/logoTimurDay.png": "/beerternational/static/media/logoTimurDay.b7692ab658eae369fb46.png",
     "index.html": "/beerternational/index.html",
-    "main.9ef1b2c3.css.map": "/beerternational/static/css/main.9ef1b2c3.css.map",
-    "main.947c3467.js.map": "/beerternational/static/js/main.947c3467.js.map",
+    "main.223dd20c.css.map": "/beerternational/static/css/main.223dd20c.css.map",
+    "main.d19038df.js.map": "/beerternational/static/js/main.d19038df.js.map",
     "787.28cb0dcd.chunk.js.map": "/beerternational/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ef1b2c3.css",
-    "static/js/main.947c3467.js"
+    "static/css/main.223dd20c.css",
+    "static/js/main.d19038df.js"
   ]
 }
