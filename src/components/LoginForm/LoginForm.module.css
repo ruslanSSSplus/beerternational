@@ -1,0 +1,86 @@
+::-webkit-input-placeholder {
+    text-align: center;
+}
+.InputNight{
+
+    background-color: #707070;
+    margin-right: 110px;
+    font-size: 15px;
+    text-align: center;
+    border: none;
+    height: 30px;
+    margin-top: 40px;
+    width: 250px;
+    margin-left: 25px;
+    border-radius: 30px;
+
+}
+.InputNight:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+.InputDay{
+    color: #1d1d1d;
+    background-color: #efe8d5;
+}
+
+.loginNight{
+
+    color: #2c2c2c;
+    background-color: #e3cd93;
+    border: none;
+    border-radius: 100px;
+    font-size: 18px ;
+    width: 130px;
+    height: 38px;
+    margin-top: 40px;
+    margin-left: 140px;
+    cursor: pointer;
+}
+.loginDay{
+    color: white;
+}
+.registNight{
+    color: #2c2c2c;
+    background-color: #e3cd93;
+    cursor: pointer;
+    border: none;
+    border-radius: 100px;
+    font-size: 18px ;
+    width: 130px;
+    height: 38px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.registDay{
+    color: white;
+}
+
+.all{
+    margin-left: 10px;
+    margin-top: 100px;
+    width: 600px;
+    height: 300px;
+    display: grid;
+    grid-template-areas:
+    'l c'
+    'p d'
+    'z z';
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.but{
+    grid-area: z;
+}
+.emailSTR{
+    grid-area: l;
+    margin-left: 100px;
+    margin-top: 30px;
+    font-size: 30px;
+}
+.passSTR{
+    grid-area: p;
+    margin-left: 100px;
+    margin-top: 30px;
+    font-size: 30px;
+}

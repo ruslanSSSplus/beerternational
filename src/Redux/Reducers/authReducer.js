@@ -5,6 +5,7 @@ import {API_URL} from "../../API/authAPI";
 const SET_AUTH = 'AUTH/SET_AUTH';
 const SET_USER = 'AUTH/SET_USER';
 const SET_LOADING = 'AUTH/SET_LOADING';
+const SET_LOCAL_LOADING = 'AUTH/SET_LOCAL_LOADING';
 const SET_RESPONSE = 'AUTH/SET_RESPONSE';
 
 
@@ -12,7 +13,8 @@ let initialState = {
     user:  {},
     isAuth:  false,
     isLoading: false,
-    responseMessage: ''
+    responseMessage: '',
+    localLoading: false
 }
 
 
@@ -25,6 +27,8 @@ const authReducer = (state = initialState, action) => {
             return {...state, user: action.user}
         case SET_LOADING:
             return {...state, isLoading: action.bool}
+        case SET_LOCAL_LOADING:
+            return {...state, localLoading: action.bool}
         case SET_RESPONSE:
             return {...state, responseMessage: action.data}
         default:
@@ -38,6 +42,8 @@ export const actions = {
         type: SET_USER, user,
     }), setIsLoading: (bool) => ({
         type: SET_LOADING, bool,
+    }), setLocalLoading: (bool) => ({
+        type: SET_LOCAL_LOADING, bool,
     }),setResponse: (data) => ({
         type: SET_RESPONSE, data,
     }),
@@ -46,14 +52,17 @@ export const actions = {
 export const loginThunkCreater = (email, password) => {
     return async (dispatch) => {
         try {
+            dispatch(actions.setLocalLoading(true))
             const response = await AuthService.login(email, password);
             localStorage.setItem('token', response.data.accessToken);
             localStorage.setItem('refresh', response.data.refreshToken);
             dispatch(actions.setAuth(true))
             dispatch(actions.setUser(response.data.user))
+            dispatch(actions.setLocalLoading(false))
         } catch (e) {
             dispatch(actions.setResponse(e.response?.data?.message))
             console.log(e.response?.data?.message);
+            dispatch(actions.setLocalLoading(false))
         }
     }
 }
@@ -61,15 +70,18 @@ export const loginThunkCreater = (email, password) => {
 export const registrationThunkCreater = (email, password) => {
     return async (dispatch) => {
         try {
+            dispatch(actions.setLocalLoading(true))
             const response = await AuthService.registration(email, password);
             console.log(response)
             localStorage.setItem('token', response.data.accessToken);
             localStorage.setItem('refresh', response.data.refreshToken);
             dispatch(actions.setAuth(true))
             dispatch(actions.setUser(response.data.user))
+            dispatch(actions.setLocalLoading(false))
         } catch (e) {
             dispatch(actions.setResponse(e.response?.data?.message))
             console.log(e.response?.data?.message);
+            dispatch(actions.setLocalLoading(false))
         }
     }
 }
@@ -77,13 +89,16 @@ export const registrationThunkCreater = (email, password) => {
 export const logoutThunkCreater = () => {
     return async (dispatch) => {
         try {
+            dispatch(actions.setLocalLoading(true))
             const response = await AuthService.logout();
             localStorage.removeItem('token');
             dispatch(actions.setAuth(false))
             dispatch(actions.setUser({}))
+            dispatch(actions.setLocalLoading(false))
         } catch (e) {
             dispatch(actions.setResponse(e.response?.data?.message))
             console.log(e.response?.data?.message);
+            dispatch(actions.setLocalLoading(false));
         }
     }
 }
@@ -93,12 +108,6 @@ export const checkAuthThunkCreater = () => {
         dispatch(actions.setIsLoading(true))
         try {
             const response = await axios.post(`${API_URL}/refresh`, {refreshToken: localStorage.getItem('refresh') ,withCredentials: true})
-            // const response = await fetch(`${API_URL}/refresh`, {
-            //     method: 'POST', headers: {
-            //         'Content-type': 'application/json',
-            //         'Access-Control-Allow-Origin': '*',
-            //         'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS'
-            //     }, body: JSON.stringify(localStorage.getItem('refreshToken')) } )
             console.log(response);
             localStorage.setItem('token', response.data.accessToken);
             localStorage.setItem('refresh', response.data.refreshToken);

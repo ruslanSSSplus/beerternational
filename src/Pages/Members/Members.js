@@ -31,6 +31,7 @@ export const Members = (props) => {
             </div>
 
             <div className={classes.commentator}>
+
                 <span className={classes.com}> Комментаторы</span>
                 <div className={props.theme ? classes.dayUsers : classes.nightUsers}>
                     <EachUser user={evgenia} theme={props.theme} deleteUser={() => {
@@ -57,7 +58,7 @@ export const Members = (props) => {
                 <div className={classes.spisok} onClick={() => props.loginization()}>
                     Список участников
                 </div>
-                {!!props.user.isActivated ? <div className={props.theme ? classes.dayUsers : classes.nightUsers}>
+                {props.user.isActivated ? <div className={props.theme ? classes.dayUsers : classes.nightUsers}>
                     {props.isLoading ? <Preloader/> : users}
                 </div> :
                     <div className={classes.block}> Для просмотра необходимо зарегестрироваться и подтвердить аккаунт </div>}
