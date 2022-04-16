@@ -4,9 +4,7 @@ import {LoginForm} from "../../components/LoginForm/LoginForm";
 import classes from './Login.module.css'
 import {useDispatch, useSelector} from "react-redux";
 import {
-    checkAuthThunkCreater,
     loginThunkCreater,
-    logoutThunkCreater,
     registrationThunkCreater
 } from "../../Redux/Reducers/authReducer";
 import Preloader from "../../components/Preloader/Preloader";
@@ -71,7 +69,7 @@ export const Login = (props) => {
 
             </div>
             <div className={classes.logo}>
-                <img src={logoNight} className={classes.png}/>
+                <img src={props.theme ? logoDay : logoNight} className={classes.png}/>
             </div>
 
 

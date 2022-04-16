@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8808b533-7d5b-4ec3-818f-134c1325d499" name="Changes" comment="fix">
-      <change afterPath="$PROJECT_DIR$/src/components/LoginForm/LoginForm.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_04_2022_16_06_[Changes]/logoKeksDay.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_04_2022_16_06_[Changes]/logoMaksDay.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_04_2022_16_06_[Changes]/logoMax.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_04_2022_16_06_[Changes]/logoMikeDay.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_04_2022_16_06_[Changes]/logoRuslanDay.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_04_2022_16_06_[Changes]/logoTimurDay.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_04_2022_16_06_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_04_2022_16_06__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_04_2022_16_55_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_04_2022_16_55__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/apiName.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/apiName.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/authAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/authAPI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Login/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Login/Login.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Login/Login.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Login/loginPage.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Members/Members.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Members/Members.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Members/Members.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Members/Members.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Reducers/authReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducers/authReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LoginForm/LoginForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoginForm/LoginForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Preloader/Prealoader.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Preloader/Prealoader.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +98,7 @@
       <workItem from="1649686176767" duration="1190000" />
       <workItem from="1649692539660" duration="709000" />
       <workItem from="1650119406194" duration="3701000" />
-      <workItem from="1650125067302" duration="10202000" />
+      <workItem from="1650125067302" duration="10383000" />
     </task>
     <task id="LOCAL-00001" summary="bundles">
       <created>1648810681068</created>
