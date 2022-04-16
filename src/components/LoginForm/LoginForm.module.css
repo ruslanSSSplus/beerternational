@@ -2,7 +2,7 @@
     text-align: center;
 }
 .InputNight{
-
+    color: white;
     background-color: #707070;
     margin-right: 110px;
     font-size: 15px;
@@ -22,6 +22,18 @@
 .InputDay{
     color: #1d1d1d;
     background-color: #efe8d5;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    black;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    black;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    black;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    black;
 }
 
 .loginNight{

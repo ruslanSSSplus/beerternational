@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {LoginForm} from "../../components/LoginForm/LoginForm";
 // import UserService from "./services/UserService";
 import classes from './Login.module.css'
@@ -69,7 +69,7 @@ export const Login = (props) => {
 
             </div>
             <div className={classes.logo}>
-                <img src={props.theme ? logoDay : logoNight} className={classes.png}/>
+                <img src={props.theme ? logoDay : logoNight} className={classes.png} alt={'f'}/>
             </div>
 
 

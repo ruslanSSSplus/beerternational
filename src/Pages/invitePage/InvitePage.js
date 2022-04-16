@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import classes from './invitePage.module.css'
 import {Field, Form, Formik, ErrorMessage} from "formik";
 import * as Yup from "yup";

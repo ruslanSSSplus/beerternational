@@ -8,7 +8,6 @@ import AOS from 'aos'
 import 'aos/dist/aos.css';
 import {useDispatch} from "react-redux";
 import {cleanThunkCreater} from "../../Redux/Reducers/invitePageReducer";
-import {cleanDataThunkCreater} from "../../Redux/Reducers/bundlesReducer";
 
 
 

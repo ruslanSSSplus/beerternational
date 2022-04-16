@@ -1,15 +1,13 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {useNavigate} from 'react-router-dom';
 
 import {useDispatch, useSelector} from "react-redux";
 import {
     actions,
-    cleanThunkCreater,
     putPhotoThunkCreater,
     submitThunkCreater
 } from "../../Redux/Reducers/invitePageReducer";
 import {InvitePage} from "./InvitePage";
-import {cleanDataThunkCreater} from "../../Redux/Reducers/bundlesReducer";
 
 
 export const InvitePageContainer = (props) => {

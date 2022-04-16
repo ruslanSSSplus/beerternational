@@ -90,7 +90,7 @@ export const logoutThunkCreater = () => {
     return async (dispatch) => {
         try {
             dispatch(actions.setLocalLoading(true))
-            const response = await AuthService.logout();
+            await AuthService.logout();
             localStorage.removeItem('token');
             dispatch(actions.setAuth(false))
             dispatch(actions.setUser({}))
