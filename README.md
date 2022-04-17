@@ -1,4 +1,4 @@
-
+Link to the site https://ruslansssplus.github.io/beerternational/
 
 BackEnd is located on Heroku
 
@@ -19,9 +19,23 @@ Libraries i used
 13. aos
 14. gh-pages
 
- =======================
- 
- To install you need
+Also on BackEnd i use 
+
+1. cookie-parser
+2. cors
+3. dotenv
+4. express
+5. express-validator
+6. fs
+7. jsonwebtoken
+8. mongodb
+9. mongoose
+10. nodemailer
+11. uuid
+
+=======================
+
+To install you need
 
 1. use git clone
 2. write "npm i"
