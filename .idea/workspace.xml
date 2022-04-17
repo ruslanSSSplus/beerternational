@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8808b533-7d5b-4ec3-818f-134c1325d499" name="Changes" comment="fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Login/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Main/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/invitePage/InvitePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/invitePage/InvitePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/invitePage/InvitePageContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/invitePage/InvitePageContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Reducers/authReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducers/authReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LoginForm/LoginForm.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoginForm/LoginForm.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Login/Login.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Login/Login.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LoginForm/LoginForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoginForm/LoginForm.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +100,9 @@
       <workItem from="1649686176767" duration="1190000" />
       <workItem from="1649692539660" duration="709000" />
       <workItem from="1650119406194" duration="3701000" />
-      <workItem from="1650125067302" duration="11416000" />
+      <workItem from="1650125067302" duration="11456000" />
+      <workItem from="1650148416636" duration="303000" />
+      <workItem from="1650214397324" duration="44000" />
     </task>
     <task id="LOCAL-00001" summary="bundles">
       <created>1648810681068</created>

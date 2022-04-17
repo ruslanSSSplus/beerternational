@@ -35,7 +35,7 @@ export const LoginForm = (props) => {
                 <button onClick={() => props.login(email, password)}  className={cn({
                     [classes.loginDay]: props.theme === true
                 }, classes.loginNight)}>
-                    Логин
+                    Вход
                 </button>
                 <button onClick={() => props.registration(email, password)}  className={cn({
                     [classes.registDay]: props.theme === true
