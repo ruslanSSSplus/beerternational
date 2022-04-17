@@ -57,7 +57,7 @@ export const Login = (props) => {
             [classes.allDay]: props.theme === true
         }, classes.allNight)}>
            <div className={classes.blank}>
-               { localLoading ? <div className={classes.preloader}> <Preloader /> </div> : <span>
+               { localLoading ? <div className={classes.preloader}> <Preloader /> </div> : <span className={classes.blankLogin}>
                    { !isAuth ? <div >
                            <LoginForm login={login} registration={registration} theme={props.theme}/>
                            <p className={classes.error}> {responseMessage}</p></div> :

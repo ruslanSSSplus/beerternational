@@ -34,6 +34,19 @@
     background: transparent;
     overflow: hidden;
     backdrop-filter: blur(10px);
+    animation-name: animetetop;
+    animation-duration: 0.5s;
+}
+
+@keyframes animetetop {
+    from {
+        left: -20%;
+
+    }
+    to {
+        left: 5%;
+
+    }
 }
 
 .blank:before {
