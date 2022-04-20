@@ -22,6 +22,7 @@ const App = () => {
         if (localStorage.getItem('token')) {
             dispatch(checkAuthThunkCreater())
         }
+        // eslint-disable-next-line
     }, [])
 
     const changeTheme = () => {

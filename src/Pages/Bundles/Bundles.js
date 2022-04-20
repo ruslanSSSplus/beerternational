@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import classes from './Bundles.module.css'
 import {arrayOfMembers} from "./legendsMassive";
-import closeElement from '../../assets/Pictures/close.png'
+import closeElement from '../../assets/Pictures/closeBannerz.png'
 import {useDispatch, useSelector} from "react-redux";
 
 import dinamik from '../../assets/Pictures/DINAMIK.png'
@@ -40,6 +40,7 @@ export const Bundles = (props) => {
         return () => {
             dispatch(cleanDataThunkCreater())
         }
+        // eslint-disable-next-line
     }, [])
 
     const openPicture = () => {

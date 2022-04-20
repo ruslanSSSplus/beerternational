@@ -23,6 +23,7 @@ export const MembersContainer = (props) => {
 
     useEffect(() => {
         dispatch(getMembersThunkCreater())
+        // eslint-disable-next-line
     }, [])
 
     return (<div>

@@ -102,6 +102,7 @@
 }
 
 .gena {
+    cursor: pointer;
     z-index: 10;
     text-align: center;
     margin-top: 10px;
@@ -110,13 +111,14 @@
     color: black;
     background-color: #e3cd93;
     border-radius: 100px;
-    margin-left: 3%;
+    margin-left: 1.2%;
 
 }
 
 .gena:hover {
-    color: black;
-    box-shadow: 5px 5px 5px #c7b68b;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .gena2 {
@@ -135,7 +137,7 @@
     height: 50px;
     width: 50px;
     margin-top: 10px;
-    margin-left: 2%;
+    margin-left: 1.5%;
     border-radius: 100px;
     border: 0;
 }
@@ -146,24 +148,27 @@
     transform: scale(1.05);
 }
 
-
 .logo {
     height: 70px;
     width: 70px;
 }
 
-.loginNight{
-    padding: 10px;
-    background-color: transparent;
-    border: none;
-    color: white;
+.bloctLog {
+    margin-right: 1%;
     margin-left: 1%;
+    margin-top: 9px;
     z-index: 10;
 }
-.loginDay{
-    color: #1d1d1d;
+
+.enter {
+    z-index: 10;
+    cursor: pointer;
+    height: 50px;
 }
-.loginNight:hover{
-    color: #e3cd93;
+.bloctLog:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
 }
+
 

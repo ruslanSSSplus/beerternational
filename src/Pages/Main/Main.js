@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import classes from './Main.module.css'
 import cn from "classnames";
-import sveti from '../../assets/Pictures/pivo_svetl.png'
-import temn from '../../assets/Pictures/pivo_temn.png'
+import sveti from '../../assets/Pictures/pivoMainDay.png'
+import temn from '../../assets/Pictures/pivoMainNight.png'
 import {InvitePageContainer} from "../invitePage/InvitePageContainer";
 import AOS from 'aos'
 import 'aos/dist/aos.css';
@@ -20,6 +20,7 @@ export const Main = (props) => {
         return () => {
             dispatch(cleanThunkCreater())
         }
+        // eslint-disable-next-line
     }, [])
 
     const dispatch = useDispatch()
@@ -39,7 +40,7 @@ export const Main = (props) => {
                  data-aos-anchor="#example-anchor"
                  data-aos-offset="500"
                  data-aos-duration="500">
-                <h1 className={classes.jul72}> THE BEERTERNATIONAL <wbr/> 2022</h1>
+                <h1 className={props.theme ? classes.jul72Day : classes.jul72Night}> THE BEERTERNATIONAL <wbr/> 2022</h1>
                 <h2 className={classes.jul30}> GENAFOND CHAMPIONSHIP</h2>
                 <div className={classes.info}>
                     <p className={cn({
@@ -64,11 +65,13 @@ export const Main = (props) => {
                 </div>
             </div>
 
+    <div className={classes.logo}>
+        <img alt={'Pivo'}
+             src={props.theme ? sveti : temn}
+             className={classes.png}
+        />
+    </div>
 
-            <img alt={'Pivo'}
-                 src={props.theme ? sveti : temn}
-                 className={classes.pivo}
-            />
 
             {isOpen ? <div className={classes.inviteBlank}>
                 <InvitePageContainer close={close} theme={props.theme}/>

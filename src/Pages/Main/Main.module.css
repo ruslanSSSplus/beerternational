@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Raleway:wght@200;300&display=swap');
 
 
-.jul72 {
+.jul72Day {
+    font-family: 'Julius Sans One', 'Arial', "Times New Roman", sans-serif;
+    color: #A69363;
+    font-size: 80px;
+}
+.jul72Night {
     font-family: 'Julius Sans One', 'Arial', "Times New Roman", sans-serif;
     color: #e3cd93;
     font-size: 80px;
@@ -42,14 +47,16 @@
     height: 90px;
     background-color: #1D1D1D;
 }
+.nightZayvka:hover {
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    transform: scale(1.01);
+}
 
 .dayZayvka {
     background-color: white;
 }
 
-.nightZayvka:hover {
-    box-shadow: 5px 5px 5px #c7b68b;
-}
 
 .invite {
     font-family: 'Raleway', sans-serif;
@@ -79,14 +86,26 @@
     }
 }
 
-.pivo {
-    width: 100%;
 
-    grid-area: p;
+
+.logo{
+    margin-top: 40px;
+
+   height: 1060px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+.png{
+
+    position: relative;
+    overflow:hidden;
+    height: 100%;
 }
 
-
 .content {
+    z-index: 1;
     margin-top: 5%;
     margin-left: 3%;
     grid-area: c;
@@ -109,7 +128,7 @@
 
 @keyframes animetetop {
     from {
-        left: 0;
+        left: -10%;
 
     }
     to {

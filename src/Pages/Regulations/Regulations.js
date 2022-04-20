@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from './Regulations.module.css'
-import header from '../../assets/Pictures/headRed.png'
+import headerDay from '../../assets/Pictures/headRegDay.png'
+import headerNight from '../../assets/Pictures/headRegNight.png'
 import bigGena from '../../assets/Pictures/bigGena.png'
 import bigBeer from '../../assets/Pictures/bigBeer.png'
 import cn from "classnames";
@@ -18,7 +19,7 @@ export const Regulations = (props) => {
     }, classes.all)}>
 
 
-        <img alt={'logofull'} src={header} className={classes.jpg} data-aos="fade-down"/>
+        <img alt={'logofull'} src={props.theme ? headerDay : headerNight} className={classes.jpg} data-aos="fade-down"/>
 
         <div className={classes.info}>
             <img alt={'logofull'} src={bigGena} className={classes.gen}/>

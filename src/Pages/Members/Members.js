@@ -44,7 +44,7 @@ export const Members = (props) => {
                 <p className={classes.beerint}> The<br/> Beerternational<br/> 2021</p>
                 <p><span className={classes.timur}> <img src={nagrada} className={classes.nagrada} alt={'nagrada'}/> Тимур - 6 минут</span><br/>
                     <span className={classes.others}>
-                       Руслан - 8 минут<br/>
+                        <span onClick={() => props.loginization()}> Руслан </span> - 8 минут<br/>
                    Максим - 10 минут<br/>
                     Михаил - 11 минут<br/>
                    Никита - 13 минут<br/>
@@ -55,7 +55,7 @@ export const Members = (props) => {
             </div>
 
             <div className={classes.content}>
-                <div className={classes.spisok} onClick={() => props.loginization()}>
+                <div className={classes.spisok}>
                     Список участников
                 </div>
                 {props.user.isActivated ? <div className={props.theme ? classes.dayUsers : classes.nightUsers}>
