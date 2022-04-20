@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/beerternational/static/css/main.774144c0.css",
-    "main.js": "/beerternational/static/js/main.b136fbee.js",
+    "main.css": "/beerternational/static/css/main.a8ebe2d6.css",
+    "main.js": "/beerternational/static/js/main.8056c71b.js",
     "static/js/787.28cb0dcd.chunk.js": "/beerternational/static/js/787.28cb0dcd.chunk.js",
     "static/media/timurWall.png": "/beerternational/static/media/timurWall.f0930053e7873888c428.png",
     "static/media/pashaWall.png": "/beerternational/static/media/pashaWall.c4e373846d55e1694ef1.png",
@@ -28,7 +28,10 @@
     "static/media/marin.png": "/beerternational/static/media/marin.c2a53a4b24ac4511ead7.png",
     "static/media/genaButer.mp3": "/beerternational/static/media/genaButer.bd562c6a2d0bf8e70336.mp3",
     "static/media/bigBeer.png": "/beerternational/static/media/bigBeer.df94cf9f3dc1337b7901.png",
-    "static/media/headRed.png": "/beerternational/static/media/headRed.bc0025dd8e47716f3e94.png",
+    "static/media/pivoMainNight.png": "/beerternational/static/media/pivoMainNight.d8cdec9d56d10819fb8b.png",
+    "static/media/headRegNight.png": "/beerternational/static/media/headRegNight.013c4743ee0bda752b2a.png",
+    "static/media/pivoMainDay.png": "/beerternational/static/media/pivoMainDay.52b3a67cae0e0aaebd17.png",
+    "static/media/headRegDay.png": "/beerternational/static/media/headRegDay.37482254e308b7bb81d5.png",
     "static/media/logoSergeyNight.png": "/beerternational/static/media/logoSergeyNight.b010f535dd06a8d2a9ee.png",
     "static/media/logoSergeyDay.png": "/beerternational/static/media/logoSergeyDay.e014fb001b3dda167df1.png",
     "static/media/руслан звездочка.mp3": "/beerternational/static/media/руслан звездочка.543194f6ed9d8dbeada8.mp3",
@@ -54,8 +57,6 @@
     "static/media/logoPashaNight.png": "/beerternational/static/media/logoPashaNight.c9d25ecc436ff67a3870.png",
     "static/media/logoPashaDay.png": "/beerternational/static/media/logoPashaDay.a4bb38d442a4119dca60.png",
     "static/media/тима респ.mp3": "/beerternational/static/media/тима респ.c87205d8e389d7e1f2cc.mp3",
-    "static/media/pivo_svetl.png": "/beerternational/static/media/pivo_svetl.19792bc44a45568b16d6.png",
-    "static/media/pivo_temn.png": "/beerternational/static/media/pivo_temn.0c6a4475f38ffdc18413.png",
     "static/media/Frame.png": "/beerternational/static/media/Frame.d9e3025454489ebc5a65.png",
     "static/media/logoKeksNight.png": "/beerternational/static/media/logoKeksNight.ebcac313602543940748.png",
     "static/media/Frame-1.png": "/beerternational/static/media/Frame-1.2b9075bd09ff2d64572f.png",
@@ -63,12 +64,12 @@
     "static/media/logoTimurNight.png": "/beerternational/static/media/logoTimurNight.3932440c2e950b802715.png",
     "static/media/logoTimurDay.png": "/beerternational/static/media/logoTimurDay.b7692ab658eae369fb46.png",
     "index.html": "/beerternational/index.html",
-    "main.774144c0.css.map": "/beerternational/static/css/main.774144c0.css.map",
-    "main.b136fbee.js.map": "/beerternational/static/js/main.b136fbee.js.map",
+    "main.a8ebe2d6.css.map": "/beerternational/static/css/main.a8ebe2d6.css.map",
+    "main.8056c71b.js.map": "/beerternational/static/js/main.8056c71b.js.map",
     "787.28cb0dcd.chunk.js.map": "/beerternational/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.774144c0.css",
-    "static/js/main.b136fbee.js"
+    "static/css/main.a8ebe2d6.css",
+    "static/js/main.8056c71b.js"
   ]
 }
