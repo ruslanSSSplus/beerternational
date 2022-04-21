@@ -4,8 +4,6 @@ import {arrayOfMembers} from "./legendsMassive";
 import closeElement from '../../assets/Pictures/closeBannerz.png'
 import {useDispatch, useSelector} from "react-redux";
 
-import dinamik from '../../assets/Pictures/DINAMIK.png'
-
 import logoGenaNight from "../../assets/Pictures/logoGenaNight.png"
 import logoTimurNight from "../../assets/Pictures/logoTimurNight.png"
 import logoPashaNight from "../../assets/Pictures/logoPashaNight.png"
@@ -28,6 +26,7 @@ import logoSergeyDay from "../../assets/Pictures/logoSergeyDay.png"
 import {
     actions, chooseBundleThunkCreater, cleanDataThunkCreater, closeBundleThunkCreater
 } from "../../Redux/Reducers/bundlesReducer";
+import {EachBundle} from "./EachBundle/EachBundle";
 
 
 export const Bundles = (props) => {
@@ -52,7 +51,9 @@ export const Bundles = (props) => {
     }
 
     const chooseBundle = async (who) => {
-        dispatch(chooseBundleThunkCreater(who))
+        if(!closing){
+            dispatch(chooseBundleThunkCreater(who))
+        }
     }
     const closeBundle = () => {
         dispatch(closeBundleThunkCreater())
@@ -72,34 +73,14 @@ export const Bundles = (props) => {
     return (<div className={classes.page}>
 
             {isOpen ?
+                <EachBundle member={member} openPicture={openPicture} soundClickFirst={soundClickFirst}
+                            soundClickSecond={soundClickSecond} closeBundle={closeBundle} closing={closing}/>
+                : null}
 
-                <div className={closing ? classes.allClose : classes.all}>
-                    <div><img src={arrayOfMembers[member].logo} alt={'loog'}
-                              className={classes.logo}/></div>
-                    <div><img src={arrayOfMembers[member].picture} alt={'wallPaper'}
-                              className={classes.picture}
-                              onClick={() => openPicture()}
-                    /></div>
-                    <div className={classes.audioBlockInside} onClick={() => soundClickFirst(member)}><img src={dinamik}
-                                                                                                           className={classes.dinamik}
-                                                                                                           alt={'din'}/> {arrayOfMembers[member].audioFirst[0]}
-                    </div>
-                    <div className={classes.audioBlockInside} onClick={() => soundClickSecond(member)}><img
-                        src={dinamik}
-                        className={classes.dinamik}
-                        alt={'din'}/> {arrayOfMembers[member].audioSecond[0]}
-                    </div>
-
-                    <img alt={'close'} className={classes.close} onClick={() => closeBundle()}
-                         src={closeElement}/>
-                </div> : null}
-
-            <div className={classes.firstLine}>
-                <div><img src={props.theme ? logoKeksDay : logoKeksNight} onClick={() => chooseBundle(0)} alt={'bundle'}
+            <div className={classes.firstLine} >
+                <div><img src={props.theme ? logoKeksDay : logoKeksNight}  onClick={() => chooseBundle(0)} alt={'bundle'}
                           className={classes.bundle}/>
                 </div>
-
-
                 <div><img src={props.theme ? logoRuslanDay : logoRuslanNight} onClick={() => chooseBundle(1)}
                           alt={'bundle'} className={classes.bundle}/>
                 </div>

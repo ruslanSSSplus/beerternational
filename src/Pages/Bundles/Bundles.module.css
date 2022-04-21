@@ -43,7 +43,7 @@
         opacity: 0;
     }
     to {
-        top: 100px;
+        top: 150px;
         opacity: 1;
     }
 }
@@ -72,11 +72,11 @@
 
 @keyframes animetebot {
     from {
-        top: 100px;
+        top: 150px;
         opacity: 1;
     }
     to {
-        top: 470px;
+        top: 520px;
         opacity: 0;
     }
 }
@@ -101,6 +101,7 @@
 }
 
 .picture {
+    cursor: pointer;
     width: 192px;
     height: 108px;
 }
@@ -145,6 +146,7 @@
 
 
 .firstLine {
+    margin-top: 50px;
     display: grid;
     grid-template-areas:
     'a b s d'
@@ -158,10 +160,10 @@
 
 
 .bundle {
+    cursor: pointer;
     margin-top: 10px;
     max-height: 380px;
     max-width: 100%;
-
 }
 
 .openedPicture {

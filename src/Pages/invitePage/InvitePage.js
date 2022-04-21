@@ -2,6 +2,8 @@ import React from 'react';
 import classes from './invitePage.module.css'
 import {Field, Form, Formik, ErrorMessage} from "formik";
 import * as Yup from "yup";
+import cn from "classnames";
+
 import inviteButton from '../../assets/Pictures/inviteBut.png'
 import galochka from '../../assets/Pictures/galochka.png'
 import inputPng from '../../assets/Pictures/input.png'
@@ -9,24 +11,24 @@ import closeButton from '../../assets/Pictures/close.png'
 import closeButtonDay from '../../assets/Pictures/closeDay.png'
 import errorPng from '../../assets/Pictures/error.png'
 
-import cn from "classnames";
-
-
 
 
 export const InvitePage = (props) => {
-    
+
 
     const initialValues = {
-        name: '', beer: '', social: '',
+        name: '',
+        beer: '',
+        social: '',
     }
-
 
 
     const validationSchema = Yup.object({
         name: Yup.string()
-            .required(<img alt={'error'} className={classes.error} src={errorPng}/>), beer: Yup.string()
-            .required(<img alt={'error'} className={classes.error} src={errorPng}/>), social: Yup.string()
+            .required(<img alt={'error'} className={classes.error} src={errorPng}/>),
+        beer: Yup.string()
+            .required(<img alt={'error'} className={classes.error} src={errorPng}/>),
+        social: Yup.string()
             .required(<img alt={'error'} className={classes.error} src={errorPng}/>),
     })
 
@@ -43,7 +45,6 @@ export const InvitePage = (props) => {
         <Formik initialValues={initialValues} onSubmit={onSubmit} validationSchema={validationSchema}
                 validateOnBlur>
             <Form className={classes.all}>
-
                 <div className={classes.content}>
                     <div><Field className={classes.field} placeholder={'Имя'} type='text' name='name'
                                 component='input'/><span><ErrorMessage name='name'/></span>
@@ -77,7 +78,6 @@ export const InvitePage = (props) => {
                     </p>
                     </button>
                 </div>
-
             </Form>
         </Formik>
         <button onClick={() => props.close()} className={classes.close}><img

@@ -11,7 +11,6 @@ import Preloader from "./components/Preloader/Preloader";
 
 const {Content} = Layout;
 
-
 const App = () => {
     const {isAuth, isLoading} = useSelector((state) => state.auth)
     const [theme, setTheme] = useState(false)
@@ -29,22 +28,22 @@ const App = () => {
         setTheme(!theme)
     }
 
-    return ( <div>
-        { isLoading ? <Preloader /> :
-    <div className={cn({
-        [classes.day]: theme === true
-    }, classes.night)}>
+    return (<div>
+        {isLoading ? <Preloader/> :
+            <div className={cn({
+                [classes.day]: theme === true
+            }, classes.night)}>
 
-        <AllLinks changeTheme={changeTheme} theme={theme} isAuth={isAuth}/>
+                <AllLinks changeTheme={changeTheme} theme={theme} isAuth={isAuth}/>
 
-        <Content className={classes.content}>
-            <AllRoutes theme={theme}/>
-        </Content>
+                <Content className={classes.content}>
+                    <AllRoutes theme={theme}/>
+                </Content>
 
-    </div>
+            </div>
         }
 
-    </div> );
+    </div>);
 }
 
 
