@@ -15,8 +15,7 @@ import cn from "classnames";
 
 
 export const InvitePage = (props) => {
-
-    console.log(props.isSend)
+    
 
     const initialValues = {
         name: '', beer: '', social: '',
