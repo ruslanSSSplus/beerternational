@@ -2,6 +2,8 @@ Link to the site https://ruslansssplus.github.io/beerternational/
 
 BackEnd is located on Heroku
 
+Data Base - MongoDB
+
 Libraries i used
 
 1. react
