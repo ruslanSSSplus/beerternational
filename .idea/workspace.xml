@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8808b533-7d5b-4ec3-818f-134c1325d499" name="Changes" comment="fix">
-      <change afterPath="$PROJECT_DIR$/src/Pages/Bundles/EachBundle/EachBundle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Bundles/Bundles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Bundles/Bundles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Bundles/Bundles.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Bundles/Bundles.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Main/Main.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Main/Main.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/invitePage/InvitePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/invitePage/InvitePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/invitePage/invitePage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/invitePage/invitePage.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/apiName.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/apiName.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/authAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/authAPI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Members/Members.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Members/Members.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +35,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../backbeerint2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -110,7 +105,34 @@
       <workItem from="1650148416636" duration="303000" />
       <workItem from="1650214397324" duration="991000" />
       <workItem from="1650481598281" duration="6009000" />
-      <workItem from="1650544143216" duration="5337000" />
+      <workItem from="1650544143216" duration="5794000" />
+      <workItem from="1650728146222" duration="12000" />
+      <workItem from="1650728312598" duration="1000" />
+      <workItem from="1650753260570" duration="1000" />
+      <workItem from="1650809280172" duration="2000" />
+      <workItem from="1650824637229" duration="4000" />
+      <workItem from="1651067421272" duration="598000" />
+      <workItem from="1651069171269" duration="145000" />
+      <workItem from="1651069775229" duration="537000" />
+      <workItem from="1651071042899" duration="108000" />
+      <workItem from="1651073861163" duration="1005000" />
+      <workItem from="1653304179387" duration="640000" />
+      <workItem from="1653912838036" duration="79000" />
+      <workItem from="1659087959585" duration="1685000" />
+      <workItem from="1659090908765" duration="5513000" />
+      <workItem from="1659104933600" duration="1135000" />
+      <workItem from="1659111310443" duration="227000" />
+      <workItem from="1659114628250" duration="112000" />
+      <workItem from="1659194019555" duration="1270000" />
+      <workItem from="1659636245817" duration="2952000" />
+      <workItem from="1659898280756" duration="85000" />
+      <workItem from="1659898588010" duration="106000" />
+      <workItem from="1659984727093" duration="14000" />
+      <workItem from="1659985159394" duration="6000" />
+      <workItem from="1666780059719" duration="22000" />
+      <workItem from="1666781709975" duration="945000" />
+      <workItem from="1666801566682" duration="122000" />
+      <workItem from="1673832587759" duration="104000" />
     </task>
     <task id="LOCAL-00001" summary="bundles">
       <created>1648810681068</created>
